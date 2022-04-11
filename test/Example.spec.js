@@ -2,17 +2,12 @@
  * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
  */
 import chai from 'chai';
-chai.should();
-const {expect} = chai;
+const should = chai.should();
 
-import {Example} from '..';
+import {implementations} from '..';
 
-describe('Example', () => {
-  describe('constructor', () => {
-    it('should exist', async () => {
-      const ex = new Example();
-
-      expect(ex).to.exist;
-    });
+describe('implementations', () => {
+  it('should exist', async () => {
+    should.exist(implementations);
   });
 });
