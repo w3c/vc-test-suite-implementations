@@ -4,7 +4,7 @@
 import chai from 'chai';
 const should = chai.should();
 
-import {implementations} from '..';
+import {implementations} from '../lib/main.js';
 
 describe('implementations', () => {
   it('should exist', async () => {
