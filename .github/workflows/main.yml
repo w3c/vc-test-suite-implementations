@@ -1,0 +1,36 @@
+name: Lint and Test
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install --legacy-peer-deps
+      - name: Run eslint
+        run: npm run lint
+  test-node:
+    runs-on: ubuntu-latest
+    needs: [lint]
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install --legacy-peer-deps
+      - name: Run test with Node.js ${{ matrix.node-version }}
+        run: npm run test-node
