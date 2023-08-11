@@ -1,0 +1,17 @@
+{
+  "name": "Danube Tech",
+  "implementation": "uni",
+  "issuers": [{
+    "id": "did:key:z6MksvTdeczd92YQ5W2V2gL9kXdRvD2AEiyJPoWieP95HUDo",
+    "endpoint": "https://uniissuer.io/1.0/credentials/issue",
+    "options": {
+      "type": "Ed25519Signature2020"
+    },
+    "tags": ["Ed25519Signature2020"]
+  }],
+  "verifiers": [{
+    "id": "",
+    "endpoint": "https://univerifier.io/1.0/credentials/verify",
+    "tags": ["Ed25519Signature2020"]
+  }]
+}

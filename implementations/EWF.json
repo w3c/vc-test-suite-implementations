@@ -1,0 +1,15 @@
+{
+  "name": "EWF",
+  "implementation": "Energy Web Foundation VC-API",
+  "issuers": [{
+    "id": "did:key:z6MksoRPRqnMWiivV4weRGGS9SiHXuqfJEYu95EiYtbvBxW6",
+    "endpoint": "https://vc-api-dev.energyweb.org/v1/vc-api/credentials/issue",
+    "tags": ["Ed25519Signature2020"]
+
+  }],
+  "verifiers": [{
+    "id": "",
+    "endpoint": "https://vc-api-dev.energyweb.org/v1/vc-api/credentials/verify",
+    "tags": ["Ed25519Signature2020"]
+  }]
+}

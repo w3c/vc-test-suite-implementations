@@ -1,0 +1,31 @@
+{
+  "name": "SpruceID",
+  "implementation": "SpruceID",
+  "issuers": [{
+    "id": "did:key:z6MkgND5U5Kedizov5nxeh2ZCVUTDRSmAfbNqPhzCq8b72Ra",
+    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
+    "options": {
+      "type": "Ed25519Signature2020"
+    },
+    "tags": ["Ed25519Signature2020"]
+  }, {
+    "id": "did:key:z6MkgND5U5Kedizov5nxeh2ZCVUTDRSmAfbNqPhzCq8b72Ra",
+    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
+    "options": {
+      "type": "DataIntegrityProof"
+    },
+    "tags": ["eddsa-2022"]
+  }, {
+    "id": "did:key:zDnaei6w9La4VphyPA6V2V5poBTpVtjCsnzPML5c78GWjRhnc",
+    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
+    "options": {
+      "type": "DataIntegrityProof"
+    },
+    "tags": ["ecdsa-2019"]
+  }],
+  "verifiers": [{
+    "id": "https://spruceid.com",
+    "endpoint": "https://vc.spruceid.xyz/credentials/verify",
+    "tags": ["Ed25519Signature2020", "eddsa-2022", "ecdsa-2019"]
+  }]
+}
