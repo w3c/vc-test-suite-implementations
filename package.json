@@ -1,0 +1,75 @@
+{
+  "name": "vc-test-suite-implementations",
+  "version": "2.0.0",
+  "description": "W3C Verifiable Credential test suite implementations.",
+  "homepage": "https://github.com/w3c/vc-test-suite-implementations",
+  "author": {
+    "name": "W3C Verifiable Credentials Working Group",
+    "email": "public-vc-wg@w3.org",
+    "url": "https://www.w3.org/groups/wg/vc/"
+  },
+  "type": "module",
+  "main": "./lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w3c/vc-test-suite-implementations"
+  },
+  "bugs": {
+    "url": "https://github.com/w3c/vc-test-suite-implementations/issues",
+    "email": "public-vc-wg@w3.org"
+  },
+  "license": "BSD-3-Clause",
+  "files": [
+    "lib/*.js",
+    "implementations/*"
+  ],
+  "dependencies": {
+    "@digitalbazaar/did-method-key": "^3.0.0",
+    "@digitalbazaar/ed25519-signature-2020": "^4.0.1",
+    "@digitalbazaar/ezcap": "^3.0.1",
+    "@digitalbazaar/http-client": "^3.2.0",
+    "app-root-path": "^3.0.0",
+    "bnid": "^3.0.0",
+    "lru-cache": "^7.14.0",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.19.0",
+    "eslint-config-digitalbazaar": "^4.0.1",
+    "eslint-plugin-jsdoc": "^39.3.3",
+    "eslint-plugin-unicorn": "^43.0.0",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "exclude": [
+      "tests"
+    ],
+    "reporter": [
+      "html",
+      "text-summary"
+    ]
+  },
+  "browser": {
+    "buffer": false,
+    "crypto": false,
+    "util": false
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "w3c",
+    "verifiable credentials"
+  ],
+  "scripts": {
+    "test": "npm run test-node && npm run lint",
+    "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks -t 10000 test/*.spec.js",
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text-summary npm run test-node",
+    "coverage-ci": "cross-env NODE_ENV=test nyc --reporter=lcovonly npm run test-node",
+    "coverage-report": "nyc report",
+    "lint": "eslint ."
+  }
+}
