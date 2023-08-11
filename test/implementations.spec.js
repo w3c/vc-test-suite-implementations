@@ -6,8 +6,8 @@ const should = chai.should();
 
 import {allImplementations} from '../lib/main.js';
 
-describe('implementations', () => {
-  it('should exist', async () => {
+describe('Loading implementations', () => {
+  it('result in no errors.', async () => {
     should.exist(allImplementations);
   });
 });
