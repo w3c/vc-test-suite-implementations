@@ -1,21 +1,24 @@
 {
-    "name": "Trinsic",
-    "implementation": "Trinsic",
-    "issuers": [
-      {
-        "id": "did:key:z6MkqbpLSbqnY1pxVyhBCDYcFsv4ZgGgqP32kzNrf5deWVPU",
-        "endpoint": "https://interop.connect.trinsic.cloud/vc-api/credentials/issue",
-        "options": {
-          "type": "DataIntegrityProof"
-        },
-        "tags": ["vc-api", "eddsa-2022", "Ed25519Signature2020"]
-      }
-    ],
-    "verifiers": [
-      {
-        "id": "https://trinsic.id",
-        "endpoint": "https://interop.connect.trinsic.cloud/vc-api/credentials/verify",
-        "tags": ["vc-api", "eddsa-2022", "Ed25519Signature2020"]
-      }
-    ]
-  }
+  "name": "Trinsic",
+  "implementation": "Trinsic",
+  "issuers": [{
+    "id": "did:key:z6MkqbpLSbqnY1pxVyhBCDYcFsv4ZgGgqP32kzNrf5deWVPU",
+    "endpoint": "https://interop.connect.trinsic.cloud/vc-api/credentials/issue",
+    "options": {
+      "type": "Ed25519Signature2020"
+    },
+    "tags": ["vc-api", "Ed25519Signature2020"]
+  }, {
+    "id": "did:key:z6MkqbpLSbqnY1pxVyhBCDYcFsv4ZgGgqP32kzNrf5deWVPU",
+    "endpoint": "https://interop.connect.trinsic.cloud/vc-api/credentials/issue",
+    "options": {
+      "type": "DataIntegrityProof"
+    },
+    "tags": ["vc-api", "eddsa-2022"]
+  }],
+  "verifiers": [{
+    "id": "https://trinsic.id",
+    "endpoint": "https://interop.connect.trinsic.cloud/vc-api/credentials/verify",
+    "tags": ["vc-api", "eddsa-2022", "Ed25519Signature2020"]
+  }]
+}
