@@ -14,18 +14,18 @@
     "options": {
       "type": "DataIntegrityProof"
     },
-    "tags": ["eddsa-2022"]
+    "tags": ["eddsa-rdfc-2022"]
   }, {
     "id": "did:key:zDnaei6w9La4VphyPA6V2V5poBTpVtjCsnzPML5c78GWjRhnc",
     "endpoint": "https://vc.spruceid.xyz/credentials/issue",
     "options": {
       "type": "DataIntegrityProof"
     },
-    "tags": ["ecdsa-2019"]
+    "tags": ["ecdsa-rdfc-2019"]
   }],
   "verifiers": [{
     "id": "https://spruceid.com",
     "endpoint": "https://vc.spruceid.xyz/credentials/verify",
-    "tags": ["Ed25519Signature2020", "eddsa-2022", "ecdsa-2019"]
+    "tags": ["Ed25519Signature2020", "eddsa-rdfc-2022", "ecdsa-rdfc-2019"]
   }]
 }

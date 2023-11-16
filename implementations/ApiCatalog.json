@@ -5,7 +5,7 @@
     "id": "https://vc.apicatalog.com",
     "endpoint": "https://vc.apicatalog.com/credentials/verify",
     "method": "POST",
-    "tags": ["Ed25519Signature2020", "vc2.0", "eddsa-2022", "ecdsa-2019" ]
+    "tags": ["Ed25519Signature2020", "vc2.0", "eddsa-rdfc-2022", "ecdsa-rdfc-2019"]
   }],
   "issuers": [{
     "id": "did:key:z6Mkska8oQD7QQQWxqa7L5ai4mH98HfAdSwomPFYKuqNyE2y",
@@ -20,19 +20,19 @@
     "options": {
       "type": "eddsa-2022"
     },
-    "tags": ["eddsa-2022"]
+    "tags": ["eddsa-rdfc-2022"]
   }, {
     "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
     "endpoint": "https://vc.apicatalog.com/credentials/issue",
     "options": {
       "type": "ecdsa-2019"
     },
-    "tags": ["ecdsa-2019" ]
+    "tags": ["ecdsa-rdfc-2019"]
   }],
   "vpVerifiers": [{
     "id": "https://vc.apicatalog.com",
     "endpoint": "https://vc.apicatalog.com/presentations/verify",
     "method": "POST",
-    "tags": ["Ed25519Signature2020", "vc2.0", "eddsa-2022", "ecdsa-2019" ]
+    "tags": ["Ed25519Signature2020", "vc2.0", "eddsa-rdfc-2022", "ecdsa-rdfc-2019"]
   }]
 }
