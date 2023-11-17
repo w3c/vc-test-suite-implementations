@@ -21,11 +21,13 @@
     "options": {
       "type": "DataIntegrityProof"
     },
-    "tags": ["ecdsa-rdfc-2019", "P-256"]
+    "supportedEcdsaKeyTypes": ["P-256"],
+    "tags": ["ecdsa-rdfc-2019"]
   }],
   "verifiers": [{
     "id": "https://spruceid.com",
     "endpoint": "https://vc.spruceid.xyz/credentials/verify",
+    "supportedEcdsaKeyTypes": ["P-256"],
     "tags": ["Ed25519Signature2020", "eddsa-rdfc-2022", "ecdsa-rdfc-2019"]
   }]
 }
