@@ -79,7 +79,7 @@ following form:
       "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:4d44084c-334e-46dc-ac23-5e26f75262b6\",\"controller\":\"did:key:zFoo\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fmy.implementation.net%2Fissuers%2Fz19wCeJafpsTzvA6hZksz7TYF\",\"invocationTarget\":\"https://my.implementation.net/issuers/z19wCeJafpsTzvA6hZksz7TYF/credentials/issue\",\"expires\":\"2022-05-29T17:26:30Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2022-02-28T17:26:30Z\",\"verificationMethod\":\"did:key:z6Mkk2x1J4jCmaHDyYRRW1NB7CzeKYbjo3boGfRiefPzZjLQ#z6Mkk2x1J4jCmaHDyYRRW1NB7CzeKYbjo3boGfRiefPzZjLQ\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fmy.implementation.net%2Fissuers%2Fz19wCeJafpsTzvA6hZksz7TYF\"],\"proofValue\":\"zBar\"}}",
       "keySeed": "KEY_SEED_DB"
     },
-    "tags": ["ecdsa-rdfc-2019"]
+    "tags": ["ecdsa-rdfc-2019", "P-256"]
   }],
   "verifiers": [{
     "id": "https://product.example.com/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR",
@@ -137,7 +137,10 @@ vc2.0 - This tag will run the [VC Data Model 2.0 Test Suite](https://github.com/
 
 Ed25519Signature2020 - This tag will run the [Ed25519 tests](https://github.com/w3c-ccg/di-ed25519-test-suite) on either your issuer and/or verifier.
 
-ecdsa-rdfc-2019 - This tag will run the [VC Data Integrity ECDSA Test Suite](https://github.com/w3c-ccg/vc-di-ecdsa-test-suite) on your issuer and verifier endpoints.
+ecdsa-rdfc-2019 - This tag will run the [VC Data Integrity ECDSA Test Suite](https://github.com/w3c-ccg/vc-di-ecdsa-test-suite) on your issuer and verifier endpoints. Along
+with the cryptosuite tag, for the issuers you should also specify the key type
+that your implementation supports. Currently, the test suite supports `P-256`
+and `P-384` keyTypes.
 
 eddsa-rdfc-2022 - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c-ccg/di-eddsa-2022-test-suite) on your issuer and verifier endpoints.
 
