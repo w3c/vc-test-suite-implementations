@@ -27,7 +27,7 @@
     "options": {
       "type": "ecdsa-2019"
     },
-    "tags": ["ecdsa-rdfc-2019"]
+    "tags": ["ecdsa-rdfc-2019", "P-256"]
   }],
   "vpVerifiers": [{
     "id": "https://vc.apicatalog.com",
