@@ -118,7 +118,7 @@ module.exports = [{
     "id": "urn:uuid:my:implementation:issuer:id",
     "endpoint": "https://localhost:40443/issuers/foo/credentials/issue",
     "method": "POST",
-    "tags": ["ecdsa-rdfc-2019", "localhost"]
+    "tags": ["ecdsa-rdfc-2019", "P-256", "localhost"]
   }],
   "verifiers": [{
     "id": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR",
@@ -133,16 +133,17 @@ module.exports = [{
 
 Tags tell the test suites which implementations to run the test suites against.
 
-vc2.0 - This tag will run the [VC Data Model 2.0 Test Suite](https://github.com/digitalbazaar/vc-data-model-2-test-suite) on your issuer and verifier endpoints.
+`vc2.0` - This tag will run the [VC Data Model 2.0 Test Suite](https://github.com/digitalbazaar/vc-data-model-2-test-suite) on your issuer and verifier endpoints.
 
-Ed25519Signature2020 - This tag will run the [Ed25519 tests](https://github.com/w3c-ccg/di-ed25519-test-suite) on either your issuer and/or verifier.
+`Ed25519Signature2020` - This tag will run the [Ed25519 tests](https://github.com/w3c-ccg/di-ed25519-test-suite) on either your issuer and/or verifier.
 
-ecdsa-rdfc-2019 - This tag will run the [VC Data Integrity ECDSA Test Suite](https://github.com/w3c-ccg/vc-di-ecdsa-test-suite) on your issuer and verifier endpoints. Along
-with the cryptosuite tag, for the issuers you should also specify the key type
-that your implementation supports. Currently, the test suite supports `P-256`
-and `P-384` keyTypes.
+`ecdsa-rdfc-2019` or `ecdsa-sd-2023` - These tags will run
+the [VC Data Integrity ECDSA Test Suite](https://github.com/w3c-ccg/vc-di-ecdsa-test-suite) on your issuer and verifier endpoints.
+Note: Along with the cryptosuite tag, for the issuers you should also specify
+the key type that your implementation supports in the tags. Currently, the test
+suite supports `P-256` and `P-384` key types.
 
-eddsa-rdfc-2022 - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c-ccg/di-eddsa-2022-test-suite) on your issuer and verifier endpoints.
+`eddsa-rdfc-2022` - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c-ccg/di-eddsa-2022-test-suite) on your issuer and verifier endpoints.
 
 ## Contribute
 
