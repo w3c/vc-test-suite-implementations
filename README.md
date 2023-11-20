@@ -137,18 +137,18 @@ module.exports = [{
 
 Tags tell the test suites which implementations to run the test suites against.
 
-`vc2.0` - This tag will run the [VC Data Model 2.0 Test Suite](https://github.com/digitalbazaar/vc-data-model-2-test-suite) on your issuer and verifier endpoints.
+* `vc2.0` - This tag will run the [VC Data Model 2.0 Test Suite](https://github.com/w3c/vc-data-model-2.0-test-suite) on your issuer and verifier endpoints.
 
-`Ed25519Signature2020` - This tag will run the [Ed25519 tests](https://github.com/w3c-ccg/di-ed25519-test-suite) on either your issuer and/or verifier.
+* `Ed25519Signature2020` - This tag will run the [Ed25519 tests](https://github.com/w3c/vc-di-ed25519signature2020-test-suite) on either your issuer and/or verifier.
 
-`ecdsa-rdfc-2019` or `ecdsa-sd-2023` - These tags will run
-the [VC Data Integrity ECDSA Test Suite](https://github.com/w3c-ccg/vc-di-ecdsa-test-suite) on your issuer and verifier endpoints.
-Note: Along with the cryptosuite tag, for you should also specify the
-`supportedEcdsaKeyTypes` (ECDSA key types that your implementation issues or
-can verify). Currently, the test suite supports `P-256` and `P-384` ECDSA key
-types.
+* `ecdsa-rdfc-2019` or `ecdsa-sd-2023` - These tags will run the
+[VC Data Integrity ECDSA Test Suite](https://github.com/w3c/vc-di-ecdsa-test-suite)
+on your issuer and verifier endpoints.
+  * Alongside this cryptosuite tag, you must also specify the `supportedEcdsaKeyTypes`
+  key parallel to `tags` listing the ECDSA key types that your implementation issues or
+  can verify. Currently, the test suite supports `P-256` and `P-384` ECDSA key types.
 
-`eddsa-rdfc-2022` - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c-ccg/di-eddsa-2022-test-suite) on your issuer and verifier endpoints.
+* `eddsa-rdfc-2022` - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c/vc-di-eddsa-test-suite) on your issuer and verifier endpoints.
 
 ## Contribute
 
