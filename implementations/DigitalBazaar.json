@@ -1,6 +1,6 @@
 {
   "name": "Digital Bazaar",
-  "implementation": "Veres One (Q/A)",
+  "implementation": "Veres (Q/A)",
   "issuers": [{
     "id": "https://issuer.qa.veres.app/issuers/z1AEwLo7tZ3TrsPgRcgLJqQvR",
     "endpoint": "https://issuer.qa.veres.app/issuers/z1AEwLo7tZ3TrsPgRcgLJqQvR/credentials/issue",
