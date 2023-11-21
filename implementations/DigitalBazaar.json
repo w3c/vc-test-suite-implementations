@@ -67,7 +67,7 @@
       "keySeed": "KEY_SEED_DB"
     },
     "supportedEcdsaKeyTypes": ["P-256", "P-384"],
-    "tags": ["Ed25519Signature2020", "eddsa-rdfc-2022", "ecdsa-rdfc-2019"]
+    "tags": ["Ed25519Signature2020", "eddsa-rdfc-2022", "ecdsa-rdfc-2019", "ecdsa-sd-2023"]
   }, {
     "id": "https://vc2.veresverifier.dev/verifiers/z19ojzY8YFhryhpghn6ZaPnHo",
     "endpoint": "https://vc2.veresverifier.dev/verifiers/z19ojzY8YFhryhpghn6ZaPnHo/credentials/verify",
