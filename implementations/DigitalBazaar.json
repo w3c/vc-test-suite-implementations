@@ -87,8 +87,8 @@
     "tags": ["vc2.0"]
   }],
   "vcHolders": [{
-    "id": "https://vc2.veresverifier.dev/verifiers/z19ojzY8YFhryhpghn6ZaPnHo",
-    "endpoint": "https://vc2.veresverifier.dev/verifiers/z19ojzY8YFhryhpghn6ZaPnHo/presentations/verify",
-    "tags": ["ecdsa-sd-2023", "vcHolder"]
+    "id": "https://vcholder.vcplayground.org",
+    "endpoint": "https://vcholder.vcplayground.org/derive",
+    "tags": ["vcHolder"]
   }]
 }
