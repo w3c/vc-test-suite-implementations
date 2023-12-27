@@ -14,16 +14,16 @@ be regularly run against the
     - [NPM](#npm)
     - [Development](#development)
   - [Usage](#usage)
-      - [Adding a new implementation](#adding-a-new-implementation)
-      - [Testing locally](#testing-locally)
+    - [Adding a new implementation](#adding-a-new-implementation)
+    - [Testing locally](#testing-locally)
     - [Tags](#tags)
   - [Contribute](#contribute)
   - [License](#license)
 
 ## Background
 
-Implementations added to this package are tested against various test suites in order to demonstrate
-[W3C Verifiable Credentials](https://www.w3.org/groups/wg/vc/) interoperability.
+Implementations added to this package are tested against various test suites
+listed below in order to demonstrate [W3C Verifiable Credentials](https://www.w3.org/groups/wg/vc/) interoperability.
 
 ## Security
 
@@ -39,7 +39,6 @@ private key information used for signing
 ### NPM
 
 To install via NPM:
-
 ```
 npm install w3c/vc-test-suite-implementations
 ```
@@ -100,14 +99,11 @@ parameters, in which case they do not specify `oauth2` or `zcap` properties.
 
 #### Testing locally
 
-If you want to test your implementation locally, you can add a configuration
-file in the root directory of the specific test suite that you are running.
+If you want to test your implementations for endpoints running locally, you can
+create a configuration file `localImplementationsConfig.cjs` in the root
+directory of the test suite.
 
-```
-localImplementationsConfig.cjs
-```
-
-That file must be a common js module that exports an array of implementations:
+This file must be a CommonJS module that exports an array of implementations:
 
 ```js
 // localImplementationsConfig.cjs defining local implementations
@@ -117,17 +113,27 @@ module.exports = [{
   "issuers": [{
     "id": "urn:uuid:my:implementation:issuer:id",
     "endpoint": "https://localhost:40443/issuers/foo/credentials/issue",
-    "supportedEcdsaKeyTypes": ["P-256"]
-    "tags": ["ecdsa-rdfc-2019", "localhost"]
+    "tags": ["eddsa-rdfc-2022", "localhost"]
   }],
   "verifiers": [{
     "id": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR",
     "endpoint": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR/credentials/verify",
-    "supportedEcdsaKeyTypes": ["P-256", "P-384"]
-    "tags": ["ecdsa-rdfc-2019", "localhost"]
+    "tags": ["eddsa-rdfc-2022", "localhost"]
   }]
 }];
 ```
+
+After adding the config file, both the localhost implementations and other
+non-localhost implementations will be included in the test run.
+
+To specifically test only the localhost implementation, modify the test suite to
+filter implementations based on a specific tag in your configuration file.
+
+For instance, if your `.localImplementationsConfig.cjs` config file looks like
+above in the `di-eddsa-2022-test-suite`, you can adjust the tag used in each test
+file of the test suite (for example -
+https://github.com/w3c/vc-di-eddsa-test-suite/blob/main/tests/10-rdfc-create.js#L16)
+to filter the implementations by `localhost` instead of `eddsa-rdfc-2022`.
 
 ### Tags
 
