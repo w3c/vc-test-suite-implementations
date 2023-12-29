@@ -1,0 +1,34 @@
+{
+  "name": "bovine",
+  "implementation": "bovine",
+ "issuers": [{
+    "id": "did:key:z6MkuEij7SCByU2MNp6Ec4iiLWdqEepvxawtq5LgqbymdsXd",
+    "endpoint": "https://bovine.social/w3c-di/issue/eddsa-rdfc-2022",
+    "tags": ["eddsa-rdfc-2022"]
+  }, {
+    "id": "did:key:z6MkuEij7SCByU2MNp6Ec4iiLWdqEepvxawtq5LgqbymdsXd",
+    "endpoint": "https://bovine.social/w3c-di/issue/eddsa-jcs-2022",
+    "tags": ["eddsa-jcs-2022"]
+  }, {
+    "id": "did:key:zDnaeRpdr3KkQ1NtBhLAWFp76epvaU1spZzGH7AvKtY9KqjZr",
+    "endpoint": "https://bovine.social/w3c-di/issue/ecdsa-rdfc-2019",
+    "tags": ["ecdsa-rdfc-2019"],
+    "supportedEcdsaKeyTypes": ["P-256"]
+  }, {
+    "id": "did:key:zDnaeRpdr3KkQ1NtBhLAWFp76epvaU1spZzGH7AvKtY9KqjZr",
+    "endpoint": "https://bovine.social/w3c-di/issue/ecdsa-jcs-2019",
+    "tags": ["ecdsa-jcs-2019"],
+    "supportedEcdsaKeyTypes": ["P-256"]
+  }],
+  "verifiers": [{
+    "id": "urn:uuid:bovine:verifier",
+    "endpoint": "https://bovine.social/w3c-di/verify",
+    "supportedEcdsaKeyTypes": ["P-256"],
+    "tags": [
+      "eddsa-rdfc-2022",
+      "eddsa-jcs-2022",
+      "ecdsa-rdfc-2019",
+      "ecdsa-jcs-2019"
+    ]
+  }]
+}
