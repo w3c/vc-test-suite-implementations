@@ -100,13 +100,13 @@ parameters, in which case they do not specify `oauth2` or `zcap` properties.
 #### Testing locally
 
 If you want to test your implementations for endpoints running locally, you can
-create a configuration file `localImplementationsConfig.cjs` in the root
+create a configuration file `.localImplementationsConfig.cjs` in the root
 directory of the test suite.
 
 This file must be a CommonJS module that exports an array of implementations:
 
 ```js
-// localImplementationsConfig.cjs defining local implementations
+// .localImplementationsConfig.cjs defining local implementations
 module.exports = [{
   "name": "My Company",
   "implementation": "My Implementation Name",
