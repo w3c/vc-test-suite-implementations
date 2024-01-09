@@ -146,9 +146,44 @@ Tags tell the test suites which implementations to run the test suites against.
 * `ecdsa-rdfc-2019` or `ecdsa-sd-2023` - These tags will run the
 [VC Data Integrity ECDSA Test Suite](https://github.com/w3c/vc-di-ecdsa-test-suite)
 on your issuer and verifier endpoints.
-  * Alongside this cryptosuite tag, you must also specify the `supportedEcdsaKeyTypes`
-  key parallel to `tags` listing the ECDSA key types that your implementation issues or
-  can verify. Currently, the test suite supports `P-256` and `P-384` ECDSA key types.
+  * Alongside this cryptosuite tag, you must also specify the
+  `supportedEcdsaKeyTypes` property listing the ECDSA key types that your
+  implementation issues or can verify. Currently, the test suite supports
+  `P-256` and `P-384` ECDSA key types.
+
+  Example:
+  You can specify the key types supported by your implementation in the issuer
+  and verifier configs like this:
+  ```json
+  {
+    "issuers": [{
+      ...
+      "supportedEcdsaKeyTypes": ["P-256", "P-384"]
+      "tags": ["ecdsa-rdfc-2019"]
+    }, {
+      ...
+      "supportedEcdsaKeyTypes": ["P-256", "P-384"]
+      "tags": ["ecdsa-jcs-2019"]
+    }, {
+      ...
+      "supportedEcdsaKeyTypes": ["P-256"]
+      "tags": ["ecdsa-sd-2023"]
+    }],
+    "verifiers": [{
+      ...
+      "supportedEcdsaKeyTypes": ["P-256", "P-384"]
+      "tags": ["ecdsa-rdfc-2019"]
+    }, {
+      ...
+      "supportedEcdsaKeyTypes": ["P-256", "P-358"]
+      "tags": ["ecdsa-jcs-2019"]
+    }, {
+      ...
+      "supportedEcdsaKeyTypes": ["P-256"]
+      "tags": ["ecdsa-sd-2023"]
+    }]
+  }
+  ```
 
 * `eddsa-rdfc-2022` - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c/vc-di-eddsa-test-suite) on your issuer and verifier endpoints.
 
