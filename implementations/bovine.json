@@ -1,7 +1,7 @@
 {
   "name": "bovine",
   "implementation": "bovine",
- "issuers": [{
+  "issuers": [{
     "id": "did:key:z6MkuEij7SCByU2MNp6Ec4iiLWdqEepvxawtq5LgqbymdsXd",
     "endpoint": "https://bovine.social/w3c-di/issue/eddsa-rdfc-2022",
     "tags": ["eddsa-rdfc-2022"]
