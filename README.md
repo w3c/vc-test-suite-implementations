@@ -151,9 +151,8 @@ on your issuer and verifier endpoints.
   implementation issues or can verify. Currently, the test suite supports
   `P-256` and `P-384` ECDSA key types.
 
-  Example:
   You can specify the key types supported by your implementation in the issuer
-  and verifier configs like this:
+  and verifier configs as shown in this example:
   ```json
   {
     "issuers": [{
