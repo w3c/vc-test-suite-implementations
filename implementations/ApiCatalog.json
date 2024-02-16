@@ -27,7 +27,7 @@
     "options": {
       "type": "ecdsa-2019"
     },
-    "supportedEcdsaKeyTypes": ["P-256"],
+    "supportedEcdsaKeyTypes": ["P-256", "P-384"],
     "tags": ["ecdsa-rdfc-2019"]
   }],
   "vpVerifiers": [{
