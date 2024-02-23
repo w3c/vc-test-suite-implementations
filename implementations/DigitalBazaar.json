@@ -60,8 +60,17 @@
       "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:73c6ab6d-fd9d-48d8-8260-c0839555e824\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fverifier.qa.veres.app%2Fverifiers%2Fz19jXQPi819fJVaBRFxZXqXay\",\"invocationTarget\":\"https://verifier.qa.veres.app/verifiers/z19jXQPi819fJVaBRFxZXqXay/credentials/verify\",\"expires\":\"2024-11-15T17:57:43Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2023-11-16T17:57:44Z\",\"verificationMethod\":\"did:key:z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b#z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fverifier.qa.veres.app%2Fverifiers%2Fz19jXQPi819fJVaBRFxZXqXay\"],\"proofValue\":\"z2Jcv3ZMfKX4FgXwnK7g4ix8WpWxhtiPdFdL1qjw7Y8XsNrEbeK5CosBPcZwLm9SrCafahF4tkufUmg5QtX51kE11\"}}",
       "keySeed": "KEY_SEED_DB"
     },
+    "supportedEcdsaKeyTypes": ["P-256"],
+    "tags": ["ecdsa-sd-2023"]
+    },{
+    "id": "https://verifier.qa.veres.app/verifiers/z19jXQPi819fJVaBRFxZXqXay",
+    "endpoint": "https://verifier.qa.veres.app/verifiers/z19jXQPi819fJVaBRFxZXqXay/credentials/verify",
+    "zcap": {
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:73c6ab6d-fd9d-48d8-8260-c0839555e824\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fverifier.qa.veres.app%2Fverifiers%2Fz19jXQPi819fJVaBRFxZXqXay\",\"invocationTarget\":\"https://verifier.qa.veres.app/verifiers/z19jXQPi819fJVaBRFxZXqXay/credentials/verify\",\"expires\":\"2024-11-15T17:57:43Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2023-11-16T17:57:44Z\",\"verificationMethod\":\"did:key:z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b#z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fverifier.qa.veres.app%2Fverifiers%2Fz19jXQPi819fJVaBRFxZXqXay\"],\"proofValue\":\"z2Jcv3ZMfKX4FgXwnK7g4ix8WpWxhtiPdFdL1qjw7Y8XsNrEbeK5CosBPcZwLm9SrCafahF4tkufUmg5QtX51kE11\"}}",
+      "keySeed": "KEY_SEED_DB"
+    },
     "supportedEcdsaKeyTypes": ["P-256", "P-384"],
-    "tags": ["Ed25519Signature2020", "eddsa-rdfc-2022", "ecdsa-rdfc-2019", "ecdsa-sd-2023"]
+    "tags": ["Ed25519Signature2020", "eddsa-rdfc-2022", "ecdsa-rdfc-2019"]
   }, {
     "id": "https://vc2.veresverifier.dev/verifiers/z19ojzY8YFhryhpghn6ZaPnHo",
     "endpoint": "https://vc2.veresverifier.dev/verifiers/z19ojzY8YFhryhpghn6ZaPnHo/credentials/verify",
