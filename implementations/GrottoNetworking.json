@@ -21,7 +21,7 @@
     {
       "id": "https://vcverifier.grotto-networking.com/test",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/verify",
-      "tags": ["bbs-2023"],
+      "tags": ["bbs-2023"]
     }
     ],
     "vcHolders": [{
