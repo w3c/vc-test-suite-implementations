@@ -83,7 +83,7 @@
 	],
 	"vcHolders": [
 		{
-			"id": "https://apicatalog.com/vp/verifier",
+			"id": "https://apicatalog.com/vp/holder",
 			"endpoint": "https://vc.apicatalog.com/credentials/derive",
 			"tags": [
 				"vcHolder",
