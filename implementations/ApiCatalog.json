@@ -84,9 +84,11 @@
 	"vcHolders": [
 		{
 			"id": "https://apicatalog.com/vp/verifier",
-			"endpoint": "https://vc.apicatalog.com/credentials/derive ",
+			"endpoint": "https://vc.apicatalog.com/credentials/derive",
 			"tags": [
-				"vcHolder"
+				"vcHolder",
+				"vc2.0",
+				"ecdsa-sd-2023"
 			]
 		}
 	]
