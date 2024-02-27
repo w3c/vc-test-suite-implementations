@@ -1,95 +1,92 @@
 {
-	"name": "apicatalog.com",
-	"implementation": "Iron Verifiable Credentials",
-	"verifiers": [
-		{
-			"id": "https://apicatalog.com/vc/verifier",
-			"endpoint": "https://vc.apicatalog.com/credentials/verify",
-			"supportedEcdsaKeyTypes": [
-				"P-256",
-				"P-384"
-			],
-			"tags": [
-				"Ed25519Signature2020",
-				"vc2.0",
-				"eddsa-rdfc-2022",
-				"ecdsa-rdfc-2019",
-				"ecdsa-sd-2023"
-			]
-		}
-	],
-	"issuers": [
-		{
-			"id": "https://apicatalog.com/issuer/Ed25519Signature2020",
-			"endpoint": "https://vc.apicatalog.com/credentials/issue",
-			"options": {
-				"type": "Ed25519Signature2020"
-			},
-			"tags": [
-				"Ed25519Signature2020",
-				"vc2.0"
-			]
-		},
-		{
-			"id": "https://apicatalog.com/issuer/eddsa-rdfc-2022",
-			"endpoint": "https://vc.apicatalog.com/credentials/issue",
-			"options": {
-				"type": "eddsa-2022"
-			},
-			"tags": [
-				"eddsa-rdfc-2022"
-			]
-		},
-		{
-			"id": "https://apicatalog.com/issuer/ecdsa-rdfc-2019",
-			"endpoint": "https://vc.apicatalog.com/credentials/issue",
-			"options": {
-				"type": "ecdsa-2019"
-			},
-			"supportedEcdsaKeyTypes": [
-				"P-256",
-				"P-384"
-			],
-			"tags": [
-				"ecdsa-rdfc-2019"
-			]
-		},
-		{
-			"id": "https://apicatalog.com/issuer/ecdsa-sd-2023",
-			"endpoint": "https://vc.apicatalog.com/credentials/issue",
-			"options": {
-				"type": "ecdsa-sd-2023"
-			},
-			"supportedEcdsaKeyTypes": [
-				"P-256"
-			],
-			"tags": [
-				"ecdsa-sd-2023"
-			]
-		}
-	],
-	"vpVerifiers": [
-		{
-			"id": "https://apicatalog.com/vp/verifier",
-			"endpoint": "https://vc.apicatalog.com/presentations/verify",
-			"tags": [
-				"Ed25519Signature2020",
-				"vc2.0",
-				"eddsa-rdfc-2022",
-				"ecdsa-rdfc-2019",
-				"ecdsa-sd-2023"
-			]
-		}
-	],
-	"vcHolders": [
-		{
-			"id": "https://apicatalog.com/vp/holder",
-			"endpoint": "https://vc.apicatalog.com/credentials/derive",
-			"tags": [
-				"vcHolder",
-				"vc2.0",
-				"ecdsa-sd-2023"
-			]
-		}
-	]
+  "name": "apicatalog.com",
+  "implementation": "Iron Verifiable Credentials",
+  "verifiers": [
+    {
+      "id": "https://vc.apicatalog.com/verifier",
+      "endpoint": "https://vc.apicatalog.com/credentials/verify",
+      "supportedEcdsaKeyTypes": [
+        "P-256",
+        "P-384"
+      ],
+      "tags": [
+        "Ed25519Signature2020",
+        "vc2.0",
+        "eddsa-rdfc-2022",
+        "ecdsa-rdfc-2019",
+        "ecdsa-sd-2023"
+      ]
+    }
+  ],
+  "issuers": [
+    {
+      "id": "https://vc.apicatalog.com/issuer/?suite=Ed25519Signature2020",
+      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=Ed25519Signature2020",
+      "tags": [
+        "Ed25519Signature2020",
+        "vc2.0"
+      ]
+    },
+    {
+      "id": "https://vc.apicatalog.com/issuer/?suite=eddsa-rdfc-2022",
+      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=eddsa-rdfc-2022",
+      "tags": [
+        "eddsa-rdfc-2022"
+      ]
+    },
+    {
+      "id": "https://vc.apicatalog.com/issuer/?suite=ecdsa-rdfc-2019&curve=p-256",
+      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=ecdsa-rdfc-2019&curve=p-256",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "tags": [
+        "ecdsa-rdfc-2019"
+      ]
+    },
+    {
+      "id": "https://vc.apicatalog.com/issuer/?suite=ecdsa-rdfc-2019&curve=p-384",
+      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=ecdsa-rdfc-2019&curve=p-384",
+      "supportedEcdsaKeyTypes": [
+        "P-384"
+      ],
+      "tags": [
+        "ecdsa-rdfc-2019"
+      ]
+    },
+    {
+      "id": "https://vc.apicatalog.com/issuer/?suite=ecdsa-sd-2023",
+      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=ecdsa-sd-2023",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "tags": [
+        "ecdsa-sd-2023"
+      ]
+    }
+  ],
+  "vpVerifiers": [
+    {
+      "id": "https://vc.apicatalog.com/vp/verifier",
+      "endpoint": "https://vc.apicatalog.com/presentations/verify",
+      "tags": [
+        "Ed25519Signature2020",
+        "vc2.0",
+        "eddsa-rdfc-2022",
+        "ecdsa-rdfc-2019",
+        "ecdsa-sd-2023"
+      ]
+    }
+  ],
+  "vcHolders": [
+    {
+      "id": "https://vc.apicatalog.com/holder",
+      "endpoint": "https://vc.apicatalog.com/credentials/derive",
+      "tags": [
+        "vcHolder",
+        "vc2.0",
+        "ecdsa-sd-2023"
+      ]
+    }
+  ]
 }
