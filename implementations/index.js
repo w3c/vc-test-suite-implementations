@@ -8,13 +8,14 @@ import {join} from 'node:path';
 const require = createRequire(import.meta.url);
 const requireDir = require('require-dir');
 
-const dir = requireDir('./');
+// get all the json files in this dir
+const manifests = Object.values(requireDir('./'));
 
 // gets local implementations from an optional config file
-const getLocalImplementations = () => {
+const getLocalImplementations = fileName => {
   try {
     const path = join(
-      appRoot.toString(), '.localImplementationsConfig.cjs');
+      appRoot.toString(), fileName);
     return require(path);
   } catch(e) {
     if(e?.code === 'MODULE_NOT_FOUND') {
@@ -24,5 +25,14 @@ const getLocalImplementations = () => {
   }
 };
 
-export const implementerFiles = Object.values(dir)
-  .concat(getLocalImplementations());
+// open either list of local endpoints and merge into one list of endpoints.
+const localImplementations = [
+  getLocalImplementations('.localImplementationsConfig.cjs'),
+  getLocalImplementations('localImplementationsConfig.cjs')
+].flatMap(a => a);
+
+// look for local only in a local settings file
+const localOnly = localImplementations.some(i => i?.local === true);
+
+export const implementerFiles = localOnly ? localImplementations :
+  manifests.concat(localImplementations);
