@@ -16,6 +16,7 @@ be regularly run against the
   - [Usage](#usage)
     - [Adding a new implementation](#adding-a-new-implementation)
     - [Testing locally](#testing-locally)
+    - [Using only](#using-only)
     - [Tags](#tags)
   - [Contribute](#contribute)
   - [License](#license)
@@ -99,8 +100,8 @@ parameters, in which case they do not specify `oauth2` or `zcap` properties.
 
 #### Testing locally
 
-If you want to test your implementations for endpoints running locally, you can
-create a configuration file `.localImplementationsConfig.cjs` in the root
+To test implementations with endpoints running locally, create a configuration file named
+either `.localImplementationsConfig.cjs` or `localImplementationsConfig.cjs` in the root
 directory of the test suite.
 
 This file must be a CommonJS module that exports an array of implementations:
@@ -124,16 +125,34 @@ module.exports = [{
 ```
 
 After adding the config file, both the localhost implementations and other
-non-localhost implementations will be included in the test run.
+non-localhost implementations will be included in the test run. To just run implementations
+from the local config file see the [Using only](#using-only) section below.
 
-To specifically test only the localhost implementation, modify the test suite to
-filter implementations based on a specific tag in your configuration file.
+### Using only
+Implementations marked `only` will exclude implementations not marked `only`.
+To only run a local implementation in the suite set `only: true` in
+the local implementation manifest.
 
-For instance, if your `.localImplementationsConfig.cjs` config file looks like
-above in the `di-eddsa-2022-test-suite`, you can adjust the tag used in each test
-file of the test suite (for example -
-https://github.com/w3c/vc-di-eddsa-test-suite/blob/main/tests/10-rdfc-create.js#L16)
-to filter the implementations by `localhost` instead of `eddsa-rdfc-2022`.
+```js
+module.exports = [{
+  "name": "My Company",
+  "implementation": "My Implementation Name",
+  // this will ensure only this implementation is used in a suite
+  "only": true,
+  "issuers": [{
+    "id": "urn:uuid:my:implementation:issuer:id",
+    "endpoint": "https://localhost:40443/issuers/foo/credentials/issue",
+    "tags": ["eddsa-rdfc-2022", "localhost"]
+  }],
+  "verifiers": [{
+    "id": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR",
+    "endpoint": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR/credentials/verify",
+    "tags": ["eddsa-rdfc-2022", "localhost"]
+  }]
+}];
+```
+To run against select implementations simply copy the other manifests to a
+local manifest and then set `only: true` in the implementations for that test run.
 
 ### Tags
 
