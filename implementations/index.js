@@ -31,8 +31,12 @@ const localImplementations = [
   getLocalImplementations('localImplementationsConfig.cjs')
 ].flatMap(a => a);
 
-// look for local only in a local settings file
-const localOnly = localImplementations.some(i => i?.local === true);
+// concat all the manifests together
+const allManifests = manifests.concat(localImplementations);
 
-export const implementerFiles = localOnly ? localImplementations :
-  manifests.concat(localImplementations);
+// look for only in a manifest
+const hasOnly = allManifests.filter(i => i?.only === true);
+
+// if any manifest has only true only return the hasOnly
+// otherwise return all the manifests
+export const implementerFiles = hasOnly.length ? hasOnly : allManifests;
