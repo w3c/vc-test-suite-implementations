@@ -7,12 +7,12 @@ import {join} from 'node:path';
 
 const require = createRequire(import.meta.url);
 const requireDir = require('require-dir');
+const manifests = {};
+// get all the remote implementations in this dir
+manifests.remote = Object.values(requireDir('./'));
 
-// get all the json files in this dir
-const manifests = Object.values(requireDir('./'));
-
-// gets local implementations from an optional config file
-const getLocalImplementations = fileName => {
+// gets local manifests from an optional config file
+const getLocalManifest = fileName => {
   try {
     const path = join(
       appRoot.toString(), fileName);
@@ -25,18 +25,16 @@ const getLocalImplementations = fileName => {
   }
 };
 
-// open either list of local endpoints and merge into one list of endpoints.
-const localImplementations = [
-  getLocalImplementations('.localImplementationsConfig.cjs'),
-  getLocalImplementations('localImplementationsConfig.cjs')
-].flatMap(a => a);
+// get all local endpoints dot file or otherwise
+manifests.local = [
+  '.localImplementationsConfig.cjs',
+  'localImplementationsConfig.cjs'
+].flatMap(path => getLocalManifest(path));
 
-// concat all the manifests together
-const allManifests = manifests.concat(localImplementations);
+// concat all the implementation manifests together
+const all = manifests.all = manifests.remote.concat(manifests.local);
 
 // look for only in a manifest
-const hasOnly = allManifests.filter(i => i?.only === true);
+const only = manifests.only = manifests.all.filter(i => i?.only === true);
 
-// if any manifest has only true only return the hasOnly
-// otherwise return all the manifests
-export const implementerFiles = hasOnly.length ? hasOnly : allManifests;
+export const implementerFiles = only.length ? only : all;
