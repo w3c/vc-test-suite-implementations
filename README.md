@@ -129,8 +129,8 @@ non-localhost implementations will be included in the test run. To just run impl
 from the local config file see the [Using only](#using-only) section below.
 
 ### Using only
-Implementations marked `only` will exclude implementations not marked `only`.
-To only run a local implementation in the suite set `only: true` in
+Implementations marked `only` will be the only implementations used in a test run.
+For example, to only run local implementations in a suite set `only: true` in
 the local implementation manifest.
 
 ```js
@@ -151,8 +151,6 @@ module.exports = [{
   }]
 }];
 ```
-To run against select implementations simply copy the other manifests to a
-local manifest and then set `only: true` in the implementations for that test run.
 
 ### Tags
 
