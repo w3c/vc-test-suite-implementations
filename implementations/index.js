@@ -34,7 +34,7 @@ manifests.local = [
 // concat all the implementation manifests together
 const all = manifests.all = manifests.remote.concat(manifests.local);
 
-// look for only in a manifest
-const only = manifests.only = manifests.all.filter(i => i?.only === true);
+// look for only in a local manifests
+const only = manifests.only = manifests.local.filter(i => i?.only === true);
 
 export const implementerFiles = only.length ? only : all;
