@@ -9,7 +9,7 @@ SPDX-License-Identifier: BSD-3-Clause
 ## 1.0.0 -
 
 ### Added
-- A new option `only` which when added to an implementation manifest results in only that manifest being run.
+- A new option `only` which when added to a local implementation manifest results in only that manifest being run.
 - Support for `localImplementationsConfig.cjs` a non-dot file config file in addition to the existing dot file.
 
 ## Before 1.0.0
