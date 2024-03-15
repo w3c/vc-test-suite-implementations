@@ -191,7 +191,7 @@ on your issuer and verifier endpoints.
       "tags": ["ecdsa-rdfc-2019"]
     }, {
       ...
-      "supportedEcdsaKeyTypes": ["P-256", "P-358"]
+      "supportedEcdsaKeyTypes": ["P-256", "P-384"]
       "tags": ["ecdsa-jcs-2019"]
     }, {
       ...
