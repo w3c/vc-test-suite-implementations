@@ -211,4 +211,4 @@ Pull Requests are welcome!
 
 ## License
 
-See [the LICENSE.md file](LICENSE.md)
+[BSD-3-Clause](LICENSE) Copyright 2022-2024, World Wide Web Consortium
