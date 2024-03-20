@@ -1,3 +1,9 @@
+<!--
+Copyright 2024 Digital Bazaar, Inc.
+
+SPDX-License-Identifier: BSD-3-Clause
+-->
+
 # VC Test Suite Implementations
 
 This repository contains a list of all implementations that have registered to
