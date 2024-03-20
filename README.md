@@ -6,20 +6,18 @@ be regularly run against the
 
 ## Table of Contents
 
-- [VC Test Suite Implementations](#vc-test-suite-implementations)
-  - [Table of Contents](#table-of-contents)
-  - [Background](#background)
-  - [Security](#security)
-  - [Install](#install)
-    - [NPM](#npm)
-    - [Development](#development)
-  - [Usage](#usage)
-    - [Adding a new implementation](#adding-a-new-implementation)
-    - [Testing locally](#testing-locally)
-    - [Using only](#using-only)
-    - [Tags](#tags)
-  - [Contribute](#contribute)
-  - [License](#license)
+- [Background](#background)
+- [Security](#security)
+- [Install](#install)
+  - [NPM](#npm)
+  - [Development](#development)
+- [Usage](#usage)
+  - [Adding a new implementation](#adding-a-new-implementation)
+  - [Testing locally](#testing-locally)
+  - [Using only](#using-only)
+  - [Tags](#tags)
+- [Contribute](#contribute)
+- [License](#license)
 
 ## Background
 
@@ -40,7 +38,7 @@ private key information used for signing
 ### NPM
 
 To install via NPM:
-```
+```sh
 npm install w3c/vc-test-suite-implementations
 ```
 
@@ -48,7 +46,7 @@ npm install w3c/vc-test-suite-implementations
 
 To install locally (for development):
 
-```
+```sh
 git clone https://github.com/w3c/vc-test-suite-implementations.git
 cd vc-test-suite-implementations
 npm install
