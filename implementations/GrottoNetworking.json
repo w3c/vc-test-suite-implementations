@@ -1,37 +1,37 @@
 {
-    "name": "Grotto Networking",
-    "implementation": "Grotto Selective Disclosure Libraries",
-    "issuers": [{
-      "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP#zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
-      "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/issue",
-      "tags": ["ecdsa-sd-2023"],
-      "supportedEcdsaKeyTypes": ["P-256"]
-    },
-    {
-      "id": "did:key:zUC7DerdEmfZ8f4pFajXgGwJoMkV1ofMTmEG5UoNvnWiPiLuGKNeqgRpLH2TV4Xe5mJ2cXV76gRN7LFQwapF1VFu6x2yrr5ci1mXqC1WNUrnHnLgvfZfMH7h6xP6qsf9EKRQrPQ#zUC7DerdEmfZ8f4pFajXgGwJoMkV1ofMTmEG5UoNvnWiPiLuGKNeqgRpLH2TV4Xe5mJ2cXV76gRN7LFQwapF1VFu6x2yrr5ci1mXqC1WNUrnHnLgvfZfMH7h6xP6qsf9EKRQrPQ",
-      "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/issue",
-      "tags": ["bbs-2023"]
-    }],
-    "verifiers": [{
-      "id": "https://vcverifier.grotto-networking.com/test",
-      "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/verify",
-      "tags": ["ecdsa-sd-2023"],
-      "supportedEcdsaKeyTypes": ["P-256"]
-    },
-    {
-      "id": "https://vcverifier.grotto-networking.com/test",
-      "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/verify",
-      "tags": ["bbs-2023"]
-    }
-    ],
-    "vcHolders": [{
-      "id": "https://vcholder.grotto-networking.com/test",
-      "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/derive",
-      "tags": ["vcHolder"]
-    },
-    {
-      "id": "https://vcholder.grotto-networking.com/test",
-      "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/derive",
-      "tags": ["vcHolder", "bbs-2023"]
-    }]
+  "name": "Grotto Networking",
+  "implementation": "Grotto Selective Disclosure Libraries",
+  "issuers": [{
+    "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP#zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
+    "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/issue",
+    "tags": ["ecdsa-sd-2023"],
+    "supportedEcdsaKeyTypes": ["P-256"]
+  },
+  {
+    "id": "did:key:zUC7DerdEmfZ8f4pFajXgGwJoMkV1ofMTmEG5UoNvnWiPiLuGKNeqgRpLH2TV4Xe5mJ2cXV76gRN7LFQwapF1VFu6x2yrr5ci1mXqC1WNUrnHnLgvfZfMH7h6xP6qsf9EKRQrPQ#zUC7DerdEmfZ8f4pFajXgGwJoMkV1ofMTmEG5UoNvnWiPiLuGKNeqgRpLH2TV4Xe5mJ2cXV76gRN7LFQwapF1VFu6x2yrr5ci1mXqC1WNUrnHnLgvfZfMH7h6xP6qsf9EKRQrPQ",
+    "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/issue",
+    "tags": ["bbs-2023"]
+  }],
+  "verifiers": [{
+    "id": "https://vcverifier.grotto-networking.com/test",
+    "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/verify",
+    "tags": ["ecdsa-sd-2023"],
+    "supportedEcdsaKeyTypes": ["P-256"]
+  },
+  {
+    "id": "https://vcverifier.grotto-networking.com/test",
+    "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/verify",
+    "tags": ["bbs-2023"]
   }
+  ],
+  "vcHolders": [{
+    "id": "https://vcholder.grotto-networking.com/test",
+    "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/derive",
+    "tags": ["vcHolder"]
+  },
+  {
+    "id": "https://vcholder.grotto-networking.com/test",
+    "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/derive",
+    "tags": ["vcHolder", "bbs-2023"]
+  }]
+}
