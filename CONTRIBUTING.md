@@ -1,3 +1,9 @@
+<!--
+Copyright 2024 Digital Bazaar, Inc.
+
+SPDX-License-Identifier: BSD-3-Clause
+-->
+
 # Verifiable Credentials Working Group
 
 Contributions to this repository are intended to become part of testing and implementations documents governed by the
