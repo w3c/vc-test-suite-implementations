@@ -1,6 +1,9 @@
 {
-  "name": "Grotto Networking",
-  "implementation": "Grotto Selective Disclosure Libraries",
+  "vendor": {
+    "name": "Grotto Networking",
+    "url": "https://grotto-networking.com/"
+  },
+  "name": "Grotto Selective Disclosure Libraries",
   "issuers": [{
     "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP#zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
     "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/issue",

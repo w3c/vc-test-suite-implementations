@@ -1,6 +1,10 @@
 {
+  "vendor": {
+    "name": "helge",
+    "url": "https://codeberg.org/helge"
+  },
   "name": "bovine",
-  "implementation": "bovine",
+  "url": "https://bovine.social/",
   "issuers": [{
     "id": "did:key:z6MkuEij7SCByU2MNp6Ec4iiLWdqEepvxawtq5LgqbymdsXd",
     "endpoint": "https://bovine.social/w3c-di/issue/eddsa-rdfc-2022",

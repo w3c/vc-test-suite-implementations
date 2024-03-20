@@ -1,6 +1,9 @@
 {
+  "vendor": {
+    "name": "Trinsic",
+    "url": "https://trinsic.id/"
+  },
   "name": "Trinsic",
-  "implementation": "Trinsic",
   "issuers": [{
     "id": "did:key:z6MkqbpLSbqnY1pxVyhBCDYcFsv4ZgGgqP32kzNrf5deWVPU",
     "endpoint": "https://interop.connect.trinsic.cloud/vc-api/credentials/issue",

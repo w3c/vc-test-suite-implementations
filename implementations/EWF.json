@@ -1,6 +1,10 @@
 {
-  "name": "EWF",
-  "implementation": "Energy Web Foundation VC-API",
+  "vendor": {
+    "name": "EWF",
+    "url": "https://www.energyweb.org/"
+  },
+  "name": "Energy Web Foundation VC-API",
+  "url": "https://github.com/openwallet-foundation-labs/vc-api/tree/develop/apps/vc-api",
   "issuers": [{
     "id": "did:key:z6MksoRPRqnMWiivV4weRGGS9SiHXuqfJEYu95EiYtbvBxW6",
     "endpoint": "https://vc-api-dev.energyweb.org/v1/vc-api/credentials/issue",

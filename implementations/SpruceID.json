@@ -1,6 +1,9 @@
 {
+  "vendor": {
+    "name": "SpruceID",
+    "url": "https://spruceid.com/"
+  },
   "name": "SpruceID",
-  "implementation": "SpruceID",
   "issuers": [{
     "id": "did:key:z6MkgND5U5Kedizov5nxeh2ZCVUTDRSmAfbNqPhzCq8b72Ra",
     "endpoint": "https://vc.spruceid.xyz/credentials/issue",
