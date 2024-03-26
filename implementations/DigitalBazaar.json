@@ -2,7 +2,8 @@
   "vendor": {
     "@type": "Organization",
     "name": "Digital Bazaar",
-    "url": "https://digitalbazaar.com/"
+    "url": "https://digitalbazaar.com/",
+    "email": "support@digitalbazaar.com"
   },
   "@type": ["TestSubject", "Software"],
   "name": "Veres (Q/A)",
