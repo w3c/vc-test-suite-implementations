@@ -1,6 +1,12 @@
 {
-  "name": "Danube Tech",
-  "implementation": "uni",
+  "vendor": {
+    "@type": "Organization",
+    "name": "Danube Tech",
+    "url": "https://danubetech.com/"
+  },
+  "@type": ["TestSubject", "Software"],
+  "name": "uni",
+  "url": "https://danubetech.com/tech/uni-issuer-verifier",
   "issuers": [{
     "id": "did:key:z6MksvTdeczd92YQ5W2V2gL9kXdRvD2AEiyJPoWieP95HUDo",
     "endpoint": "https://uniissuer.io/1.0/credentials/issue",

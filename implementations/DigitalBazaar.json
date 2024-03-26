@@ -1,6 +1,13 @@
 {
-  "name": "Digital Bazaar",
-  "implementation": "Veres (Q/A)",
+  "vendor": {
+    "@type": "Organization",
+    "name": "Digital Bazaar",
+    "url": "https://digitalbazaar.com/",
+    "email": "support@digitalbazaar.com"
+  },
+  "@type": ["TestSubject", "Software"],
+  "name": "Veres (Q/A)",
+  "url": "https://demo.veresewallet.dev/",
   "issuers": [{
     "id": "https://issuer.qa.veres.app/issuers/z1AEwLo7tZ3TrsPgRcgLJqQvR",
     "endpoint": "https://issuer.qa.veres.app/issuers/z1AEwLo7tZ3TrsPgRcgLJqQvR/credentials/issue",
