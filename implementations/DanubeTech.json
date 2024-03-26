@@ -1,8 +1,10 @@
 {
   "vendor": {
+    "@type": "Organization",
     "name": "Danube Tech",
     "url": "https://danubetech.com/"
   },
+  "@type": ["TestSubject", "Software"],
   "name": "uni",
   "url": "https://danubetech.com/tech/uni-issuer-verifier",
   "issuers": [{

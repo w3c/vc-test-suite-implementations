@@ -1,8 +1,10 @@
 {
   "vendor": {
+    "@type": "Organization",
     "name": "EWF",
     "url": "https://www.energyweb.org/"
   },
+  "@type": ["TestSubject", "Software"],
   "name": "Energy Web Foundation VC-API",
   "url": "https://github.com/openwallet-foundation-labs/vc-api/tree/develop/apps/vc-api",
   "issuers": [{

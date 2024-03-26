@@ -1,8 +1,10 @@
 {
   "vendor": {
+    "@type": "Organization",
     "name": "Grotto Networking",
     "url": "https://grotto-networking.com/"
   },
+  "@type": ["TestSubject", "Software"],
   "name": "Grotto Selective Disclosure Libraries",
   "issuers": [{
     "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP#zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",

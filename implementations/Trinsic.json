@@ -1,8 +1,10 @@
 {
   "vendor": {
+    "@type": "Organization",
     "name": "Trinsic",
     "url": "https://trinsic.id/"
   },
+  "@type": ["TestSubject", "Software"],
   "name": "Trinsic",
   "issuers": [{
     "id": "did:key:z6MkqbpLSbqnY1pxVyhBCDYcFsv4ZgGgqP32kzNrf5deWVPU",

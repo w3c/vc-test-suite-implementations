@@ -1,8 +1,10 @@
 {
   "vendor": {
+    "@type": "Organization",
     "name": "Digital Bazaar",
     "url": "https://digitalbazaar.com/"
   },
+  "@type": ["TestSubject", "Software"],
   "name": "Veres (Q/A)",
   "url": "https://demo.veresewallet.dev/",
   "issuers": [{

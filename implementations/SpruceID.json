@@ -1,8 +1,10 @@
 {
   "vendor": {
+    "@type": "Organization",
     "name": "SpruceID",
     "url": "https://spruceid.com/"
   },
+  "@type": ["TestSubject", "Software"],
   "name": "SpruceID",
   "issuers": [{
     "id": "did:key:z6MkgND5U5Kedizov5nxeh2ZCVUTDRSmAfbNqPhzCq8b72Ra",

@@ -1,8 +1,10 @@
 {
   "vendor": {
+    "@type": "Person",
     "name": "helge",
     "url": "https://codeberg.org/helge"
   },
+  "@type": ["TestSubject", "Software"],
   "name": "bovine",
   "url": "https://bovine.social/",
   "issuers": [{
