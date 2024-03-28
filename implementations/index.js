@@ -34,6 +34,14 @@ manifests.local = [
   'localImplementationsConfig.cjs'
 ].flatMap(path => getLocalManifest(path));
 
+// get localConfig and look for a manifest
+const localConfig = [
+  '.localConfig.cjs',
+  'localConfig.cjs'
+].flatMap(path => getLocalManifest(path)?.implementations);
+// add localConfig manifests to existings manifests.local
+manifests.local.concat(localConfig);
+
 // concat all the implementation manifests together
 const all = manifests.all = manifests.remote.concat(manifests.local);
 
