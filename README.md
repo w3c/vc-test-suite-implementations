@@ -105,55 +105,70 @@ parameters, in which case they do not specify `oauth2` or `zcap` properties.
 #### Testing locally
 
 To test implementations with endpoints running locally, create a configuration file named
-either `.localImplementationsConfig.cjs` or `localImplementationsConfig.cjs` in the root
-directory of the test suite.
-
-This file must be a CommonJS module that exports an array of implementations:
+`localConfig.cjs` in the root directory of the test suite. `localConfig.cjs` should export
+a json object. Add the property `implementations` to the exported object. `implementations`
+should be an array of objects such as the one below:
 
 ```js
-// .localImplementationsConfig.cjs defining local implementations
-module.exports = [{
-  "name": "My Company",
-  "implementation": "My Implementation Name",
-  "issuers": [{
-    "id": "urn:uuid:my:implementation:issuer:id",
-    "endpoint": "https://localhost:40443/issuers/foo/credentials/issue",
-    "tags": ["eddsa-rdfc-2022", "localhost"]
-  }],
-  "verifiers": [{
-    "id": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR",
-    "endpoint": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR/credentials/verify",
-    "tags": ["eddsa-rdfc-2022", "localhost"]
-  }]
-}];
+// localConfig.cjs defining local implementations
+module.exports = {
+  "implementations": [{
+    "name": "My Company",
+    "implementation": "My Implementation Name",
+    "issuers": [{
+      "id": "urn:uuid:my:implementation:issuer:id",
+      "endpoint": "https://localhost:40443/issuers/foo/credentials/issue",
+      "tags": ["eddsa-rdfc-2022"]
+    }],
+    "verifiers": [{
+      "id": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR",
+      "endpoint": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR/credentials/verify",
+      "tags": ["eddsa-rdfc-2022"]
+    }]
+  }];
+};
 ```
 
-After adding the config file, both the localhost implementations and other
-non-localhost implementations will be included in the test run. To just run implementations
-from the local config file see the [Using only](#using-only) section below.
+After adding the config file, only implementations in `localConfig.cjs` will run.
+To only run specific implementations from the local config file see the [Using only](#using-only) section below.
 
-### Using only
-Local Implementations marked `only` will be the only implementations used in a test run.
-For example, to only run a single implementation in a suite set `only: true` in
-the local implementation manifest.
+### Test Suite Settings
+
+Additional test suite runtime configuration can be done via the `settings` key
+in a `localConfig.cjs`. The current global settings are:
+
+  * `disableInteropTests` - enable/disable the cross-implementation "interop" tests
+  * `testAllImplementers` - enable/disable testing _all_ implementations (not
+    just what's in `localConfig.cjs`)
+
+Both of these settings are `false` when `localConfig.cjs` is present, but may be
+overridden as below:
 
 ```js
-module.exports = [{
-  "name": "My Company",
-  "implementation": "My Implementation Name",
-  // this will ensure only this implementation is used in a suite
-  "only": true,
-  "issuers": [{
-    "id": "urn:uuid:my:implementation:issuer:id",
-    "endpoint": "https://localhost:40443/issuers/foo/credentials/issue",
-    "tags": ["eddsa-rdfc-2022", "localhost"]
-  }],
-  "verifiers": [{
-    "id": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR",
-    "endpoint": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR/credentials/verify",
-    "tags": ["eddsa-rdfc-2022", "localhost"]
-  }]
-}];
+module.exports = {
+  "settings": {
+    // overriding the default, false, for local testing
+    "disableInteropTests": true,
+    "testAllImplementers": true
+  },
+  "implementations": [{
+    "name": "My Company",
+    "implementation": "My Implementation Name",
+    // this will ensure only this implementation is used in a suite
+    "only": true,
+    "issuers": [{
+      "id": "urn:uuid:my:implementation:issuer:id",
+      "endpoint": "https://localhost:40443/issuers/foo/credentials/issue",
+      "tags": ["eddsa-rdfc-2022"]
+    }],
+    "verifiers": [{
+      "id": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR",
+      "endpoint": "https://localhost:40443/verifiers/z19uokPn3b1Z4XDbQSHo7VhFR/credentials/verify",
+      "tags": ["eddsa-rdfc-2022"]
+    }]
+  }, {
+    // Add additional implementations as needed
+  }];
 ```
 
 ### Tags

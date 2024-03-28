@@ -6,7 +6,16 @@ SPDX-License-Identifier: BSD-3-Clause
 
 # w3c/vc-test-suite-implementations  ChangeLog
 
-## 1.0.0 -
+## 2.0.0 -
+
+### Added
+- Support for a new `localConfig.cjs` feature.
+
+### Removed
+- **BREAKING**: Removed support for `.localImplementationsConfig.cjs`.
+- **BREAKING**: Removed support for `localImplementationsConfig.cjs`.
+
+## 1.0.0 - 03/28/2024
 
 ### Added
 - A new option `only` which when added to a local implementation manifest results in only that manifest being run.

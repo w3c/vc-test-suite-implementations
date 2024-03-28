@@ -28,11 +28,9 @@ const getLocalManifest = fileName => {
   }
 };
 
-// get all local endpoints dot file or otherwise
-manifests.local = [
-  '.localImplementationsConfig.cjs',
-  'localImplementationsConfig.cjs'
-].flatMap(path => getLocalManifest(path));
+// get localConfig and look for an implementations property
+const local = manifests.local = getLocalManifest('localConfig.cjs')?.
+  implementations || [];
 
 // concat all the implementation manifests together
 const all = manifests.all = manifests.remote.concat(manifests.local);
@@ -40,4 +38,5 @@ const all = manifests.all = manifests.remote.concat(manifests.local);
 // look for only in a local manifests
 const only = manifests.only = manifests.local.filter(i => i?.only === true);
 
-export const implementerFiles = only.length ? only : all;
+// if local implementations are defined only return local implementations
+export const implementerFiles = local.length ? only : all;
