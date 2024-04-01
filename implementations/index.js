@@ -34,8 +34,5 @@ const local = getLocalManifest('localConfig.cjs')?.
 // concat all the implementation manifests together
 const all = remote.concat(local);
 
-// look for only in a local manifests
-const only = local.filter(i => i?.only === true);
-
 // if local implementations are defined only return local implementations
-export const implementerFiles = local.length ? only : all;
+export const implementerFiles = local.length ? local : all;
