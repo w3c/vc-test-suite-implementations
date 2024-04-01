@@ -20,7 +20,6 @@ be regularly run against the
 - [Usage](#usage)
   - [Adding a new implementation](#adding-a-new-implementation)
   - [Testing locally](#testing-locally)
-  - [Using only](#using-only)
   - [Tags](#tags)
 - [Contribute](#contribute)
 - [License](#license)
@@ -130,7 +129,6 @@ module.exports = {
 ```
 
 After adding the config file, only implementations in `localConfig.cjs` will run.
-To only run specific implementations from the local config file see the [Using only](#using-only) section below.
 
 ### Test Suite Settings
 
@@ -154,8 +152,6 @@ module.exports = {
   "implementations": [{
     "name": "My Company",
     "implementation": "My Implementation Name",
-    // this will ensure only this implementation is used in a suite
-    "only": true,
     "issuers": [{
       "id": "urn:uuid:my:implementation:issuer:id",
       "endpoint": "https://localhost:40443/issuers/foo/credentials/issue",
