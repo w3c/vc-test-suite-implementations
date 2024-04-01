@@ -135,7 +135,7 @@ After adding the config file, only implementations in `localConfig.cjs` will run
 Additional test suite runtime configuration can be done via the `settings` key
 in a `localConfig.cjs`. The current global settings are:
 
-  * `disableInteropTests` - enable/disable the cross-implementation "interop" tests
+  * `enableInteropTests` - enable/disable the cross-implementation "interop" tests
   * `testAllImplementers` - enable/disable testing _all_ implementations (not
     just what's in `localConfig.cjs`)
 
@@ -146,7 +146,7 @@ overridden as below:
 module.exports = {
   "settings": {
     // overriding the default, false, for local testing
-    "disableInteropTests": true,
+    "enableInteropTests": true,
     "testAllImplementers": true
   },
   "implementations": [{
