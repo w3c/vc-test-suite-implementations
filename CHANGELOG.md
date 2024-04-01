@@ -6,14 +6,16 @@ SPDX-License-Identifier: BSD-3-Clause
 
 # w3c/vc-test-suite-implementations  ChangeLog
 
-## 2.0.0 -
+## 2.0.0 - yyyy-mm-dd
 
 ### Added
 - Support for a new `localConfig.cjs` feature.
+  - Adds options for test suite config and local implementation endpoint configuration.
 
 ### Removed
 - **BREAKING**: Removed support for `.localImplementationsConfig.cjs`.
 - **BREAKING**: Removed support for `localImplementationsConfig.cjs`.
+- **BREAKING**: Remove requirement of `only: true` use in local configuration.
 
 ## 1.0.0 - 03/28/2024
 
