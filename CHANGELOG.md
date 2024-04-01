@@ -17,7 +17,7 @@ SPDX-License-Identifier: BSD-3-Clause
 - **BREAKING**: Removed support for `localImplementationsConfig.cjs`.
 - **BREAKING**: Remove requirement of `only: true` use in local configuration.
 
-## 1.0.0 - 03/28/2024
+## 1.0.0 - 2024-03-28
 
 ### Added
 - A new option `only` which when added to a local implementation manifest results in only that manifest being run.
