@@ -27,12 +27,16 @@ const getLocalManifest = fileName => {
   }
 };
 
+const localConfig = getLocalManifest('localConfig.cjs');
+
 // get localConfig and look for an implementations property
-const local = getLocalManifest('localConfig.cjs')?.
-  implementations || [];
+const local = localConfig?.implementations || [];
 
 // concat all the implementation manifests together
 const all = remote.concat(local);
 
 // if local implementations are defined only return local implementations
-export const implementerFiles = local.length ? local : all;
+export const implementerFiles = local.length ?
+  // unless testAllImplementers...in which case, include them all
+  (localConfig?.settings?.testAllImplementers === true ? all : local) :
+  all;
