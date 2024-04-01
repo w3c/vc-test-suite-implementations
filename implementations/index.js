@@ -21,13 +21,20 @@ const getLocalManifest = fileName => {
     return require(path);
   } catch(e) {
     if(e?.code === 'MODULE_NOT_FOUND') {
-      return [];
+      return {};
     }
     throw e;
   }
 };
 
 const localConfig = getLocalManifest('localConfig.cjs');
+export const localSettings = (Object.keys(localConfig).length > 0) ?
+  // we have a localConfig object, so merge in local defaults
+  {...localConfig?.settings,
+    ...{enableInteropTests: false, testAllImplementers: false}} :
+  // otherwise, return the global defaults
+  // FIXME: ...consider renaming `localSettings` as it can hold global ones...
+  {enableInteropTests: true, testAllImplementers: true};
 
 // get localConfig and look for an implementations property
 const local = localConfig?.implementations || [];
@@ -37,6 +44,6 @@ const all = remote.concat(local);
 
 // if local implementations are defined only return local implementations
 export const implementerFiles = local.length ?
-  // unless testAllImplementers...in which case, include them all
-  (localConfig?.settings?.testAllImplementers === true ? all : local) :
+  // unless testAllImplementers is true...in which case, include them all
+  (localSettings.testAllImplementers === true ? all : local) :
   all;
