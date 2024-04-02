@@ -13,4 +13,33 @@ describe('Loading implementations', () => {
   it('should result in no errors.', async () => {
     should.exist(allImplementations);
   });
+
+  describe('Implementations using DID:key identifiers', () => {
+    allImplementations.forEach(implementation => {
+      const {issuers, verifiers} = implementation;
+
+      const isDidKeyFilter = ({settings: {id}}) =>
+        id && id.startsWith('did:key');
+
+      describe(implementation.settings.name, () => {
+        issuers.filter(isDidKeyFilter)
+          .map(({settings: {id}}, index) => {
+            describe(`issuer[${index}].id`, () => {
+              it('should not specify a fragment', () => {
+                chai.expect(id).not.match(/#/);
+              });
+            });
+          });
+
+        verifiers.filter(isDidKeyFilter)
+          .map(({settings: {id}}, index) => {
+            describe(`verifier[${index}].id`, () => {
+              it('should not specify a fragment', () => {
+                chai.expect(id).not.match(/#/);
+              });
+            });
+          });
+      });
+    });
+  });
 });
