@@ -136,7 +136,7 @@ Additional test suite runtime configuration can be done via the `settings` key
 in a `localConfig.cjs`. The current global settings are:
 
   * `enableInteropTests` - enable/disable the cross-implementation "interop" tests
-  * `testAllImplementers` - enable/disable testing _all_ implementations (not
+  * `testAllImplementations` - enable/disable testing _all_ implementations (not
     just what's in `localConfig.cjs`)
 
 Both of these settings are `false` when `localConfig.cjs` is present, but may be
@@ -147,7 +147,7 @@ module.exports = {
   "settings": {
     // overriding the default, false, for local testing
     "enableInteropTests": true,
-    "testAllImplementers": true
+    "testAllImplementations": true
   },
   "implementations": [{
     "name": "My Company",
