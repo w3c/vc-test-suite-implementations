@@ -1,6 +1,11 @@
 {
+  "vendor": {
+    "@type": "Organization",
+    "name": "LearnCard",
+    "url": "https://www.learncard.com/"
+  },
+  "@type": ["TestSubject", "Software"],
   "name": "LearnCard",
-  "implementation": "LearnCard",
   "issuers": [{
     "id": "did:key:z6MkjSz4mYqcn7dePGuktJ5PxecMkXQQHWRg8Lm6okATyFVh",
     "endpoint": "https://bridge.learncard.com/credentials/issue",

@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "earl": "https://www.w3.org/ns/earl#",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "schema": "http://schema.org/",
+    "reporter": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#",
+
+    "Software": "earl:Software",
+    "TestSubject": "earl:TestSubject",
+    "Organization": "schema:Organization",
+    "Person": "schema:Person",
+
+    "id": "@id",
+    "name": "schema:name",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "vendor": {
+      "@id": "doap:vendor"
+    },
+    "email": "schema:email",
+
+    "options": {
+      "@id": "https://w3c-ccg.github.io/vc-api/#options",
+      "@type": "@json"
+    },
+
+    "tags": {
+      "@id": "schema:keywords"
+    },
+    "issuers": {
+      "@id": "cred:issuer",
+      "@container": "@set"
+    },
+    "verifiers": {
+      "@id": "cred:verifier",
+      "@container": "@set"
+    },
+    "endpoint": {
+      "@id": "doap:service-endpoint",
+      "@type": "@id"
+    },
+
+    "zcap": "reporter:zcap",
+    "capability": "reporter:capability",
+    "keySeed": "reporter:keySeed",
+    "supportedEcdsaKeyTypes": "reporter:supportedEcdsaKeyTypes",
+    "vcHolders": "reporter:vcHolders",
+    "vpVerifiers": "reporter:vpVerifiers"
+  }
+}
