@@ -29,9 +29,9 @@ const getLocalManifest = fileName => {
 
 const localConfig = getLocalManifest('localConfig.cjs');
 export const localSettings = (Object.keys(localConfig).length > 0) ?
-  // we have a localConfig object, so merge in local defaults
-  {...localConfig?.settings,
-    ...{enableInteropTests: false, testAllImplementations: false}} :
+  // if there is a localConfig.settings overwrite local defaults
+  {...{enableInteropTests: false, testAllImplementations: false},
+    ...localConfig?.settings} :
   // otherwise, return the global defaults
   // FIXME: ...consider renaming `localSettings` as it can hold global ones...
   {enableInteropTests: true, testAllImplementations: true};
