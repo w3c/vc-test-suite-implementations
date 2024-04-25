@@ -43,7 +43,7 @@
       "keySeed": "KEY_SEED_DB"
     },
     "supportedEcdsaKeyTypes": ["P-256"],
-    "tags": ["ecdsa-sd-2023", "vc2.0"]
+    "tags": ["ecdsa-sd-2023"]
    }, {
     "id": "https://vc2.veresissuer.dev/issuers/z1A2ELCrwCJaA8AZKpr3YREye",
     "endpoint": "https://vc2.veresissuer.dev/issuers/z1A2ELCrwCJaA8AZKpr3YREye/credentials/issue",
