@@ -2,11 +2,14 @@
   "name": "Digital Bazaar",
   "implementation": "Veres (Q/A)",
   "issuers": [{
-    "id": "https://issuer.qa.veres.app/issuers/z1AEwLo7tZ3TrsPgRcgLJqQvR",
-    "endpoint": "https://issuer.qa.veres.app/issuers/z1AEwLo7tZ3TrsPgRcgLJqQvR/credentials/issue",
+    "id": "did:key:z6MkgVS1yW8ETBSYqHdJnmpUioyd27dnYToZoiwL9BCV7ipn",
+    "endpoint": "https://vc2.veresissuer.dev/issuers/z1A3KfoLojUc7GchY2wDjSz4F/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:2432d7c1-8082-410d-b9fb-0c40ae0dbce4\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fissuer.qa.veres.app%2Fissuers%2Fz1AEwLo7tZ3TrsPgRcgLJqQvR\",\"invocationTarget\":\"https://issuer.qa.veres.app/issuers/z1AEwLo7tZ3TrsPgRcgLJqQvR/credentials/issue\",\"expires\":\"2024-11-15T19:06:05Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2023-11-16T19:06:06Z\",\"verificationMethod\":\"did:key:z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b#z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fissuer.qa.veres.app%2Fissuers%2Fz1AEwLo7tZ3TrsPgRcgLJqQvR\"],\"proofValue\":\"z2x1TjQQHHS82K76CV9JzTom42CHhDhq2ShiPvqfCJWqvq2iQuveFW8mik9f4XytctzQDQpiYsuDx3Y27dxKJbbbd\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:bb87bef6-fd5a-4a22-9902-c81c92cbd243\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1A3KfoLojUc7GchY2wDjSz4F\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1A3KfoLojUc7GchY2wDjSz4F/credentials/issue\",\"expires\":\"2025-05-31T13:45:35Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-05-31T13:45:36Z\",\"verificationMethod\":\"did:key:z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b#z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1A3KfoLojUc7GchY2wDjSz4F\"],\"proofValue\":\"z66voMjUaybKSo5YPmt9SsdmpURVvRM8qznPza2dwFKdnwV62JGnJfZ6DXcDZyoeT2uEo1C7Tfzii4Rf7ACbmkTQm\"}}",
       "keySeed": "KEY_SEED_DB"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
     },
     "tags": ["Ed25519Signature2020"]
    }, {
