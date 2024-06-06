@@ -169,18 +169,18 @@ module.exports = {
 
 ### Tags
 
-Tags tell the test suites which implementations to run the test suites against.
+Tags tell the test suites which implementations' endpoints to run the test suites against.
 
-* `vc2.0` - This tag will run the [VC Data Model 2.0 Test Suite](https://github.com/w3c/vc-data-model-2.0-test-suite) on your issuer and verifier endpoints.
+* `vc2.0` - This tag will run the [VC Data Model 2.0 Test Suite](https://github.com/w3c/vc-data-model-2.0-test-suite) on the tagged issuer and verifier endpoints.
 
-* `Ed25519Signature2020` - This tag will run the [Ed25519 tests](https://github.com/w3c/vc-di-ed25519signature2020-test-suite) on either your issuer and/or verifier.
+* `Ed25519Signature2020` - This tag will run the [Ed25519 tests](https://github.com/w3c/vc-di-ed25519signature2020-test-suite) on the tagged issuer and/or verifier endpoints.
 
 * `ecdsa-rdfc-2019` or `ecdsa-sd-2023` - These tags will run the
 [VC Data Integrity ECDSA Test Suite](https://github.com/w3c/vc-di-ecdsa-test-suite)
-on your issuer and verifier endpoints.
-  * Alongside this cryptosuite tag, you must also specify the
-  `supportedEcdsaKeyTypes` property listing the ECDSA key types that your
-  implementation issues or can verify. Currently, the test suite supports
+on the tagged issuer and verifier endpoints.
+  * Alongside this cryptosuite tag, also specify the
+  `supportedEcdsaKeyTypes` property listing the ECDSA key types the
+  implementation issues or can verify. Currently, the ecdsa test suite supports
   `P-256` and `P-384` ECDSA key types.
 
   You can specify the key types supported by your implementation in the issuer
@@ -189,11 +189,11 @@ on your issuer and verifier endpoints.
   {
     "issuers": [{
       // ...
-      "supportedEcdsaKeyTypes": ["P-256", "P-384"]
+      "supportedEcdsaKeyTypes": ["P-256"]
       "tags": ["ecdsa-rdfc-2019"]
     }, {
       // ...
-      "supportedEcdsaKeyTypes": ["P-256", "P-384"]
+      "supportedEcdsaKeyTypes": ["P-384"]
       "tags": ["ecdsa-jcs-2019"]
     }, {
       // ...
@@ -203,20 +203,14 @@ on your issuer and verifier endpoints.
     "verifiers": [{
       // ...
       "supportedEcdsaKeyTypes": ["P-256", "P-384"]
-      "tags": ["ecdsa-rdfc-2019"]
-    }, {
-      // ...
-      "supportedEcdsaKeyTypes": ["P-256", "P-384"]
-      "tags": ["ecdsa-jcs-2019"]
-    }, {
-      // ...
-      "supportedEcdsaKeyTypes": ["P-256"]
-      "tags": ["ecdsa-sd-2023"]
+      "tags": ["ecdsa-rdfc-2019", "ecdsa-sd-2023", "ecdsa-jcs-2019"]
     }]
   }
   ```
 
-* `eddsa-rdfc-2022` - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c/vc-di-eddsa-test-suite) on your issuer and verifier endpoints.
+* `eddsa-rdfc-2022` - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c/vc-di-eddsa-test-suite) on the tagged issuer and verifier endpoints.
+
+* `bbs-2023` - This tag will run the [VC Data Integrity BBS Test Suite](https://github.com/w3c/vc-di-bbs-test-suite) on the tagged issuer and verifier endpoints.
 
 ## Contribute
 
