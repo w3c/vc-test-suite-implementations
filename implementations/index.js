@@ -37,8 +37,11 @@ export const localSettings = (Object.keys(localConfig).length > 0) ?
   {enableInteropTests: true, testAllImplementations: true};
 
 // get localConfig and look for an implementations property
-const local = localConfig?.implementations || [];
-
+let local = localConfig?.implementations || [];
+// it's an easy typo to set `implementations` to an object...instead of an array
+if(!Array.isArray(local)) {
+  local = [local];
+}
 // concat all the implementation manifests together
 const all = remote.concat(local);
 
