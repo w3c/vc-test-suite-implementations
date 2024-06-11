@@ -180,7 +180,7 @@ Tags tell the test suites which implementations' endpoints to run the test suite
 on the tagged issuer and verifier endpoints.
   * Alongside this cryptosuite tag, also specify the
   `supportedEcdsaKeyTypes` property listing the ECDSA key types the
-  implementation issues or can verify. Currently, the ecdsa test suite supports
+  implementation issues or can verify. Currently, the ECDSA test suite supports
   `P-256` and `P-384` ECDSA key types.
 
   You can specify the key types supported by your implementation in the issuer
