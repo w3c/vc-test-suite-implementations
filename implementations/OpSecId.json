@@ -1,0 +1,19 @@
+{
+  "name": "Open Security and Identity",
+  "implementation": "Aca-py Plugin",
+  "verifiers": [{
+    "id": "https://vc.opsec.id",
+    "endpoint": "https://vc.opsec.id/credentials/verify",
+    "tags": ["Ed25519Signature2020", "vc2.0"],
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    }
+  }],
+  "issuers": [{
+    "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+    "endpoint": "https://vc.opsec.id/credentials/issue",
+    "tags": ["Ed25519Signature2020", "vc2.0"],
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    }]
+}
