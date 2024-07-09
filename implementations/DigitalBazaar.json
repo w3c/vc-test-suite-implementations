@@ -103,7 +103,7 @@
   }],
   "vcHolders": [{
     "id": "https://vcholder.vcplayground.org",
-    "endpoint": "https://vcholder.vcplayground.org/derive",
+    "endpoint": "https://vcholder.vcplayground.org/credentials/derive",
     "tags": ["vcHolder"]
   }]
 }
