@@ -13,10 +13,10 @@
     },
     "tags": ["Ed25519Signature2020"]
    }, {
-      "id": "did:key:z6MkmfwYETCWBFzrab4Z5yPauJ2yxk7iw6iykTdHtixsi6p7",
-      "endpoint": "https://vc2.veresissuer.dev/issuers/z1ABPdeQDvAnbdPuWEwJsFsbW/credentials/issue",
+      "id": "did:key:z6MkkwVJXDkKXhu2y3E1iF2cbzCUL42veRdzC7FFvNAeJ3Ja",
+      "endpoint": "https://vc2.veresissuer.dev/issuers/z1AG4jtcG7E9KZCBXyyekq2nw/credentials/issue",
       "zcap": {
-        "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:75ec2ee0-047e-443c-a3b5-eb0d618d10d6\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1ABPdeQDvAnbdPuWEwJsFsbW\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1ABPdeQDvAnbdPuWEwJsFsbW/credentials/issue\",\"expires\":\"2025-05-31T13:45:24Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-05-31T13:45:25Z\",\"verificationMethod\":\"did:key:z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b#z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1ABPdeQDvAnbdPuWEwJsFsbW\"],\"proofValue\":\"z2aECBtpfUd8Y79J7P3Do8gKeHuSkH5z5joimC2apCfvdK5SYAt8bX7BqRFSi9PJmN9cZYmGKCXvgJSPM83Jmiuuk\"}}",
+        "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:01c3a09e-42b7-4b49-b8db-4cd0302fdeb3\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1AG4jtcG7E9KZCBXyyekq2nw\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1AG4jtcG7E9KZCBXyyekq2nw/credentials/issue\",\"expires\":\"2025-07-09T19:59:50Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T19:59:51Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1AG4jtcG7E9KZCBXyyekq2nw\"],\"proofValue\":\"z5eDxqGdZ11bSA4pFVrAKhE8taGuPdwxex46HZ1s1Cwmto8NvtVqsk69ctFkzcu8BxX4G3uRPZVHko2EEjs5H4EpG\"}}",
         "keySeed": "KEY_SEED_DB"
       },
       "supports": {
