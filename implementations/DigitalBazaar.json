@@ -68,11 +68,14 @@
     },
     "tags": ["vc2.0"]
    }, {
-    "id": "did:key:zUC7G1b6xRa2CshhhPx7utpa9JZH4XfwkpG6i9iBrX62JZTMRitKtq2WsoZJTeCkwHajpLYZ3Jpg8PWVNwVzzcUQVZa96gkzrjWyMUdKEmkRC6i2wu28f6jJBexgCYjoFCkp2sH",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z19mTWdDmrhAVtnYrQkkGne3d/credentials/issue",
+    "id": "did:key:zUC7LefkJ2MJtULzRQfCMhJa5rcYad7XAn3nsSyk657q5AFpbmn9yk4QSh2BaaqvSeS5irGhf76iLkpGeWiDzM4AaNTjfy4uvpnCi2ALsW7ma3d41sHvcgyRPucBBdrUM9Nhcec",
+    "endpoint": "https://vc2.veresissuer.dev/issuers/z19po9Z6NAE1BnwjxLoTfjnex/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:46c5de52-3e45-4ff9-a3cd-4313628144e9\",\"controller\":\"did:key:z6Mko2U1o1bVyABZ8wuGTqUP85gntbHZ2qDGejaVnNhXAdtH\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19mTWdDmrhAVtnYrQkkGne3d\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19mTWdDmrhAVtnYrQkkGne3d/credentials/issue\",\"expires\":\"2025-07-08T20:59:03Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-08T20:59:03Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19mTWdDmrhAVtnYrQkkGne3d\"],\"proofValue\":\"z2E5KeWZ6excF52jA9PMS4n4DvMEfUEy7LPAhNd18VGNaoUFCr6tuBKjMdcTLeVwMF2ih2iKMJxrxXgDxTxmm3iqF\"}}",
-    "keySeed": "KEY_SEED_DEMO_DB"
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:1f005bf1-990d-4d82-bbca-30c1208b9d09\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19po9Z6NAE1BnwjxLoTfjnex\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19po9Z6NAE1BnwjxLoTfjnex/credentials/issue\",\"expires\":\"2025-07-09T19:42:26Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T19:42:27Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19po9Z6NAE1BnwjxLoTfjnex\"],\"proofValue\":\"zwbECZcDH8dTH2d2hvr5dqt64F1LXPcezhfpPNaty7k3ddDLBfQhCrqRCeWXKPq3KWT1qUgksVhP1J3UW3gxFdum\"}}",
+      "keySeed": "KEY_SEED_DB"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
     },
     "tags": ["bbs-2023"]
    }],
