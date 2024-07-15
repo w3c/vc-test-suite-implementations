@@ -4,7 +4,7 @@
   "verifiers": [
     {
       "id": "https://agent.opsec.id",
-      "endpoint": "https://agent.opsec.id/credentials/verify",
+      "endpoint": "https://agent.opsec.id/vc/credentials/verify",
       "tags": [],
       "supports": {
         "vc": ["1.1","2.0"]
