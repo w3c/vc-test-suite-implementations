@@ -1,20 +1,47 @@
 {
   "name": "Open Security and Identity",
   "implementation": "Aca-py Plugin",
-  "verifiers": [{
-    "id": "https://vc.opsec.id",
-    "endpoint": "https://vc.opsec.id/credentials/verify",
-    "tags": ["Ed25519Signature2020", "vc2.0"],
-    "supports": {
-      "vc": ["1.1", "2.0"]
+  "verifiers": [
+    {
+      "id": "https://agent.opsec.id",
+      "endpoint": "https://agent.opsec.id/vc/credentials/verify",
+      "tags": [],
+      "supports": {
+        "vc": ["1.1","2.0"]
+      }
     }
-  }],
-  "issuers": [{
-    "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
-    "endpoint": "https://vc.opsec.id/credentials/issue",
-    "tags": ["Ed25519Signature2020", "vc2.0"],
-    "supports": {
-      "vc": ["1.1", "2.0"]
+  ],
+  "issuers": [
+    {
+      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "endpoint": "https://agent.opsec.id/vc/credentials/issue?cryptosuite=Ed25519Signature2020",
+      "tags": ["vc2.0","Ed25519Signature2020"],
+      "supports": {
+        "vc": ["1.1","2.0"]
+      }
+    },
+    {
+      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "endpoint": "https://agent.opsec.id/vc/credentials/issue?cryptosuite=eddsa-rdfc-2022",
+      "tags": ["vc2.0","eddsa-rdfc-2022"],
+      "supports": {
+        "vc": ["1.1","2.0"]
+      }
+    },
+    {
+      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "endpoint": "https://agent.opsec.id/vc/credentials/issue?cryptosuite=eddsa-jcs-2022",
+      "tags": ["vc2.0","eddsa-jcs-2022"],
+      "supports": {
+        "vc": ["1.1","2.0"]
+      }
     }
-  }]
+  ],
+  "vpVerifiers": [
+    {
+      "id": "https://agent.opsec.id",
+      "endpoint": "https://agent.opsec.id/vc/presentations/verify",
+      "tags": []
+    }
+  ]
 }
