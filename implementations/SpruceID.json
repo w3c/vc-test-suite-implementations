@@ -2,32 +2,106 @@
   "name": "SpruceID",
   "implementation": "SpruceID",
   "issuers": [{
-    "id": "did:key:z6MkgND5U5Kedizov5nxeh2ZCVUTDRSmAfbNqPhzCq8b72Ra",
+    "id": "did:key:z6MkgYAGxLBSXa6Ygk1PnUbK2F7zya8juE9nfsZhrvY7c9GD",
     "endpoint": "https://vc.spruceid.xyz/credentials/issue",
     "options": {
       "type": "Ed25519Signature2020"
     },
-    "tags": ["Ed25519Signature2020"]
-  }, {
-    "id": "did:key:z6MkgND5U5Kedizov5nxeh2ZCVUTDRSmAfbNqPhzCq8b72Ra",
-    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
-    "options": {
-      "type": "DataIntegrityProof"
+    "supports": {
+      "vc": ["1.1", "2.0"]
     },
-    "tags": ["eddsa-rdfc-2022"]
+    "tags": ["vc-api", "Ed25519Signature2020", "JWT", "vc2.0"]
   }, {
-    "id": "did:key:zDnaei6w9La4VphyPA6V2V5poBTpVtjCsnzPML5c78GWjRhnc",
+    "id": "did:key:z6MkgYAGxLBSXa6Ygk1PnUbK2F7zya8juE9nfsZhrvY7c9GD",
     "endpoint": "https://vc.spruceid.xyz/credentials/issue",
     "options": {
-      "type": "DataIntegrityProof"
+      "type": "DataIntegrityProof",
+      "cryptosuite": "eddsa-rdfc-2022"
+    },
+    "supports": {
+       "vc": ["1.1", "2.0"]
+    },
+    "tags": ["vc-api", "eddsa-rdfc-2022", "JWT", "vc2.0"]
+  }, {
+    "id": "did:key:zDnaeqRNmCGRy8f4RgNSoj9YiwG697iWB7htXNX89G8Nu3Hxo",
+    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
+    "options": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "ecdsa-rdfc-2019"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
     },
     "supportedEcdsaKeyTypes": ["P-256"],
-    "tags": ["ecdsa-rdfc-2019"]
+    "tags": ["vc-api", "ecdsa-rdfc-2019", "JWT", "vc2.0"]
+  }, {
+    "id": "did:key:zDnaeqRNmCGRy8f4RgNSoj9YiwG697iWB7htXNX89G8Nu3Hxo",
+    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
+    "options": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "ecdsa-sd-2023"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-256"],
+    "tags": ["vc-api", "ecdsa-sd-2023", "JWT", "vc2.0"]
+  }, {
+    "id": "did:key:z82LkvutaARmY8poLhUnMCAhFbts88q4yDBmkqwRFYbxpFvmE1nbGUGLKf9fD66LGUbXDce",
+    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
+    "options": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "ecdsa-rdfc-2019"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-384"],
+    "tags": ["vc-api", "ecdsa-rdfc-2019", "JWT", "vc2.0"]
+  }, {
+    "id": "did:key:z82LkvutaARmY8poLhUnMCAhFbts88q4yDBmkqwRFYbxpFvmE1nbGUGLKf9fD66LGUbXDce",
+    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
+    "options": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "ecdsa-sd-2023"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-384"],
+    "tags": ["vc-api", "ecdsa-sd-2023", "JWT", "vc2.0"]
+  }, {
+    "id": "did:key:zUC7Ker8jsi8tkhwz9CN1MdmunYbgXg4B7iTWJoPFiPty3ZrFg8j3a5bBX1hozUZxck8C73UunuWBZBy7PtYDCe9XYqGjWzXRqyLFqxWGo5nGArAvndYVqSQJhULMJFq5KKgW2X",
+    "endpoint": "https://vc.spruceid.xyz/credentials/issue",
+    "options": {
+      "type": "DataIntegrityProof"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "tags": ["vc-api", "bbs-2023", "JWT", "vc2.0"]
   }],
   "verifiers": [{
     "id": "https://spruceid.com",
     "endpoint": "https://vc.spruceid.xyz/credentials/verify",
-    "supportedEcdsaKeyTypes": ["P-256"],
-    "tags": ["Ed25519Signature2020", "eddsa-rdfc-2022", "ecdsa-rdfc-2019"]
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-256", "P-384"],
+    "tags": ["vc-api", "Ed25519Signature2020", "JWT", "ecdsa-rdfc-2019", "ecdsa-sd-2023", "eddsa-rdfc-2022", "bbs-2023", "vc2.0"]
+  }],
+  "vpVerifiers": [{
+    "id": "https://spruceid.com",
+    "endpoint": "https://vc.spruceid.xyz/presentations/verify",
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-256", "P-384"],
+    "tags": ["vc-api", "Ed25519Signature2020", "JWT", "ecdsa-rdfc-2019", "ecdsa-sd-2023", "eddsa-rdfc-2022", "bbs-2023", "vc2.0"]
+  }],
+  "didResolvers": [{
+    "id": "https://spruceid.com",
+    "endpoint": "https://vc.spruceid.xyz/identifiers",
+    "tags": ["did-key"]
   }]
 }
