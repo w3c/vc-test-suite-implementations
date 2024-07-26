@@ -82,6 +82,9 @@
    "verifiers": [{
     "id": "https://vc2.veresverifier.dev/verifiers/z19rSJA9yQQwEqSSoNDjzkuNJ",
     "endpoint": "https://vc2.veresverifier.dev/verifiers/z19rSJA9yQQwEqSSoNDjzkuNJ/credentials/verify",
+    "options": {
+      "checks": ["proof"]
+    },
     "zcap": {
       "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:256658f7-1341-4a55-85dc-800603b19b11\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresverifier.dev%2Fverifiers%2Fz19rSJA9yQQwEqSSoNDjzkuNJ\",\"invocationTarget\":\"https://vc2.veresverifier.dev/verifiers/z19rSJA9yQQwEqSSoNDjzkuNJ/credentials/verify\",\"expires\":\"2025-03-22T21:03:42Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-03-22T21:03:43Z\",\"verificationMethod\":\"did:key:z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b#z6MkmMeWhZTJr8mhA2n48FoKV1kLqJAm9eYdu4cdTtTC6Y5b\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresverifier.dev%2Fverifiers%2Fz19rSJA9yQQwEqSSoNDjzkuNJ\"],\"proofValue\":\"zHJuPMu4VjQKVgPPWP1CzRdFYsPJfnGqhGWRE1iVbLQF3vBHSBhGDbvfmvmbZ8VRQaxnyaR3D1d1om4EqxvqzzFJ\"}}",
       "keySeed": "KEY_SEED_DB"
