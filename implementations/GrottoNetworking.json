@@ -14,12 +14,12 @@
     },
     {
       "id": "did:key:z6MktgKTsu1QhX6QPbyqG6geXdw6FQCZBPq7uQpieWbiQiG7",
-      "endpoint": "http://localhost:5150/EdDSA-JCS/credentials/issue",
+      "endpoint": "https://ecdsa-sd.grotto-networking.com/EdDSA-JCS/credentials/issue",
       "tags": ["eddsa-jcs-2022"],
     },
     {
       "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
-      "endpoint": "http://localhost:5150/ECDSA-JCS/credentials/issue",
+      "endpoint": "https://ecdsa-sd.grotto-networking.com/ECDSA-JCS/credentials/issue",
       "tags": ["ecdsa-jcs-2019"],
       "supportedEcdsaKeyTypes": ["P-256"]
     }
@@ -37,12 +37,12 @@
     },
     {
       "id": "https://vcverifier.grotto-networking.com/test",
-      "endpoint": "http://localhost:5150/EdDSA-JCS/credentials/verify",
+      "endpoint": "https://ecdsa-sd.grotto-networking.com/EdDSA-JCS/credentials/verify",
       "tags": ["eddsa-jcs-2022"]
     },
     {
       "id": "https://vcverifier.grotto-networking.com/test",
-      "endpoint": "http://localhost:5150/ECDSA-JCS/credentials/verify",
+      "endpoint": "https://ecdsa-sd.grotto-networking.com/ECDSA-JCS/credentials/verify",
       "tags": ["ecdsa-jcs-2019"],
       "supportedEcdsaKeyTypes": ["P-256"]
     }
