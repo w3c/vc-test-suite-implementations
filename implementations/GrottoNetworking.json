@@ -15,7 +15,7 @@
     {
       "id": "did:key:z6MktgKTsu1QhX6QPbyqG6geXdw6FQCZBPq7uQpieWbiQiG7",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/EdDSA-JCS/credentials/issue",
-      "tags": ["eddsa-jcs-2022"],
+      "tags": ["eddsa-jcs-2022"]
     },
     {
       "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
