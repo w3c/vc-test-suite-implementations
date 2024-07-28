@@ -1,0 +1,28 @@
+{
+  "name": "VC Issuer Mock",
+  "implementation": "vc-issuer-mock-core",
+  "issuers": [{
+      "id": "https://github.com/laysakura/vc-issuer-mock",
+      "endpoint": "https://vc-issuer-mock.onrender.com/vc-issuer-mock/credentials/issue",
+      "supports": {
+          "vc": ["2.0"]
+      },
+      "tags": ["vc2.0"]
+  }],
+  "verifiers": [{
+      "id": "https://spruceid.com",
+      "endpoint": "https://vc-issuer-mock.onrender.com/didkit-http/credentials/verify",
+      "supports": {
+          "vc": ["1.1", "2.0"]
+      },
+      "tags": ["vc2.0"]
+  }],
+  "vpVerifiers": [{
+      "id": "https://spruceid.com",
+      "endpoint": "https://vc-issuer-mock.onrender.com/didkit-http/presentations/verify",
+      "supports": {
+          "vc": ["1.1", "2.0"]
+      },
+      "tags": ["vc2.0"]
+  }]
+}
