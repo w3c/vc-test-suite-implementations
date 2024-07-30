@@ -5,51 +5,78 @@
       "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/issue",
       "tags": ["ecdsa-sd-2023"],
-      "supportedEcdsaKeyTypes": ["P-256"]
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+          "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "did:key:zUC7DerdEmfZ8f4pFajXgGwJoMkV1ofMTmEG5UoNvnWiPiLuGKNeqgRpLH2TV4Xe5mJ2cXV76gRN7LFQwapF1VFu6x2yrr5ci1mXqC1WNUrnHnLgvfZfMH7h6xP6qsf9EKRQrPQ",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/issue",
-      "tags": ["bbs-2023"]
+      "tags": ["bbs-2023"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "did:key:z6MktgKTsu1QhX6QPbyqG6geXdw6FQCZBPq7uQpieWbiQiG7",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/EdDSA-JCS/credentials/issue",
-      "tags": ["eddsa-jcs-2022"]
+      "tags": ["eddsa-jcs-2022"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "did:key:z6MktgKTsu1QhX6QPbyqG6geXdw6FQCZBPq7uQpieWbiQiG7",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/EdDSA-RDFC/credentials/issue",
-      "tags": ["eddsa-rdfc-2022"]
+      "tags": ["eddsa-rdfc-2022"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/ECDSA-JCS/credentials/issue",
       "tags": ["ecdsa-jcs-2019"],
-      "supportedEcdsaKeyTypes": ["P-256"]
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "did:key:zDnaepBuvsQ8cpsWrVKw8fbpGpvPeNSjVPTWoq6cRqaYzBKVP",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/ECDSA-RDFC/credentials/issue",
       "tags": ["ecdsa-rdfc-2019"],
-      "supportedEcdsaKeyTypes": ["P-256"]
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     }
     ],
     "verifiers": [{
       "id": "https://vcverifier.grotto-networking.com/test",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/credentials/verify",
       "tags": ["ecdsa-sd-2023"],
-      "supportedEcdsaKeyTypes": ["P-256"]
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "https://vcverifier.grotto-networking.com/test",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/BBS/credentials/verify",
-      "tags": ["bbs-2023"]
+      "tags": ["bbs-2023"],    
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "https://vcverifier.grotto-networking.com/test",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/EdDSA-JCS/credentials/verify",
-      "tags": ["eddsa-jcs-2022"]
+      "tags": ["eddsa-jcs-2022"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "https://vcverifier.grotto-networking.com/test",
@@ -60,13 +87,19 @@
       "id": "https://vcverifier.grotto-networking.com/test",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/ECDSA-JCS/credentials/verify",
       "tags": ["ecdsa-jcs-2019"],
-      "supportedEcdsaKeyTypes": ["P-256"]
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "https://vcverifier.grotto-networking.com/test",
       "endpoint": "https://ecdsa-sd.grotto-networking.com/ECDSA-RDFC/credentials/verify",
       "tags": ["ecdsa-rdfc-2019"],
-      "supportedEcdsaKeyTypes": ["P-256"]
+      "supportedEcdsaKeyTypes": ["P-256"],    
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     }
     ],
     "vcHolders": [{
