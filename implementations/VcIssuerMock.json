@@ -2,7 +2,7 @@
   "name": "VC Issuer Mock",
   "implementation": "vc-issuer-mock-core",
   "issuers": [{
-      "id": "https://github.com/laysakura/vc-issuer-mock",
+      "id": "did:key:z6Mki1Hh2QAiwrzMWRdLAnoJypAAAtY5ffVqskUgjW9GcJCh",
       "endpoint": "https://vc-issuer-mock.onrender.com/vc-issuer-mock/credentials/issue",
       "supports": {
           "vc": ["2.0"]
