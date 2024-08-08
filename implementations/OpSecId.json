@@ -1,5 +1,5 @@
 {
-  "name": "Open Security and Identity",
+  "name": "OpSecId",
   "implementation": "Aca-py VC-API Plugin",
   "verifiers": [
     {
