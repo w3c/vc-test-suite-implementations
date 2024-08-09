@@ -78,6 +78,14 @@
       "vc": ["1.1", "2.0"]
     },
     "tags": ["bbs-2023"]
+   }, {
+     "id": "did:key:zDnaerQCrQwEocofoup5cMxyviZwPiXgyykMEb5gd2PTUxiqo",
+     "endpoint": "https://sandbox.platform.veres.dev/issuers/z19qx6wy8gWj9e6fMywmVd4m4/credentials/issue",
+     "zcap": {
+       "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:53e60eff-5ba4-4391-9b60-97c1060373f1\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19qx6wy8gWj9e6fMywmVd4m4\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19qx6wy8gWj9e6fMywmVd4m4/credentials/issue\",\"expires\":\"2025-08-09T14:38:41Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-08-09T14:38:42Z\",\"verificationMethod\":\"did:key:z6MkgfcyQnH2dLs53kErxtmtskhPDquxcijikCURh74PtfBE#z6MkgfcyQnH2dLs53kErxtmtskhPDquxcijikCURh74PtfBE\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19qx6wy8gWj9e6fMywmVd4m4\"],\"proofValue\":\"z3wQT3KoNjGCCNuqXkaETM1dqddXGijumzGJ16wqWnf3DCAAXfyFo8GFDjard5GPKGwSQHymeFXBvQF4xZ4dvgCDb\"}}",
+       "keySeed": "KEY_SEED_DB"
+     },
+     "tags": ["BitStringStatusList"]
    }],
    "verifiers": [{
     "id": "https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz",
