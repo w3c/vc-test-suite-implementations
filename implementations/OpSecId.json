@@ -3,7 +3,7 @@
   "implementation": "Aca-py VC-API Plugin",
   "verifiers": [
     {
-      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
       "endpoint": "https://agent.opsec.id/vc/credentials/verify",
       "tags": ["vc2.0", "BitstringStatusList", "Ed25519Signature2020", "eddsa-jcs-2022", "eddsa-rdfc-2022"],
       "supports": {
@@ -13,7 +13,7 @@
   ],
   "vpVerifiers": [
     {
-      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
       "endpoint": "https://agent.opsec.id/vc/presentations/verify",
       "tags": ["vc2.0", "BitstringStatusList", "Ed25519Signature2020", "eddsa-jcs-2022", "eddsa-rdfc-2022"],
       "supports": {
@@ -23,7 +23,7 @@
   ],
   "issuers": [
     {
-      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
       "endpoint": "https://agent.opsec.id/vc/credentials/issue",
       "options": {
         "type": "Ed25519Signature2020",
@@ -38,7 +38,7 @@
       }
     },
     {
-      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
       "endpoint": "https://agent.opsec.id/vc/credentials/issue",
       "options": {
         "type": "DataIntegrityProof",
@@ -54,7 +54,7 @@
       }
     },
     {
-      "id": "did:key:z6MksCeXh9Jwp4ZTEb5Kei7sJpBLpUyS3oaAib8wbtJQqsQu",
+      "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
       "endpoint": "https://agent.opsec.id/vc/credentials/issue",
       "options": {
         "type": "DataIntegrityProof",
