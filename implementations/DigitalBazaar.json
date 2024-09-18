@@ -86,6 +86,14 @@
        "keySeed": "KEY_SEED_DB"
      },
      "tags": ["BitstringStatusList"]
+   }, {
+     "id": "did:key:zDnaeTQKDbXQT4batxKcnMQYQ8JynjqC5Xz1uMk5euG2ht8nq",
+     "endpoint": "https://sandbox.platform.veres.dev/issuers/z1A5wbtxmm14nAwXH5vpLktrt/credentials/issue",
+     "zcap": {
+       "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:c8809654-1586-45db-98de-cec7861c87eb\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz1A5wbtxmm14nAwXH5vpLktrt\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z1A5wbtxmm14nAwXH5vpLktrt/credentials\",\"expires\":\"2025-09-18T17:57:35Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-09-18T17:57:36Z\",\"verificationMethod\":\"did:key:z6MkgfcyQnH2dLs53kErxtmtskhPDquxcijikCURh74PtfBE#z6MkgfcyQnH2dLs53kErxtmtskhPDquxcijikCURh74PtfBE\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz1A5wbtxmm14nAwXH5vpLktrt\"],\"proofValue\":\"z3PpszhaLKELjFtS6Z5DRhXRDUP34JGdR9GAXt29gnos6TYowW3veJDpMqnhi48WztvvwWGjcnvQ5sAwhpRnuUvVk\"}}",
+       "keySeed": "KEY_SEED_DB"
+     },
+     "tags": ["VC-ENVELOPE"]
    }],
    "verifiers": [{
     "id": "https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz",
