@@ -1,6 +1,6 @@
 {
   "name": "ACA-py",
-  "implementation": "VC-API Plugin",
+  "implementation": "ACA-Py",
   "verifiers": [
     {
       "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
