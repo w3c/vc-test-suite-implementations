@@ -5,9 +5,14 @@
     {
       "id": "https://vc.opsec.id",
       "endpoint": "https://vc.opsec.id/credentials/verify",
-      "tags": ["vc2.0", "EnvelopingProof"],
+      "tags": [
+        "vc2.0",
+        "EnvelopingProof"
+      ],
       "supports": {
-        "vc": ["2.0"]
+        "vc": [
+          "2.0"
+        ]
       }
     }
   ],
@@ -15,32 +20,49 @@
     {
       "id": "https://vc.opsec.id",
       "endpoint": "https://vc.opsec.id/presentations/verify",
-      "tags": ["vc2.0", "EnvelopingProof"],
+      "tags": [
+        "vc2.0",
+        "EnvelopingProof"
+      ],
       "supports": {
-        "vc": ["2.0"]
+        "vc": [
+          "2.0"
+        ]
       }
     }
   ],
   "issuers": [
     {
-      "id": "did:key:z6MkkQivZZ25XQRsmF6br5cbRYuQqn18PigKCaLHi8qSF251",
+      "id": "did:key:z6MkwMaVueYP9pYSTKxtRSMzgzsSkpx1wrhwdq8MEHFxtHdu",
       "endpoint": "https://vc.opsec.id/credentials/issue",
       "options": {
         "type": "DataIntegrityProof",
         "cryptosuite": "eddsa-jcs-2022"
       },
-      "tags": ["vc2.0", "eddsa-jcs-2022"],
+      "tags": [
+        "vc2.0",
+        "eddsa-jcs-2022"
+      ],
       "supports": {
-        "vc": ["2.0"]
+        "vc": [
+          "2.0"
+        ]
       }
     },
     {
-      "id": "did:key:z6MkkQivZZ25XQRsmF6br5cbRYuQqn18PigKCaLHi8qSF251",
+      "id": "did:key:z6MkwMaVueYP9pYSTKxtRSMzgzsSkpx1wrhwdq8MEHFxtHdu",
       "endpoint": "https://vc.opsec.id/credentials/issue",
-      "options": {},
-      "tags": ["vc2.0", "EnvelopingProof"],
+      "options": {
+        "securingMechanism": "EnvelopingProof"
+      },
+      "tags": [
+        "vc2.0",
+        "EnvelopingProof"
+      ],
       "supports": {
-        "vc": ["2.0"]
+        "vc": [
+          "2.0"
+        ]
       }
     }
   ]
