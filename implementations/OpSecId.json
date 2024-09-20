@@ -3,8 +3,8 @@
   "implementation": "Askar VC-API",
   "verifiers": [
     {
-      "id": "https://opsec.id",
-      "endpoint": "https://opsec.id/credentials/verify",
+      "id": "https://vc.opsec.id",
+      "endpoint": "https://vc.opsec.id/credentials/verify",
       "tags": ["vc2.0", "EnvelopingProof"],
       "supports": {
         "vc": ["2.0"]
@@ -13,8 +13,8 @@
   ],
   "vpVerifiers": [
     {
-      "id": "https://opsec.id",
-      "endpoint": "https://opsec.id/presentations/verify",
+      "id": "https://vc.opsec.id",
+      "endpoint": "https://vc.opsec.id/presentations/verify",
       "tags": ["vc2.0", "EnvelopingProof"],
       "supports": {
         "vc": ["2.0"]
@@ -24,7 +24,7 @@
   "issuers": [
     {
       "id": "did:key:z6MkkQivZZ25XQRsmF6br5cbRYuQqn18PigKCaLHi8qSF251",
-      "endpoint": "https://opsec.id/credentials/issue",
+      "endpoint": "https://vc.opsec.id/credentials/issue",
       "options": {
         "type": "DataIntegrityProof",
         "cryptosuite": "eddsa-jcs-2022"
@@ -36,7 +36,7 @@
     },
     {
       "id": "did:key:z6MkkQivZZ25XQRsmF6br5cbRYuQqn18PigKCaLHi8qSF251",
-      "endpoint": "https://opsec.id/credentials/issue",
+      "endpoint": "https://vc.opsec.id/credentials/issue",
       "options": {},
       "tags": ["vc2.0", "EnvelopingProof"],
       "supports": {
