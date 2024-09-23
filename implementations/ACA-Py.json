@@ -5,7 +5,7 @@
     {
       "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
       "endpoint": "https://aca-py.test-suite.app/vc/credentials/verify",
-      "tags": ["vc2.0", "BitstringStatusList", "Ed25519Signature2020", "eddsa-jcs-2022", "eddsa-rdfc-2022"],
+      "tags": ["vc2.0", "Ed25519Signature2020", "eddsa-jcs-2022", "eddsa-rdfc-2022"],
       "supports": {
         "vc": ["1.1","2.0"]
       }
@@ -15,7 +15,7 @@
     {
       "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
       "endpoint": "https://aca-py.test-suite.app/vc/presentations/verify",
-      "tags": ["vc2.0", "BitstringStatusList", "Ed25519Signature2020", "eddsa-jcs-2022", "eddsa-rdfc-2022"],
+      "tags": ["vc2.0", "Ed25519Signature2020", "eddsa-jcs-2022", "eddsa-rdfc-2022"],
       "supports": {
         "vc": ["1.1","2.0"]
       }
@@ -26,13 +26,9 @@
       "id": "did:key:z6MkmiYjSToh5NdEf9xNuh5mDGXGYinzcAy1s4feRHtkEQJr",
       "endpoint": "https://aca-py.test-suite.app/vc/credentials/issue",
       "options": {
-        "type": "Ed25519Signature2020",
-        "credentialStatus": {
-          "type": "BitstringStatusListEntry",
-          "statusPurpose": "suspension"
-        }
+        "type": "Ed25519Signature2020"
       },
-      "tags": ["vc2.0", "Ed25519Signature2020", "BitstringStatusList"],
+      "tags": ["vc2.0", "Ed25519Signature2020"],
       "supports": {
         "vc": ["1.1","2.0"]
       }
@@ -42,13 +38,9 @@
       "endpoint": "https://aca-py.test-suite.app/vc/credentials/issue",
       "options": {
         "type": "DataIntegrityProof",
-        "cryptosuite": "eddsa-rdfc-2022",
-        "credentialStatus": {
-          "type": "BitstringStatusListEntry",
-          "statusPurpose": "suspension"
-        }
+        "cryptosuite": "eddsa-rdfc-2022"
       },
-      "tags": ["vc2.0","eddsa-rdfc-2022", "BitstringStatusList"],
+      "tags": ["vc2.0","eddsa-rdfc-2022"],
       "supports": {
         "vc": ["1.1","2.0"]
       }
@@ -58,13 +50,9 @@
       "endpoint": "https://aca-py.test-suite.app/vc/credentials/issue",
       "options": {
         "type": "DataIntegrityProof",
-        "cryptosuite": "eddsa-jcs-2022",
-        "credentialStatus": {
-          "type": "BitstringStatusListEntry",
-          "statusPurpose": "suspension"
-        }
+        "cryptosuite": "eddsa-jcs-2022"
       },
-      "tags": ["vc2.0","eddsa-jcs-2022", "BitstringStatusList"],
+      "tags": ["vc2.0","eddsa-jcs-2022"],
       "supports": {
         "vc": ["1.1","2.0"]
       }
