@@ -1,0 +1,144 @@
+{
+  "name": "Procivis One Core",
+  "implementation": "Procivis One Core",
+  "issuers": [
+    {
+      "id": "did:key:zDnaeTN1jq1Ry9o5JLMveEding2rQ6DDw33aKAprMkdiuYWHz",
+      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/issue",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "options": {
+        "credentialFormat": "JSON_LD_CLASSIC",
+        "signatureAlgorithm": "ES256",
+        "cryptosuite": "ecdsa-rdfc-2019"
+      },
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      },
+      "tags": [
+        "ecdsa-rdfc-2019",
+        "vc2.0"
+      ]
+    },
+    {
+      "id": "did:key:z6Mkpkxjp7478bTmfccmSdzJAXSwbN98KbQbgi4DNWJDwQNn",
+      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/issue",
+      "options": {
+        "credentialFormat": "JSON_LD_CLASSIC",
+        "signatureAlgorithm": "EDDSA",
+        "revocationMethod": "BITSTRINGSTATUSLIST",
+        "cryptosuite": "eddsa-rdfc-2022"
+      },
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      },
+      "tags": [
+        "BitstringStatusList",
+        "vc-api",
+        "eddsa-rdfc-2022",
+        "vc2.0"
+      ]
+    },
+    {
+      "id": "did:key:zUC7Km9TK8NX1GBL4DJWonZE8rskUz7TRJBfnPaNY8GhwUPFZ6yXPa5gAPEy2jyCZE1Wb4ToLKmn16nRD1TXncUEj31uxpVZNG8b7PPSEd4wSsGe7qHXpru3U6U12cm5gA1rXEh",
+      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/issue",
+      "options": {
+        "credentialFormat": "JSON_LD_BBSPLUS",
+        "signatureAlgorithm": "BBS_PLUS",
+        "cryptosuite": "bbs-2023"
+      },
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      },
+      "tags": [
+        "bbs-2023",
+        "vc1.1",
+        "vc2.0"
+      ]
+    }
+  ],
+  "verifiers": [
+    {
+      "id": "did:key:zDnaeTN1jq1Ry9o5JLMveEding2rQ6DDw33aKAprMkdiuYWHz",
+      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/verify",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      },
+      "options": {
+        "checks": [],
+        "credentialFormat": "JSON_LD_CLASSIC"
+      },
+      "tags": [
+        "vc-api",
+        "vc2.0",
+        "eddsa-rdfc-2022",
+        "ecdsa-rdfc-2019",
+        "BitstringStatusList"
+      ]
+    },
+    {
+      "id": "did:key:zUC7Km9TK8NX1GBL4DJWonZE8rskUz7TRJBfnPaNY8GhwUPFZ6yXPa5gAPEy2jyCZE1Wb4ToLKmn16nRD1TXncUEj31uxpVZNG8b7PPSEd4wSsGe7qHXpru3U6U12cm5gA1rXEh",
+      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/verify",
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      },
+      "options": {
+        "checks": [],
+        "credentialFormat": "JSON_LD_BBSPLUS"
+      },
+      "tags": [
+        "vc1.1",
+        "vc2.0",
+        "bbs-2023"
+      ]
+    }
+  ],
+  "vpVerifiers": [
+    {
+      "id": "did:key:zDnaeTN1jq1Ry9o5JLMveEding2rQ6DDw33aKAprMkdiuYWHz",
+      "endpoint": "https://core.test.procivis-one.com/vc-api/presentations/verify",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "options": {
+        "credentialFormat": "JSON_LD_CLASSIC",
+        "checks": []
+      },
+      "tags": [
+        "vc-api",
+        "vc2.0",
+        "eddsa-rdfc-2022",
+        "BitstringStatusList"
+      ]
+    }
+  ],
+  "didResolvers": [
+    {
+      "id": "resolver",
+      "endpoint": "https://core.test.procivis-one.com/vc-api/identifiers",
+      "tags": [
+        "vc2.0",
+        "did-key"
+      ]
+    }
+  ]
+}
