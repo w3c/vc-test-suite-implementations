@@ -109,7 +109,16 @@
       "vc": ["1.1", "2.0"]
     },
     "supportedEcdsaKeyTypes": ["P-256", "P-384"],
-    "tags": ["BitstringStatusList", "Ed25519Signature2020", "eddsa-rdfc-2022", "ecdsa-rdfc-2019", "ecdsa-sd-2023", "vc2.0", "bbs-2023"]
+    "tags": [
+      "BitstringStatusList",
+      "Ed25519Signature2020",
+      "eddsa-rdfc-2022",
+      "ecdsa-rdfc-2019",
+      "ecdsa-sd-2023",
+      "vc2.0",
+      "bbs-2023",
+      "EnvelopingProof"
+    ]
   }],
   "vpVerifiers": [{
     "id": "https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz",
