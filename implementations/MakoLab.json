@@ -1,0 +1,24 @@
+{
+  "name": "MakoLab",
+  "implementation": "MakoLab Verifiable Credentials",
+  "issuers": [
+    {
+      "endpoint": "https://db.makolab.pro/issuers/credentials/issue",
+      "method": "POST",
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      },
+      "tags": ["ecdsa-rdfc-2019"]
+    },
+    {
+      "endpoint": "https://db.makolab.pro/issuers/sd/credentials/issue",
+      "method": "POST",
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      },
+      "tags": ["ecdsa-sd-2023"]
+    }
+  ]
+}
