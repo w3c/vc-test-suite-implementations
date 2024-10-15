@@ -1,0 +1,16 @@
+{
+  "name": "Netis",
+  "implementation": "MyNextID",
+  "issuers": [],
+  "verifiers": [{
+    "id": "https://test-api.mynext.id",
+    "endpoint": "https://test-api.mynext.id/api/v1/verifier/credential/vc-api/verify",
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-256", "P-384"],
+    "tags": ["Ed25519Signature2020", "ecdsa-rdfc-2019", "ecdsa-sd-2023", "eddsa-rdfc-2022", "bbs-2023"]
+  }],
+  "vpVerifiers": [],
+  "didResolvers": []
+}
