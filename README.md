@@ -175,6 +175,8 @@ Tags tell the test suites which implementations' endpoints to run the test suite
 
 * `Ed25519Signature2020` - This tag will run the [Ed25519 tests](https://github.com/w3c/vc-di-ed25519signature2020-test-suite) on the tagged issuer and/or verifier endpoints.
 
+* `BitstringStatusList` - This tag will run the [BitstringStatusList tests](https://github.com/w3c/vc-bitstring-status-list-test-suite) on the tagged issuer and/or verifier endpoints.
+
 * `ecdsa-rdfc-2019` or `ecdsa-sd-2023` - These tags will run the
 [VC Data Integrity ECDSA Test Suite](https://github.com/w3c/vc-di-ecdsa-test-suite)
 on the tagged issuer and verifier endpoints.
