@@ -212,6 +212,8 @@ on the tagged issuer and verifier endpoints.
 
 * `eddsa-rdfc-2022` - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c/vc-di-eddsa-test-suite) on the tagged issuer and verifier endpoints.
 
+* `eddsa-jcs-2022` - This tag will run the [VC Data Integrity EDDSA Test Suite](https://github.com/w3c/vc-di-eddsa-test-suite) on the tagged issuer and verifier endpoints.
+
 * `bbs-2023` - This tag will run the [VC Data Integrity BBS Test Suite](https://github.com/w3c/vc-di-bbs-test-suite) on the tagged issuer and verifier endpoints.
 
 ## Contribute
