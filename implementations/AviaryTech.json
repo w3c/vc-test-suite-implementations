@@ -1,0 +1,49 @@
+{
+  "name": "Aviary Tech",
+  "implementation": "DI-Wings",
+  "verifiers": [
+    {
+      "id": "did:key:z6MkionEHQNFCUtoJDo8PLnqU7NC4qjFRF6vPzA52rVapqLF",
+      "endpoint": "https://demo.av1.sh/credentials/verify",
+      "tags": ["vc2.0", "Ed25519Signature2020", "eddsa-rdfc-2022"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
+    }
+  ],
+  "vpVerifiers": [
+    {
+      "id": "did:key:z6MkionEHQNFCUtoJDo8PLnqU7NC4qjFRF6vPzA52rVapqLF",
+      "endpoint": "https://demo.av1.sh/presentations/verify",
+      "tags": ["vc2.0", "Ed25519Signature2020", "eddsa-rdfc-2022"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
+    }
+  ],
+  "issuers": [
+    {
+      "id": "did:key:z6MkionEHQNFCUtoJDo8PLnqU7NC4qjFRF6vPzA52rVapqLF",
+      "endpoint": "https://demo.av1.sh/credentials/issue",
+      "options": {
+        "type": "Ed25519Signature2020"
+      },
+      "tags": ["vc2.0", "Ed25519Signature2020"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
+    },
+    {
+      "id": "did:key:z6MkionEHQNFCUtoJDo8PLnqU7NC4qjFRF6vPzA52rVapqLF",
+      "endpoint": "https://demo.av1.sh/credentials/issue",
+      "options": {
+        "type": "DataIntegrityProof",
+        "cryptosuite": "eddsa-rdfc-2022"
+      },
+      "tags": ["vc2.0", "eddsa-rdfc-2022"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
+    }
+  ]
+}
