@@ -7,6 +7,8 @@
       "endpoint": "https://vc.opsec.id/credentials/verify",
       "tags": [
         "vc2.0",
+        "eddsa-jcs-2022",
+        "BitstringStatusList",
         "EnvelopingProof"
       ],
       "supports": {
@@ -22,6 +24,8 @@
       "endpoint": "https://vc.opsec.id/presentations/verify",
       "tags": [
         "vc2.0",
+        "eddsa-jcs-2022",
+        "BitstringStatusList",
         "EnvelopingProof"
       ],
       "supports": {
@@ -37,10 +41,12 @@
       "endpoint": "https://vc.opsec.id/credentials/issue",
       "options": {
         "type": "DataIntegrityProof",
-        "cryptosuite": "eddsa-jcs-2022"
+        "cryptosuite": "eddsa-jcs-2022",
+        "statusPurpose": "revocation"
       },
       "tags": [
         "vc2.0",
+        "BitstringStatusList",
         "eddsa-jcs-2022"
       ],
       "supports": {
