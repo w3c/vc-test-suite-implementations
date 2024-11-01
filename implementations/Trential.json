@@ -1,0 +1,131 @@
+{
+    "name": "Trential",
+    "implementation": "Indisi",
+    "issuers": [
+        {
+            "id": "did:key:zDnaejmKpyd7EF3GGhmLCohTxuWUC6MgkE5nRq5fj4wvPLmRM",
+            "endpoint": "https://api.trential.dev/indisi-vc/issuer/credentials/issue",
+            "tags": [
+                "vc2.0"
+            ]
+        },
+        {
+            "id": "did:key:zDnaeUEETxo2R8EKb8SP8arohj2uzYe459FDXo6sGfpHs5tAb",
+            "endpoint": "https://api.trential.dev/indisi-vc/issuer/credentials/issue",
+            "tags": [
+                "BitstringStatusList"
+            ]
+        },
+        {
+            "id": "did:key:zDnaejmKpyd7EF3GGhmLCohTxuWUC6MgkE5nRq5fj4wvPLmRM",
+            "endpoint": "https://api.trential.dev/indisi-vc/issuer/credentials/issue",
+            "tags": [
+                "ecdsa-rdfc-2019"
+            ],
+            "supportedEcdsaKeyTypes": [
+                "P-256"
+            ],
+            "supports": {
+                "vc": [
+                    "1.1",
+                    "2.0"
+                ]
+            }
+        },
+        {
+            "id": "did:key:z82Lm4idNbwpdMqeeR9Jt1Pti9W7xDeaETVNGRiLZ4a1XaBZALDh5qZ1hJvjTgwTvCfe4n3",
+            "endpoint": "https://api.trential.dev/indisi-vc/issuer/credentials/issue",
+            "tags": [
+                "ecdsa-rdfc-2019"
+            ],
+            "supportedEcdsaKeyTypes": [
+                "P-384"
+            ],
+            "supports": {
+                "vc": [
+                    "1.1",
+                    "2.0"
+                ]
+            }
+        },
+        {
+            "id": "did:key:zDnaecCAAyR7cqdb39JKrc71AV5wujsvQvA7J2LRctmbFUyz6",
+            "endpoint": "https://api.trential.dev/indisi-vc/issuer/credentials/issue",
+            "tags": [
+                "ecdsa-sd-2023"
+            ],
+            "supportedEcdsaKeyTypes": [
+                "P-256"
+            ],
+            "supports": {
+                "vc": [
+                    "1.1",
+                    "2.0"
+                ]
+            }
+        },
+        {
+            "id": "did:key:zUC7CXttUsbVYVwQCmuvaNePRj8kn8gY9EhfHrK9tJHssoL9PFqjHcStndAb1tHLgq5p563boFKGKCt4zHTtcCvdVogfb3HjL9oGAWjweioYC2m7svK6hHHh2Mj3mxw6bjQK9cR",
+            "endpoint": "https://api.trential.dev/indisi-vc/issuer/credentials/issue",
+            "tags": [
+                "bbs-2023"
+            ],
+            "supports": {
+                "vc": [
+                    "1.1",
+                    "2.0"
+                ]
+            }
+        },
+        {
+            "id": "did:key:z6Mksp1UFB9CFNSao7BC9gVkHoHidRK8NrZNNLqFDkp5xUXC",
+            "endpoint": "https://api.trential.dev/indisi-vc/issuer/credentials/issue",
+            "tags": [
+                "eddsa-rdfc-2022"
+            ],
+            "supports": {
+                "vc": [
+                    "1.1",
+                    "2.0"
+                ]
+            }
+        }
+    ],
+    "verifiers": [
+        {
+            "endpoint": "https://api.trential.dev/indisi-vc/verifier/credentials/verify",
+            "tags": [
+                "vc2.0",
+                "ecdsa-rdfc-2019",
+                "BitstringStatusList",
+                "ecdsa-rdfc-2019",
+                "ecdsa-sd-2023",
+                "bbs-2023",
+                "eddsa-rdfc-2022"
+            ],
+            "supportedEcdsaKeyTypes": [
+                "P-256",
+                "P-384"
+            ],
+            "supports": {
+                "vc": [
+                    "1.1",
+                    "2.0"
+                ]
+            }
+        }
+    ],
+    "vpVerifiers": [
+        {
+            "endpoint": "https://api.trential.dev/indisi-vc/verifier/presentations/verify",
+            "tags": [
+                "vc2.0"
+            ],
+            "options": {
+                "checks": [
+                    "proof"
+                ]
+            }
+        }
+    ]
+}
