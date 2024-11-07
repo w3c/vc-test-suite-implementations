@@ -120,12 +120,7 @@
             "endpoint": "https://api.trential.dev/indisi-vc/verifier/presentations/verify",
             "tags": [
                 "vc2.0"
-            ],
-            "options": {
-                "checks": [
-                    "proof"
-                ]
-            }
+            ]
         }
     ]
 }
