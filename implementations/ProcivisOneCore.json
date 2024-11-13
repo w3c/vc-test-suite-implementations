@@ -3,8 +3,8 @@
   "implementation": "Procivis One Core",
   "issuers": [
     {
-      "id": "did:key:zDnaeTN1jq1Ry9o5JLMveEding2rQ6DDw33aKAprMkdiuYWHz",
-      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/issue",
+      "id": "did:key:zDnaebiWvYW4sEFcncp6sLRmGPio1tVaXSDBwnYELtyvwpnYE",
+      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/credentials/issue",
       "supportedEcdsaKeyTypes": [
         "P-256"
       ],
@@ -25,8 +25,8 @@
       ]
     },
     {
-      "id": "did:key:z6Mkpkxjp7478bTmfccmSdzJAXSwbN98KbQbgi4DNWJDwQNn",
-      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/issue",
+      "id": "did:key:zDnaebiWvYW4sEFcncp6sLRmGPio1tVaXSDBwnYELtyvwpnYE",
+      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/credentials/issue",
       "options": {
         "credentialFormat": "JSON_LD_CLASSIC",
         "signatureAlgorithm": "EDDSA",
@@ -47,8 +47,8 @@
       ]
     },
     {
-      "id": "did:key:zUC7Km9TK8NX1GBL4DJWonZE8rskUz7TRJBfnPaNY8GhwUPFZ6yXPa5gAPEy2jyCZE1Wb4ToLKmn16nRD1TXncUEj31uxpVZNG8b7PPSEd4wSsGe7qHXpru3U6U12cm5gA1rXEh",
-      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/issue",
+      "id": "did:key:zUC73LLhADbPMpB7UwUWck8LQ7dvCdEPmYuz1yRiC8a77sd9Qshz381Zqfa27sNCzpev1AQgw2WAGEz17msLdCuXytZoEKvGfwWRw7J14cupqSNSR7txFcyEhBUzooZF1qAEhJL",
+      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/credentials/issue",
       "options": {
         "credentialFormat": "JSON_LD_BBSPLUS",
         "signatureAlgorithm": "BBS_PLUS",
@@ -69,8 +69,8 @@
   ],
   "verifiers": [
     {
-      "id": "did:key:zDnaeTN1jq1Ry9o5JLMveEding2rQ6DDw33aKAprMkdiuYWHz",
-      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/verify",
+      "id": "did:key:zDnaebiWvYW4sEFcncp6sLRmGPio1tVaXSDBwnYELtyvwpnYE",
+      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/credentials/verify",
       "supportedEcdsaKeyTypes": [
         "P-256"
       ],
@@ -93,8 +93,8 @@
       ]
     },
     {
-      "id": "did:key:zUC7Km9TK8NX1GBL4DJWonZE8rskUz7TRJBfnPaNY8GhwUPFZ6yXPa5gAPEy2jyCZE1Wb4ToLKmn16nRD1TXncUEj31uxpVZNG8b7PPSEd4wSsGe7qHXpru3U6U12cm5gA1rXEh",
-      "endpoint": "https://core.test.procivis-one.com/vc-api/credentials/verify",
+      "id": "did:key:zUC73LLhADbPMpB7UwUWck8LQ7dvCdEPmYuz1yRiC8a77sd9Qshz381Zqfa27sNCzpev1AQgw2WAGEz17msLdCuXytZoEKvGfwWRw7J14cupqSNSR7txFcyEhBUzooZF1qAEhJL",
+      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/credentials/verify",
       "supports": {
         "vc": [
           "1.1",
@@ -114,8 +114,8 @@
   ],
   "vpVerifiers": [
     {
-      "id": "did:key:zDnaeTN1jq1Ry9o5JLMveEding2rQ6DDw33aKAprMkdiuYWHz",
-      "endpoint": "https://core.test.procivis-one.com/vc-api/presentations/verify",
+      "id": "did:key:zDnaebiWvYW4sEFcncp6sLRmGPio1tVaXSDBwnYELtyvwpnYE",
+      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/presentations/verify",
       "supportedEcdsaKeyTypes": [
         "P-256"
       ],
@@ -134,7 +134,7 @@
   "didResolvers": [
     {
       "id": "resolver",
-      "endpoint": "https://core.test.procivis-one.com/vc-api/identifiers",
+      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/identifiers",
       "tags": [
         "vc2.0",
         "did-key"
