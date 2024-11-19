@@ -5,7 +5,6 @@
     {
       "id": "did:key:zDnaeipTBN8tgRmkjZWaQSBFj4Ub3ywWP6vAsgGET922nkvZz",
       "endpoint": "https://db.makolab.pro/issuers/credentials/issue",
-      "method": "POST",
       "supportedEcdsaKeyTypes": ["P-256"],
       "supports": {
         "vc": ["1.1", "2.0"]
@@ -15,7 +14,6 @@
     {
       "id": "did:key:zDnaeipTBN8tgRmkjZWaQSBFj4Ub3ywWP6vAsgGET922nkvZz",
       "endpoint": "https://db.makolab.pro/issuers/sd/credentials/issue",
-      "method": "POST",
       "supportedEcdsaKeyTypes": ["P-256"],
       "supports": {
         "vc": ["1.1", "2.0"]
