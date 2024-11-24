@@ -10,13 +10,30 @@
         "P-384"
       ],
       "tags": [
-        "Ed25519Signature2020",
-        "vc2.0",
-        "eddsa-rdfc-2022",
-        "ecdsa-rdfc-2019",
-        "ecdsa-sd-2023"
+        "ecdsa-sd-2023",
+        "vc2.0"
       ]
-    }
+    },
+    {
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-credential-verify",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-verify",
+      "supportedEcdsaKeyTypes": [
+        "P-256",
+        "P-384"
+      ],
+      "tags": [
+        "Ed25519Signature2020",
+        "eddsa-rdfc-2022",
+        "eddsa-jcs-2022",
+        "ecdsa-rdfc-2019",
+        "ecdsa-jcs-2019",
+        "EnvelopingProof",
+        "vc2.0"
+      ],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
+    }    
   ],
   "issuers": [
     {
@@ -27,10 +44,7 @@
         "vc2.0"
       ],
       "supports": {
-        "vc": [
-          "1.1",
-          "2.0"
-        ]
+        "vc": ["1.1", "2.0"]
       }
     },
     {
@@ -40,10 +54,7 @@
         "eddsa-rdfc-2022"
       ],
       "supports": {
-        "vc": [
-          "1.1",
-          "2.0"
-        ]
+        "vc": ["1.1", "2.0"]
       }
     },
     {
@@ -53,10 +64,7 @@
         "eddsa-jcs-2022"
       ],
       "supports": {
-        "vc": [
-          "1.1",
-          "2.0"
-        ]
+        "vc": ["1.1", "2.0"]
       }
     },
     {
@@ -69,10 +77,7 @@
         "ecdsa-rdfc-2019"
       ],
       "supports": {
-        "vc": [
-          "1.1",
-          "2.0"
-        ]
+        "vc": ["1.1", "2.0"]
       }
     },
     {
@@ -85,10 +90,7 @@
         "ecdsa-rdfc-2019"
       ],
       "supports": {
-        "vc": [
-          "1.1",
-          "2.0"
-        ]
+        "vc": ["1.1", "2.0"]
       }
     },
     {
@@ -101,10 +103,7 @@
         "ecdsa-jcs-2019"
       ],
       "supports": {
-        "vc": [
-          "1.1",
-          "2.0"
-        ]
+        "vc": ["1.1", "2.0"]
       }
     },
     {
@@ -117,10 +116,7 @@
         "ecdsa-jcs-2019"
       ],
       "supports": {
-        "vc": [
-          "1.1",
-          "2.0"
-        ]
+        "vc": ["1.1", "2.0"]
       }
     },
     {
@@ -131,13 +127,7 @@
       ],
       "tags": [
         "ecdsa-sd-2023"
-      ],
-      "supports": {
-        "vc": [
-          "1.1",
-          "2.0"
-        ]
-      }
+      ]
     }
   ],
   "vpVerifiers": [
@@ -145,17 +135,35 @@
       "id": "https://vc.apicatalog.com/vp/verifier",
       "endpoint": "https://vc.apicatalog.com/presentations/verify",
       "tags": [
-        "Ed25519Signature2020",
-        "vc2.0",
-        "eddsa-rdfc-2022",
-        "ecdsa-rdfc-2019",
-        "ecdsa-sd-2023"
+        "ecdsa-sd-2023",
+        "vc2.0"
       ],
       "supportedEcdsaKeyTypes": [
         "P-256",
         "P-384"
       ]
+    },
+    {
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-presentation-verify",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-verify",
+      "tags": [
+        "Ed25519Signature2020",
+        "eddsa-rdfc-2022",
+        "eddsa-jcs-2022",
+        "ecdsa-rdfc-2019",
+        "ecdsa-jcs-2019",
+        "vc2.0",
+        "EnvelopingProof"
+      ],
+      "supportedEcdsaKeyTypes": [
+        "P-256",
+        "P-384"
+      ],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }      
     }
+    
   ],
   "vcHolders": [
     {
