@@ -21,19 +21,35 @@
   "issuers": [
     {
       "id": "https://vc.apicatalog.com/issuer/?suite=Ed25519Signature2020",
-      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=Ed25519Signature2020",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ed25519",
       "tags": [
         "Ed25519Signature2020",
         "vc2.0"
-      ]
+      ],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     },
     {
       "id": "https://vc.apicatalog.com/issuer/?suite=eddsa-rdfc-2022",
-      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=eddsa-rdfc-2022",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-rdfc-2022",
       "tags": [
         "eddsa-rdfc-2022"
-      ]
+      ],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }      
     },
+    {
+      "id": "https://vc.apicatalog.com/issuer/?suite=eddsa-rdfc-2022",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-jcs-2022",
+      "tags": [
+        "eddsa-jcs-2022"
+      ],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
+    },    
     {
       "id": "https://vc.apicatalog.com/issuer/?suite=ecdsa-rdfc-2019&curve=p-256",
       "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=ecdsa-rdfc-2019&curve=p-256",
