@@ -20,55 +20,108 @@
   ],
   "issuers": [
     {
-      "id": "https://vc.apicatalog.com/issuer/?suite=Ed25519Signature2020",
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ed25519",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ed25519",
       "tags": [
         "Ed25519Signature2020",
         "vc2.0"
       ],
       "supports": {
-        "vc": ["1.1", "2.0"]
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
       }
     },
     {
-      "id": "https://vc.apicatalog.com/issuer/?suite=eddsa-rdfc-2022",
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-rdfc-2022",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-rdfc-2022",
       "tags": [
         "eddsa-rdfc-2022"
       ],
       "supports": {
-        "vc": ["1.1", "2.0"]
-      }      
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
     },
     {
-      "id": "https://vc.apicatalog.com/issuer/?suite=eddsa-rdfc-2022",
+      "id": "ttps://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-jcs-2022",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-jcs-2022",
       "tags": [
         "eddsa-jcs-2022"
       ],
       "supports": {
-        "vc": ["1.1", "2.0"]
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
       }
-    },    
+    },
     {
-      "id": "https://vc.apicatalog.com/issuer/?suite=ecdsa-rdfc-2019&curve=p-256",
-      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=ecdsa-rdfc-2019&curve=p-256",
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-rdfc-2019-p256",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-rdfc-2019-p256",
       "supportedEcdsaKeyTypes": [
         "P-256"
       ],
       "tags": [
         "ecdsa-rdfc-2019"
-      ]
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
     },
     {
-      "id": "https://vc.apicatalog.com/issuer/?suite=ecdsa-rdfc-2019&curve=p-384",
-      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=ecdsa-rdfc-2019&curve=p-384",
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-rdfc-2019-p384",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-rdfc-2019-p384",
       "supportedEcdsaKeyTypes": [
         "P-384"
       ],
       "tags": [
         "ecdsa-rdfc-2019"
-      ]
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-rdfc-2019-p256",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-rdfc-2019-p256",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "tags": [
+        "ecdsa-jcs-2019"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-jcs-2019-p384",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-jcs-2019-p384",
+      "supportedEcdsaKeyTypes": [
+        "P-384"
+      ],
+      "tags": [
+        "ecdsa-jcs-2019"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
     },
     {
       "id": "https://vc.apicatalog.com/issuer/?suite=ecdsa-sd-2023",
@@ -78,7 +131,13 @@
       ],
       "tags": [
         "ecdsa-sd-2023"
-      ]
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
     }
   ],
   "vpVerifiers": [
@@ -91,6 +150,10 @@
         "eddsa-rdfc-2022",
         "ecdsa-rdfc-2019",
         "ecdsa-sd-2023"
+      ],
+      "supportedEcdsaKeyTypes": [
+        "P-256",
+        "P-384"
       ]
     }
   ],
