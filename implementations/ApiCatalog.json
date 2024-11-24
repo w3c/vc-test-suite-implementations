@@ -92,8 +92,8 @@
       }
     },
     {
-      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-rdfc-2019-p256",
-      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-rdfc-2019-p256",
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-jcs-2019-p256",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-jcs-2019-p256",
       "supportedEcdsaKeyTypes": [
         "P-256"
       ],
