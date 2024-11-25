@@ -89,6 +89,19 @@
                     "2.0"
                 ]
             }
+        },
+        {
+            "id": "did:key:z6MkeWzNrES6WARMfUqymQVyzao4dCYF2Tt7Sq8ytCX7NxqH",
+            "endpoint": "https://api.trential.dev/indisi-vc/issuer/credentials/issue",
+            "tags": [
+                "Ed25519Signature2020"
+            ],
+            "supports": {
+                "vc": [
+                    "1.1",
+                    "2.0"
+                ]
+            }
         }
     ],
     "verifiers": [
@@ -98,10 +111,10 @@
                 "vc2.0",
                 "ecdsa-rdfc-2019",
                 "BitstringStatusList",
-                "ecdsa-rdfc-2019",
                 "ecdsa-sd-2023",
                 "bbs-2023",
-                "eddsa-rdfc-2022"
+                "eddsa-rdfc-2022",
+                "Ed25519Signature2020"
             ],
             "supportedEcdsaKeyTypes": [
                 "P-256",
