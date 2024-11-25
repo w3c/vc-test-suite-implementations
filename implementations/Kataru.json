@@ -1,0 +1,28 @@
+{
+  "name": "Kataru Content VC",
+  "implementation": "Kataru VC API for content management",
+  "issuers": [{
+    "id": "did:key:z2dmzD81cgPx8Vki7JbuuMmFYrWPgYoytykUZ3eyqht1j9KbpLd5o7JwwW7YsEYzeZ2weQANbWfstbTBYb46E9B5eFzk1zDiJNAtxZ24NDJiSyzHnMZ7zi85to5iUDDtLPz1X1oSKnTpD66nsHHE9UNQsHDemntP98XdesfSubtL3neKpx",
+    "endpoint": "https://vc.kataru.io/credentials/issue",
+    "supports": {
+      "vc": ["2.0"]
+    },
+    "tags": ["vc2.0"]
+  }],
+  "verifiers": [{
+    "id": "https://vc.kataru.io",
+    "endpoint": "https://vc.kataru.io/credentials/verify",
+    "supports": {
+      "vc": ["2.0"]
+    },
+    "tags": ["vc2.0"]
+  }],
+  "vpVerifiers": [{
+    "id": "https://vc.kataru.io",
+    "endpoint": "https://vc.kataru.io/presentations/verify",
+    "supports": {
+      "vc": ["2.0"]
+    },
+    "tags": ["vc2.0"]
+  }]
+}

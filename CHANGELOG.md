@@ -6,7 +6,12 @@ SPDX-License-Identifier: BSD-3-Clause
 
 # w3c/vc-test-suite-implementations  ChangeLog
 
-## 2.0.0 - yyyy-mm-dd
+## 2.0.1 - 2024-10-24
+
+### Fixed
+- Code for sanitizing request headers is more resilient.
+
+## 2.0.0 - 2024-07-13
 
 ### Added
 - Support for a new `localConfig.cjs` feature.
