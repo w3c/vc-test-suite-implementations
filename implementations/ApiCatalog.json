@@ -3,18 +3,6 @@
   "implementation": "Iron Verifiable Credentials",
   "verifiers": [
     {
-      "id": "https://vc.apicatalog.com/verifier",
-      "endpoint": "https://vc.apicatalog.com/credentials/verify",
-      "supportedEcdsaKeyTypes": [
-        "P-256",
-        "P-384"
-      ],
-      "tags": [
-        "ecdsa-sd-2023",
-        "vc2.0"
-      ]
-    },
-    {
       "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-credential-verify",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-verify",
       "supportedEcdsaKeyTypes": [
@@ -27,6 +15,7 @@
         "eddsa-jcs-2022",
         "ecdsa-rdfc-2019",
         "ecdsa-jcs-2019",
+        "ecdsa-sd-2023",
         "EnvelopingProof",
         "vc2.0"
       ],
@@ -120,29 +109,33 @@
       }
     },
     {
-      "id": "https://vc.apicatalog.com/issuer/?suite=ecdsa-sd-2023",
-      "endpoint": "https://vc.apicatalog.com/credentials/issue?suite=ecdsa-sd-2023",
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-sd-2023-p256",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-sd-2023-p256",
       "supportedEcdsaKeyTypes": [
         "P-256"
       ],
       "tags": [
         "ecdsa-sd-2023"
-      ]
+      ],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
+    },
+    {
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-sd-2023-p384",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-ecdsa-sd-2023-p384",
+      "supportedEcdsaKeyTypes": [
+        "P-384"
+      ],
+      "tags": [
+        "ecdsa-sd-2023"
+      ],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      }
     }
   ],
   "vpVerifiers": [
-    {
-      "id": "https://vc.apicatalog.com/vp/verifier",
-      "endpoint": "https://vc.apicatalog.com/presentations/verify",
-      "tags": [
-        "ecdsa-sd-2023",
-        "vc2.0"
-      ],
-      "supportedEcdsaKeyTypes": [
-        "P-256",
-        "P-384"
-      ]
-    },
     {
       "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-presentation-verify",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-verify",
@@ -152,6 +145,7 @@
         "eddsa-jcs-2022",
         "ecdsa-rdfc-2019",
         "ecdsa-jcs-2019",
+        "ecdsa-sd-2023",
         "vc2.0",
         "EnvelopingProof"
       ],
@@ -163,12 +157,11 @@
         "vc": ["1.1", "2.0"]
       }      
     }
-    
   ],
   "vcHolders": [
     {
-      "id": "https://vc.apicatalog.com/holder",
-      "endpoint": "https://vc.apicatalog.com/credentials/derive",
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-derive",
+      "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-derive",
       "tags": [
         "vcHolder",
         "vc2.0",
