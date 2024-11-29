@@ -17,6 +17,7 @@
         "ecdsa-jcs-2019",
         "ecdsa-sd-2023",
         "EnvelopingProof",
+        "BitstringStatusList",
         "vc2.0"
       ],
       "supports": {
@@ -40,7 +41,8 @@
       "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-rdfc-2022",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-rdfc-2022",
       "tags": [
-        "eddsa-rdfc-2022"
+        "eddsa-rdfc-2022",
+        "BitstringStatusList"
       ],
       "supports": {
         "vc": ["1.1", "2.0"]
@@ -50,7 +52,8 @@
       "id": "ttps://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-jcs-2022",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-jcs-2022",
       "tags": [
-        "eddsa-jcs-2022"
+        "eddsa-jcs-2022",
+        "BitstringStatusList"
       ],
       "supports": {
         "vc": ["1.1", "2.0"]
@@ -162,6 +165,10 @@
     {
       "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-derive",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-derive",
+      "supportedEcdsaKeyTypes": [
+        "P-256",
+        "P-384"
+      ],      
       "tags": [
         "vcHolder",
         "vc2.0",
