@@ -104,8 +104,8 @@ parameters, in which case they do not specify `oauth2` or `zcap` properties.
 Please check specific test suite READMEs for further details on implementation properties and endpoints. 
 Test suites MAY specify additional properties and features for endpoints such as
 mandatory JSON-LD contexts, keyTypes settings, additional tags for specific tests such as Enveloped Proofs,
-and supported VC Data Model versions. Endpoints in most cases should: be VC-API capable; be able to sign and/or 
-verify using `did:key`; and be able to resolve the following contexts:
+and supported VC Data Model versions. In most cases, endpoints are expected to: be capable
+of using the test suite API; be capable of signing and/or verifying using `did:key`; and support the following contexts:
 
 - https://www.w3.org/ns/credentials/examples/v2
 - https://www.w3.org/2018/credentials/v1
