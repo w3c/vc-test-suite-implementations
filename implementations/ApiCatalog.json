@@ -49,7 +49,7 @@
       }
     },
     {
-      "id": "ttps://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-jcs-2022",
+      "id": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-jcs-2022",
       "endpoint": "https://us-central1-api-catalog.cloudfunctions.net/vc-api-issue-eddsa-jcs-2022",
       "tags": [
         "eddsa-jcs-2022",
