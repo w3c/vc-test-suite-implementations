@@ -5,7 +5,7 @@
         {
             "endpoint": "https://verifier.credenceid.com/credentials/verify",
             "tags": [
-				"vc2.0",
+			    "vc2.0",
                 "ecdsa-rdfc-2019",
                 "ecdsa-sd-2023",
                 "bbs-2023",
