@@ -5,13 +5,14 @@
         {
             "endpoint": "https://verifier.credenceid.com/credentials/verify",
             "tags": [
-                "vc2.0",
+				"vc2.0",
                 "ecdsa-rdfc-2019",
                 "ecdsa-sd-2023",
                 "bbs-2023",
                 "eddsa-rdfc-2022",
                 "Ed25519Signature2020",
-				"vc-api"
+				"vc-api",
+				"BitstringStatusList"
             ],
             "supportedEcdsaKeyTypes": [
                 "P-256"
