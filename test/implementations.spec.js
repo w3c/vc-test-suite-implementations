@@ -22,7 +22,7 @@ describe('Loading implementations', () => {
         id && id.startsWith('did:key');
 
       describe(implementation.settings.name, () => {
-        issuers.filter(isDidKeyFilter)
+        issuers?.filter(isDidKeyFilter)
           .map(({settings: {id}}, index) => {
             describe(`issuer[${index}].id`, () => {
               it('should not specify a fragment', () => {
