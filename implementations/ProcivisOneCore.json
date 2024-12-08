@@ -25,7 +25,7 @@
       ]
     },
     {
-      "id": "did:key:zDnaebiWvYW4sEFcncp6sLRmGPio1tVaXSDBwnYELtyvwpnYE",
+      "id": "did:key:z6Mkt224NWyb5GLLwWiPcMU88i2zEA9fSy3QQeCRsh7j7WT9",
       "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/credentials/issue",
       "options": {
         "credentialFormat": "JSON_LD_CLASSIC",
@@ -41,8 +41,25 @@
       },
       "tags": [
         "BitstringStatusList",
-        "vc-api",
         "eddsa-rdfc-2022",
+        "vc2.0"
+      ]
+    },
+    {
+      "id": "did:key:z6Mkt224NWyb5GLLwWiPcMU88i2zEA9fSy3QQeCRsh7j7WT9",
+      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/credentials/issue",
+      "options": {
+        "credentialFormat": "JSON_LD_CLASSIC",
+        "signatureAlgorithm": "EDDSA"
+      },
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      },
+      "tags": [
+        "Ed25519Signature2020",
         "vc2.0"
       ]
     },
@@ -62,7 +79,6 @@
       },
       "tags": [
         "bbs-2023",
-        "vc1.1",
         "vc2.0"
       ]
     }
@@ -81,14 +97,13 @@
         ]
       },
       "options": {
-        "checks": [],
         "credentialFormat": "JSON_LD_CLASSIC"
       },
       "tags": [
-        "vc-api",
         "vc2.0",
         "eddsa-rdfc-2022",
         "ecdsa-rdfc-2019",
+        "Ed25519Signature2020",
         "BitstringStatusList"
       ]
     },
@@ -102,11 +117,9 @@
         ]
       },
       "options": {
-        "checks": [],
         "credentialFormat": "JSON_LD_BBSPLUS"
       },
       "tags": [
-        "vc1.1",
         "vc2.0",
         "bbs-2023"
       ]
@@ -120,24 +133,14 @@
         "P-256"
       ],
       "options": {
-        "credentialFormat": "JSON_LD_CLASSIC",
-        "checks": []
+        "credentialFormat": "JSON_LD_CLASSIC"
       },
       "tags": [
-        "vc-api",
         "vc2.0",
         "eddsa-rdfc-2022",
-        "BitstringStatusList"
-      ]
-    }
-  ],
-  "didResolvers": [
-    {
-      "id": "resolver",
-      "endpoint": "https://canivc.core.dev.procivis-one.com/vc-api/identifiers",
-      "tags": [
-        "vc2.0",
-        "did-key"
+        "ecdsa-rdfc-2019",
+        "Ed25519Signature2020",
+        "EnvelopingProof"
       ]
     }
   ]

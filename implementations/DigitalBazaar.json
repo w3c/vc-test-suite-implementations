@@ -135,6 +135,6 @@
   "vcHolders": [{
     "id": "https://vcholder.vcplayground.org",
     "endpoint": "https://vcholder.vcplayground.org/credentials/derive",
-    "tags": ["vcHolder"]
+    "tags": ["vcHolder", "bbs-2023", "ecdsa-sd-2023"]
   }]
 }
