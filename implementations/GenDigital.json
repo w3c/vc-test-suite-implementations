@@ -80,7 +80,7 @@
     },
     {
       "id": "did:web:481ca770-fca8-4425-97be-96f057d6952a.did-dev3.dev.dts-dsa.com",
-      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/issuer/profiles/f3c5e456-2528-4821-9516-e062392f6ead/v1.latest/credentials/issue",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/f3c5e456-2528-4821-9516-e062392f6ead/v1.latest/credentials/verify",
       "tags": [
         "BitstringStatusList",
         "Revocation"
@@ -88,7 +88,7 @@
     },
     {
       "id": "did:key:z6MkuhVK21jQzMQLMwH8hJh2DZbvH6ETzRyCj7aQkaxpszLi",
-      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/issuer/profiles/45c5068e-4f46-4135-8c33-de2b8d81d6ae/v1.latest/credentials/issue",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/45c5068e-4f46-4135-8c33-de2b8d81d6ae/v1.latest/credentials/verify",
       "tags": [
         "Ed25519Signature2020"
       ]
