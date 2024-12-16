@@ -2,6 +2,41 @@
   "name": "Digital Bazaar",
   "implementation": "Veres (Q/A)",
   "issuers": [{
+    "id": "did:key:zDnaer1eJZAf1qxHBeRZqiVg5pxyUpdQBdZCVsHCAp7n9JZyg",
+    "endpoint": "https://vc2.veresissuer.dev/issuers/z19kS41UcJKY6KBwzW2iecY9r/credentials/issue",
+    "zcap": {
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:e47d00e4-5553-4f15-9da7-98c074eec6c7\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19kS41UcJKY6KBwzW2iecY9r\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19kS41UcJKY6KBwzW2iecY9r/credentials/issue\",\"expires\":\"2025-12-14T11:11:39Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-12-14T11:11:41Z\",\"verificationMethod\":\"did:key:z6Mkj9qmQhYiG5pdbNHpysPz5c5vEhRxjZ4o9E1xGqBVL1oX#z6Mkj9qmQhYiG5pdbNHpysPz5c5vEhRxjZ4o9E1xGqBVL1oX\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19kS41UcJKY6KBwzW2iecY9r\"],\"proofValue\":\"zup8rvGvWJVu95NBJv7RUPo6ZfUjA2Njt1wDxge4tyTjxxPnkgdUjxnJ6x12sSAJBVeg8NJH6N9cTb3kS82EUmkj\"}}",
+      "keySeed": "KEY_SEED_DB"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-256"],
+    "tags": ["vc2.0", "ecdsa-jcs-2019"]
+  }, {
+    "id": "did:key:z82Lkn39nLqZLL9gMZ7TsAfachzQVPdCsWk8pkqVa8iUrU2XGTTqZzkNHavRyj8tEDvzKuY",
+    "endpoint": "https://vc2.veresissuer.dev/issuers/z19kKvNPk2ySFm1K7Pgz2doLA/credentials/issue",
+    "zcap": {
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:e7bbf1d9-dd24-456f-97ce-7e3140c053eb\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19kKvNPk2ySFm1K7Pgz2doLA\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19kKvNPk2ySFm1K7Pgz2doLA/credentials/issue\",\"expires\":\"2025-12-14T11:17:49Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-12-14T11:17:50Z\",\"verificationMethod\":\"did:key:z6MknLePFyZHZWGfcfMcxvodH7FgNWMqSe1NE4MXdZ5saJah#z6MknLePFyZHZWGfcfMcxvodH7FgNWMqSe1NE4MXdZ5saJah\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19kKvNPk2ySFm1K7Pgz2doLA\"],\"proofValue\":\"z4ChxHf8wuZgrZaesxTD9BYSbtPMqmEj36vs4CkahyBPfFrZr2uAaCtmZrwNDvMJYdZpRxPyJjYsG46AN7znBhoUv\"}}",
+      "keySeed": "KEY_SEED_DB"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-384"],
+    "tags": ["vc2.0", "ecdsa-jcs-2019"]
+  }, {
+    "id": "did:key:z6MkvLVAs9wUcLRfvcvAMywt7NGx4ymVKozLjAYyE8QHeieX",
+    "endpoint": "https://vc2.veresissuer.dev/issuers/z1ACcKqNoNEwydMe6McpKpCSV/credentials/issue",
+    "zcap": {
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:2b50c12d-219f-4211-a762-d0083b9f9f0f\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1ACcKqNoNEwydMe6McpKpCSV\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1ACcKqNoNEwydMe6McpKpCSV/credentials/issue\",\"expires\":\"2025-12-14T11:22:09Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-12-14T11:22:10Z\",\"verificationMethod\":\"did:key:z6MkgcjrV5vP9WEV4JKTGg8j2btH539C4ZsrhmTXcVt9DjyV#z6MkgcjrV5vP9WEV4JKTGg8j2btH539C4ZsrhmTXcVt9DjyV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1ACcKqNoNEwydMe6McpKpCSV\"],\"proofValue\":\"z2k5HU6bQbLFW2yhVGgkzKtmEhRx3XVLNwkhjJ92XEGTQUTM74ASAdQ2KCP5N5XuNeEWD4zLfB1diUbEaCmfGg2CP\"}}",
+      "keySeed": "KEY_SEED_DB"
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "tags": ["vc2.0", "eddsa-jcs-2022"]
+  }, {
     "id": "did:key:z6MkkZu37ESix41fjPc2bFJ6eGsz1mbzdSn1MYcuU2qWBDAN",
     "endpoint": "https://vc2.veresissuer.dev/issuers/z1A5TMiJPYBhYCutYH2XZULjt/credentials/issue",
     "zcap": {
@@ -113,7 +148,9 @@
       "BitstringStatusList",
       "Ed25519Signature2020",
       "eddsa-rdfc-2022",
+      "eddsa-jcs-2022",
       "ecdsa-rdfc-2019",
+      "ecdsa-jcs-2019",
       "ecdsa-sd-2023",
       "vc2.0",
       "bbs-2023",
