@@ -12,7 +12,7 @@
       "vc": ["1.1", "2.0"]
     },
     "supportedEcdsaKeyTypes": ["P-256"],
-    "tags": ["vc2.0", "ecdsa-jcs-2019"]
+    "tags": ["ecdsa-jcs-2019"]
   }, {
     "id": "did:key:z82Lkn39nLqZLL9gMZ7TsAfachzQVPdCsWk8pkqVa8iUrU2XGTTqZzkNHavRyj8tEDvzKuY",
     "endpoint": "https://vc2.veresissuer.dev/issuers/z19kKvNPk2ySFm1K7Pgz2doLA/credentials/issue",
@@ -24,7 +24,7 @@
       "vc": ["1.1", "2.0"]
     },
     "supportedEcdsaKeyTypes": ["P-384"],
-    "tags": ["vc2.0", "ecdsa-jcs-2019"]
+    "tags": ["ecdsa-jcs-2019"]
   }, {
     "id": "did:key:z6MkvLVAs9wUcLRfvcvAMywt7NGx4ymVKozLjAYyE8QHeieX",
     "endpoint": "https://vc2.veresissuer.dev/issuers/z1ACcKqNoNEwydMe6McpKpCSV/credentials/issue",
@@ -35,7 +35,7 @@
     "supports": {
       "vc": ["1.1", "2.0"]
     },
-    "tags": ["vc2.0", "eddsa-jcs-2022"]
+    "tags": ["eddsa-jcs-2022"]
   }, {
     "id": "did:key:z6MkkZu37ESix41fjPc2bFJ6eGsz1mbzdSn1MYcuU2qWBDAN",
     "endpoint": "https://vc2.veresissuer.dev/issuers/z1A5TMiJPYBhYCutYH2XZULjt/credentials/issue",
