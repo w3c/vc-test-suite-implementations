@@ -17,7 +17,8 @@
       "@type": "@id"
     },
     "vendor": {
-      "@id": "doap:vendor"
+      "@id": "doap:vendor",
+      "@type": "@id"
     },
     "email": "schema:email",
 
@@ -43,7 +44,10 @@
       "@id": "schema:keywords"
     },
 
-    "zcap": "reporter:zcap",
+    "zcap": {
+      "@id": "reporter:zcap",
+      "@type": "@id"
+    },
     "capability": "reporter:capability",
     "keySeed": "reporter:keySeed",
     "supportedEcdsaKeyTypes": "reporter:supportedEcdsaKeyTypes",
