@@ -1,26 +1,21 @@
 {
   "@context": {
-    "earl": "https://www.w3.org/ns/earl#",
-    "doap": "http://usefulinc.com/ns/doap#",
-    "schema": "http://schema.org/",
-    "reporter": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#",
-
-    "Software": "earl:Software",
-    "TestSubject": "earl:TestSubject",
-    "Organization": "schema:Organization",
-    "Person": "schema:Person",
+    "Software": "https://www.w3.org/ns/earl#Software",
+    "TestSubject": "https://www.w3.org/ns/earl#TestSubject",
+    "Organization": "https://schema.org/Organization",
+    "Person": "https://schema.org/Person",
 
     "id": "@id",
-    "name": "schema:name",
+    "name": "https://schema.org/name",
     "url": {
-      "@id": "schema:url",
+      "@id": "https://schema.org/url",
       "@type": "@id"
     },
     "vendor": {
-      "@id": "doap:vendor",
+      "@id": "http://usefulinc.com/ns/doap#vendor",
       "@type": "@id"
     },
-    "email": "schema:email",
+    "email": "https://schema.org/email",
 
     "options": {
       "@id": "https://w3c-ccg.github.io/vc-api/#options",
@@ -37,21 +32,21 @@
     },
 
     "endpoint": {
-      "@id": "doap:service-endpoint",
+      "@id": "http://usefulinc.com/ns/doap#service-endpoint",
       "@type": "@id"
     },
     "tags": {
-      "@id": "schema:keywords"
+      "@id": "https://schema.org/keywords"
     },
 
     "zcap": {
-      "@id": "reporter:zcap",
+      "@id": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#zcap",
       "@type": "@id"
     },
-    "capability": "reporter:capability",
-    "keySeed": "reporter:keySeed",
-    "supportedEcdsaKeyTypes": "reporter:supportedEcdsaKeyTypes",
-    "vcHolders": "reporter:vcHolders",
-    "vpVerifiers": "reporter:vpVerifiers"
+    "capability": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#capability",
+    "keySeed": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#keySeed",
+    "supportedEcdsaKeyTypes": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#supportedEcdsaKeyTypes",
+    "vcHolders": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vcHolders",
+    "vpVerifiers": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vpVerifiers"
   }
 }
