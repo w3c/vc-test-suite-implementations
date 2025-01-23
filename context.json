@@ -23,11 +23,11 @@
     },
 
     "issuers": {
-      "@id": "cred:issuer",
+      "@id": "https://www.w3.org/2018/credentials#issuer",
       "@container": "@set"
     },
     "verifiers": {
-      "@id": "cred:verifier",
+      "@id": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#verifier",
       "@container": "@set"
     },
 
