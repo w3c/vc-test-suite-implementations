@@ -49,6 +49,14 @@
     "keySeed": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#keySeed",
     "supportedEcdsaKeyTypes": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#supportedEcdsaKeyTypes",
     "vcHolders": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vcHolders",
-    "vpVerifiers": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vpVerifiers"
+    "vpVerifiers": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vpVerifiers",
+    "supports": {
+      "@id": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#supports",
+      "@type": "@id"
+    },
+    "vc": {
+      "@id": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vc",
+      "@container": "@set"
+    }
   }
 }
