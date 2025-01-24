@@ -6,6 +6,8 @@
     "Person": "https://schema.org/Person",
 
     "id": "@id",
+    "type": "@type",
+
     "name": "https://schema.org/name",
     "url": {
       "@id": "https://schema.org/url",
