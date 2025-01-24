@@ -226,6 +226,26 @@ on the tagged issuer and verifier endpoints.
 
 * `bbs-2023` - This tag will run the [VC Data Integrity BBS Test Suite](https://github.com/w3c/vc-di-bbs-test-suite) on the tagged issuer and verifier endpoints.
 
+### Validating Description
+
+Implementation details may include more verbose vendor and implementation
+descriptions by adding the following to the description JSON:
+
+```jsonc
+{
+  "@context": "https://raw.githubusercontent.com/digitalbazaar/mocha-w3c-interop-reporter/refs/heads/main/context.json",
+  "vendor": {
+    "type": "Organization",
+    "name": "...",
+    "url": "...",
+    "email": "..."
+  },
+  "type": ["TestSubject", "Software"],
+  "name": "...implementation name...",
+  // the rest of the implementation details as described above
+}
+```
+
 ## Contribute
 
 See [the CONTRIBUTING.md file](CONTRIBUTING.md).
