@@ -37,6 +37,12 @@
   ],
   "issuers": [
     {
+      "id": "https://vc.opsec.id",
+      "tags": [
+        "cid"
+      ]
+    },
+    {
       "id": "did:key:z6MkwMaVueYP9pYSTKxtRSMzgzsSkpx1wrhwdq8MEHFxtHdu",
       "endpoint": "https://vc.opsec.id/credentials/issue",
       "options": {
