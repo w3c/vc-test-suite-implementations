@@ -13,10 +13,10 @@ To run your implementation against all test suites from one location, you can us
 
 ## Setup
 
-Make sure you are in the `docker` directory, then copy the `localConfig` example file:
+Make sure you are in the `docker` directory, then copy the `implementation` example file:
 ```bash
 cd ./docker
-cp localConfig.example.yml localConfig.yml
+cp implementation.example.yml implementation.yml
 ```
 Edit the local config details to match your implementation.
 
