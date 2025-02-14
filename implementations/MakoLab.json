@@ -20,5 +20,14 @@
       },
       "tags": ["ecdsa-sd-2023", "vc2.0"]
     }
-  ]
+  ],
+  "verifiers": [{
+    "id": "did:key:zDnaeipTBN8tgRmkjZWaQSBFj4Ub3ywWP6vAsgGET922nkvZz",
+    "endpoint": "https://db.makolab.pro/verifiers/credentials/verify",
+    "supportedEcdsaKeyTypes": ["P-256"],
+    "supports": {
+        "vc": ["1.1", "2.0"]
+      },
+    "tags": ["ecdsa-rdfc-2019", "ecdsa-sd-2023", "vc2.0"]
+  }]
 }

@@ -1,0 +1,122 @@
+{
+  "name": "Gen Digital",
+  "implementation": "Gen Digital",
+  "issuers": [
+    {
+      "id": "did:web:fd5e2e37-8ee6-424e-92df-28d34fe4e0a5.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/issuer/profiles/f89d9d3a-e545-4ccd-987d-6bc257054c0c/v1.latest/credentials/issue",
+      "supportedEcdsaKeyTypes": [
+        "P-384"
+      ],
+      "supports": {
+        "vc": [
+          "2.0"
+        ]
+      },
+      "tags": [
+        "ecdsa-rdfc-2019"
+      ]
+    },
+    {
+      "id": "did:web:fd5e2e37-8ee6-424e-92df-28d34fe4e0a5.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/issuer/profiles/d4b42a1f-92ff-45f8-b81f-b24f3f3e37bc/v1.latest/credentials/issue",
+      "tags": [
+        "vc2.0"
+      ]
+    },
+    {
+      "id": "did:web:fd5e2e37-8ee6-424e-92df-28d34fe4e0a5.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/issuer/profiles/78980eb4-3862-4a78-8b65-b158b580aeec/v1.latest/credentials/issue",
+      "tags": [
+        "vc-api"
+      ]
+    },
+    {
+      "id": "did:web:fd5e2e37-8ee6-424e-92df-28d34fe4e0a5.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/issuer/profiles/21dc85e3-a9e9-4304-bc77-88874fa3f37d/v1.latest/credentials/issue",
+      "tags": [
+        "BitstringStatusList",
+        "Revocation"
+      ]
+    },
+    {
+      "id": "did:key:z6MkiAbKDyb6D4n1JQr8TFUzHkWxzGSBW8XMbm8rdE4t5TbQ",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/issuer/profiles/c3414275-b923-4b26-a38f-d39884940aa1/v1.latest/credentials/issue",
+      "tags": [
+        "Ed25519Signature2020"
+      ]
+    }
+  ],
+  "verifiers": [
+    {
+      "id": "did:web:481ca770-fca8-4425-97be-96f057d6952a.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/f3636e58-d37a-46c3-b81a-2672a11c3efe/v1.latest/credentials/verify",
+      "supportedEcdsaKeyTypes": [
+        "P-384",
+        "P-256"
+      ],
+      "supports": {
+        "vc": [
+          "2.0"
+        ]
+      },
+      "tags": [
+        "ecdsa-rdfc-2019"
+      ]
+    },
+    {
+      "id": "did:web:481ca770-fca8-4425-97be-96f057d6952a.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/ed8564d3-7c96-40ec-8a1e-08c7224a08f5/v1.latest/credentials/verify",
+      "tags": [
+        "vc2.0"
+      ]
+    },
+    {
+      "id": "did:web:481ca770-fca8-4425-97be-96f057d6952a.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/25c3a9cd-2a45-418e-9200-f7e8a24d1a43/v1.latest/credentials/verify",
+      "tags": [
+        "vc-api"
+      ]
+    },
+    {
+      "id": "did:web:481ca770-fca8-4425-97be-96f057d6952a.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/f3c5e456-2528-4821-9516-e062392f6ead/v1.latest/credentials/verify",
+      "tags": [
+        "BitstringStatusList",
+        "Revocation"
+      ]
+    },
+    {
+      "id": "did:key:z6MkuhVK21jQzMQLMwH8hJh2DZbvH6ETzRyCj7aQkaxpszLi",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/45c5068e-4f46-4135-8c33-de2b8d81d6ae/v1.latest/credentials/verify",
+      "tags": [
+        "Ed25519Signature2020"
+      ]
+    }
+  ],
+  "vpVerifiers": [
+    {
+      "id": "did:web:481ca770-fca8-4425-97be-96f057d6952a.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/f3636e58-d37a-46c3-b81a-2672a11c3efe/v1.latest/presentations/verify",
+      "supportedEcdsaKeyTypes": [
+        "P-384",
+        "P-256"
+      ],
+      "supports": {
+        "vc": [
+          "2.0"
+        ]
+      },
+      "tags": [
+        "ecdsa-rdfc-2019"
+      ]
+    },
+    {
+      "id": "did:web:481ca770-fca8-4425-97be-96f057d6952a.did-dev3.dev.dts-dsa.com",
+      "endpoint": "https://krakend-k8s-dev3.dev.dts-dsa.com/vcs/verifier/profiles/ed8564d3-7c96-40ec-8a1e-08c7224a08f5/v1.latest/presentations/verify",
+      "tags": [
+        "vc2.0"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,18 @@
 {
   "name": "OpSecId",
   "implementation": "Askar VC-API",
+  "identifiers": [
+    {
+      "id": "https://vc.opsec.id",
+      "endpoint": "https://vc.opsec.id",
+      "tags": ["cid"]
+    },
+    {
+      "id": "did:web:vc.opsec.id",
+      "endpoint": "https://vc.opsec.id/.well-known/did.json",
+      "tags": ["cid"]
+    }
+  ],
   "verifiers": [
     {
       "id": "https://vc.opsec.id",

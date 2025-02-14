@@ -1,0 +1,21 @@
+{
+	"name": "CredenceID",
+	"implementation": "CredenceID",
+	"verifiers": [
+		{
+			"id": "https://verifier.credenceid.com/credentials/verify",
+			"endpoint": "https://verifier.credenceid.com/credentials/verify",
+			"tags": [
+				"ecdsa-rdfc-2019"
+			],
+			"supportedEcdsaKeyTypes": [
+				"P-256"
+			],
+			"supports": {
+				"vc": [
+					"2.0"
+				]
+			}
+		}
+	]
+}
