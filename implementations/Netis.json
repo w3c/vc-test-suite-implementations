@@ -11,6 +11,12 @@
     "supportedEcdsaKeyTypes": ["P-256", "P-384"],
     "tags": ["Ed25519Signature2020", "ecdsa-rdfc-2019", "ecdsa-sd-2023", "eddsa-rdfc-2022", "bbs-2023", "vc2.0"]
   }],
-  "vpVerifiers": [],
+  "vpVerifiers": [
+    {
+      "id": "https://test-api.mynext.id",
+      "endpoint": "https://test-api.mynext.id/api/v1/verifier/presentation/vc-api/verify",
+      "tags": ["vc2.0"]
+    }
+  ],
   "didResolvers": []
 }
