@@ -1,0 +1,18 @@
+{
+  "name": "Mavennet",
+  "implementation": "Mavennet",
+  "issuers": [
+    {
+      "id": "urn:uuid:mavennet-vc-wallet",
+      "endpoint": "https://vc.mavennet.com/credentials/issue",
+      "tags": ["BitstringStatusList"]
+    }
+  ],
+  "verifiers": [
+    {
+      "id": "uurn:uuid:mavennet-vc-wallet",
+      "endpoint": "https://vc.mavennet.com/credentials/verify",
+      "tags": ["BitstringStatusList"]
+    }
+  ]
+}
