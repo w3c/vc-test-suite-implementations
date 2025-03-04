@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "Software": "https://www.w3.org/ns/earl#Software",
+    "TestSubject": "https://www.w3.org/ns/earl#TestSubject",
+    "Organization": "https://schema.org/Organization",
+    "Person": "https://schema.org/Person",
+
+    "id": "@id",
+    "type": "@type",
+
+    "name": "https://schema.org/name",
+    "url": {
+      "@id": "https://schema.org/url",
+      "@type": "@id"
+    },
+    "vendor": {
+      "@id": "http://usefulinc.com/ns/doap#vendor",
+      "@type": "@id"
+    },
+    "email": "https://schema.org/email",
+
+    "options": {
+      "@id": "https://w3c-ccg.github.io/vc-api/#options",
+      "@type": "@json"
+    },
+
+    "issuers": {
+      "@id": "https://www.w3.org/2018/credentials#issuer",
+      "@container": "@set"
+    },
+    "verifiers": {
+      "@id": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#verifier",
+      "@container": "@set"
+    },
+
+    "endpoint": {
+      "@id": "http://usefulinc.com/ns/doap#service-endpoint",
+      "@type": "@id"
+    },
+    "tags": {
+      "@id": "https://schema.org/keywords"
+    },
+
+    "zcap": {
+      "@id": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#zcap",
+      "@type": "@id"
+    },
+    "capability": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#capability",
+    "keySeed": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#keySeed",
+    "supportedEcdsaKeyTypes": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#supportedEcdsaKeyTypes",
+    "vcHolders": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vcHolders",
+    "vpVerifiers": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vpVerifiers",
+    "supports": {
+      "@id": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#supports",
+      "@type": "@id"
+    },
+    "vc": {
+      "@id": "https://github.com/digitalbazaar/mocha-w3c-interop-reporter#vc",
+      "@container": "@set"
+    }
+  }
+}

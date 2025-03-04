@@ -1,6 +1,13 @@
 {
-  "name": "Digital Bazaar",
-  "implementation": "Veres (Q/A)",
+  "@context": "https://raw.githubusercontent.com/digitalbazaar/mocha-w3c-interop-reporter/refs/heads/main/context.json",
+  "vendor": {
+    "type": "Organization",
+    "name": "Digital Bazaar, Inc.",
+    "url": "https://digitalbazaar.com/",
+    "email": "support@digitalbazaar.com"
+  },
+  "type": ["TestSubject", "Software"],
+  "name": "Veres (Q/A)",
   "issuers": [{
     "id": "did:key:zDnaer1eJZAf1qxHBeRZqiVg5pxyUpdQBdZCVsHCAp7n9JZyg",
     "endpoint": "https://vc2.veresissuer.dev/issuers/z19kS41UcJKY6KBwzW2iecY9r/credentials/issue",
