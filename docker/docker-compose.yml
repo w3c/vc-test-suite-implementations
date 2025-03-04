@@ -1,0 +1,47 @@
+---
+include:
+  - implementation.yml
+services:
+  vc-data-model-v2:
+    build: https://github.com/w3c/vc-data-model-2.0-test-suite.git#allure-in-docker
+    command: 
+      - /bin/bash
+      - -c
+      - |
+        npm t
+        serve -p 8000 reports/
+    configs:
+      - source: localConfig.cjs
+        target: /test-suite/localConfig.cjs
+      - source: implementation.json
+        target: /test-suite/implementation.json
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.vc-data-model.rule=Host(`vc-data-model.docker.localhost`)
+      - traefik.http.routers.vc-data-model.entrypoints=web
+      - traefik.http.services.vc-data-model.loadbalancer.server.port=8000
+
+  traefik:
+    image: traefik:v3.1
+    command:
+      - --api.insecure=true
+      - --providers.docker=true
+      - --providers.docker.exposedbydefault=false
+      - --entryPoints.web.address=:80
+    ports:
+      - 80:80
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+
+
+configs:
+  localConfig.cjs:
+    content: |
+      module.exports = {
+        settings: {
+          enableInteropTests: true
+        },
+        implementations: [
+          require('/test-suite/implementation.json')
+        ]
+      };
