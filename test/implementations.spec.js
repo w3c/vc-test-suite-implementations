@@ -57,7 +57,9 @@ describe('Loading implementations', () => {
                 it(`ZCAP should not be expired for ${issuer.id}`, () => {
                   const expiration = JSON.parse(issuer.zcap.capability).expires;
                   const today = new Date();
-                  chai.expect(new Date(expiration)).to.be.afterDate(today);
+                  const nextMonth = new Date(
+                    today.getFullYear(), today.getMonth() + 1, today.getDate());
+                  chai.expect(new Date(expiration)).to.be.afterDate(nextMonth);
                 });
               });
           });
