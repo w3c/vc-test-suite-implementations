@@ -2,7 +2,12 @@ name: Lint and Test
 
 permissions: {}
 
-on: [push]
+on:
+  push:
+    branches: ['**']
+  schedule:
+    # check the implementation details on Thursdays; 3 days before test suites
+    - cron: 0 5 * * 4
 
 jobs:
   lint:
