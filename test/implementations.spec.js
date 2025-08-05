@@ -33,7 +33,7 @@ describe('Loading implementations', () => {
             });
           });
 
-        verifiers.filter(isDidKeyFilter)
+        verifiers?.filter(isDidKeyFilter)
           .map(({settings: {id}}, index) => {
             describe(`verifier[${index}].id`, () => {
               it('should not specify a fragment', () => {
