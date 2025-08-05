@@ -8,6 +8,11 @@
     "email": "public-vc-wg@w3.org",
     "url": "https://www.w3.org/groups/wg/vc/"
   },
+  "contributors": [{
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "https://digitalbazaar.com/"
+  }],
   "type": "module",
   "main": "./lib/main.js",
   "repository": {
@@ -51,8 +56,8 @@
     "node": ">=18"
   },
   "keywords": [
-    "w3c",
-    "verifiable credentials"
+    "W3C",
+    "Verifiable Credentials"
   ],
   "scripts": {
     "test": "npm run test-node && npm run lint",
