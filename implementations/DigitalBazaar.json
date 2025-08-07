@@ -1,11 +1,11 @@
 {
   "name": "Digital Bazaar",
-  "implementation": "Veres (Q/A)",
+  "implementation": "Veres (Playground)",
   "issuers": [{
-    "id": "did:key:zDnaer1eJZAf1qxHBeRZqiVg5pxyUpdQBdZCVsHCAp7n9JZyg",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z19kS41UcJKY6KBwzW2iecY9r/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19oE1YHbvBP7ady4bYtnqyTp/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:e47d00e4-5553-4f15-9da7-98c074eec6c7\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19kS41UcJKY6KBwzW2iecY9r\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19kS41UcJKY6KBwzW2iecY9r/credentials/issue\",\"expires\":\"2025-12-14T11:11:39Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-12-14T11:11:41Z\",\"verificationMethod\":\"did:key:z6Mkj9qmQhYiG5pdbNHpysPz5c5vEhRxjZ4o9E1xGqBVL1oX#z6Mkj9qmQhYiG5pdbNHpysPz5c5vEhRxjZ4o9E1xGqBVL1oX\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19kS41UcJKY6KBwzW2iecY9r\"],\"proofValue\":\"zup8rvGvWJVu95NBJv7RUPo6ZfUjA2Njt1wDxge4tyTjxxPnkgdUjxnJ6x12sSAJBVeg8NJH6N9cTb3kS82EUmkj\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:32Z\",\"id\":\"urn:uuid:b4a142f3-2d60-4dca-9574-c36de2737e13\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19oE1YHbvBP7ady4bYtnqyTp/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19oE1YHbvBP7ady4bYtnqyTp\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19oE1YHbvBP7ady4bYtnqyTp\"],\"created\":\"2025-08-07T18:17:32Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z5QccdvVU1UTXwHwV5htWWJYNv2BK6eCWYP5DnQnhS9Nv6iRYk8T9Dvhd4VWMDv6qNdgMHLQEdPjhhgnL79uxCNVF\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -14,10 +14,10 @@
     "supportedEcdsaKeyTypes": ["P-256"],
     "tags": ["ecdsa-jcs-2019"]
   }, {
-    "id": "did:key:z82Lkn39nLqZLL9gMZ7TsAfachzQVPdCsWk8pkqVa8iUrU2XGTTqZzkNHavRyj8tEDvzKuY",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z19kKvNPk2ySFm1K7Pgz2doLA/credentials/issue",
+    "id": "did:key:z82Lm3Rgjb4QphhUweHLHXK547S3GHCsF5FtxzgBgdGu1c2S6VS1AV6xhgrGPxvSGa1mF6D",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z1AEuPbin3EyDTMj6A1PewqmW/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:e7bbf1d9-dd24-456f-97ce-7e3140c053eb\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19kKvNPk2ySFm1K7Pgz2doLA\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19kKvNPk2ySFm1K7Pgz2doLA/credentials/issue\",\"expires\":\"2025-12-14T11:17:49Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-12-14T11:17:50Z\",\"verificationMethod\":\"did:key:z6MknLePFyZHZWGfcfMcxvodH7FgNWMqSe1NE4MXdZ5saJah#z6MknLePFyZHZWGfcfMcxvodH7FgNWMqSe1NE4MXdZ5saJah\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19kKvNPk2ySFm1K7Pgz2doLA\"],\"proofValue\":\"z4ChxHf8wuZgrZaesxTD9BYSbtPMqmEj36vs4CkahyBPfFrZr2uAaCtmZrwNDvMJYdZpRxPyJjYsG46AN7znBhoUv\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:33Z\",\"id\":\"urn:uuid:f63be576-155b-4d6b-9160-26f664c0b9b3\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z1AEuPbin3EyDTMj6A1PewqmW/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz1AEuPbin3EyDTMj6A1PewqmW\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz1AEuPbin3EyDTMj6A1PewqmW\"],\"created\":\"2025-08-07T18:17:33Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z2cKzBwf2PXXu7wK8YYUFbKnfWtPanLMtrrbBypKA6Dpp1onHfpkMt3Y5EnxfZ24tCdqK2qFamKCGmiAj4X5WMk7o\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -26,10 +26,10 @@
     "supportedEcdsaKeyTypes": ["P-384"],
     "tags": ["ecdsa-jcs-2019"]
   }, {
-    "id": "did:key:z6MkvLVAs9wUcLRfvcvAMywt7NGx4ymVKozLjAYyE8QHeieX",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z1ACcKqNoNEwydMe6McpKpCSV/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z1A1UrioQsq3Eqo1tjXymgcoM/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:2b50c12d-219f-4211-a762-d0083b9f9f0f\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1ACcKqNoNEwydMe6McpKpCSV\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1ACcKqNoNEwydMe6McpKpCSV/credentials/issue\",\"expires\":\"2025-12-14T11:22:09Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-12-14T11:22:10Z\",\"verificationMethod\":\"did:key:z6MkgcjrV5vP9WEV4JKTGg8j2btH539C4ZsrhmTXcVt9DjyV#z6MkgcjrV5vP9WEV4JKTGg8j2btH539C4ZsrhmTXcVt9DjyV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1ACcKqNoNEwydMe6McpKpCSV\"],\"proofValue\":\"z2k5HU6bQbLFW2yhVGgkzKtmEhRx3XVLNwkhjJ92XEGTQUTM74ASAdQ2KCP5N5XuNeEWD4zLfB1diUbEaCmfGg2CP\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:34Z\",\"id\":\"urn:uuid:1b1116d5-5733-4f40-b496-e5f8f2a27868\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z1A1UrioQsq3Eqo1tjXymgcoM/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz1A1UrioQsq3Eqo1tjXymgcoM\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz1A1UrioQsq3Eqo1tjXymgcoM\"],\"created\":\"2025-08-07T18:17:34Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z5cuqVaH27DUnXV76eKXGgY6TK6XdCnqpcuASXQJrHTtiguMMiZxRqvm4bf5iUxNDc4L7ZV8VHP95ob2SRUwFNs2e\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -37,10 +37,10 @@
     },
     "tags": ["eddsa-jcs-2022"]
   }, {
-    "id": "did:key:z6MkkZu37ESix41fjPc2bFJ6eGsz1mbzdSn1MYcuU2qWBDAN",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z1A5TMiJPYBhYCutYH2XZULjt/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19v56MLUcZD7trcrFAK56usc/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:8728f0c9-e9f4-4815-965d-99e37ae8b6e2\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1A5TMiJPYBhYCutYH2XZULjt\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1A5TMiJPYBhYCutYH2XZULjt/credentials/issue\",\"expires\":\"2025-07-09T20:00:01Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T20:00:02Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1A5TMiJPYBhYCutYH2XZULjt\"],\"proofValue\":\"z38R8Z5wDwMBxpWGBQWtDTDXYkHJnYmRUNUDTY5YuSZgMbAV4UiM72NH1uA3oonD72ukk6Ea2dmt5zHvWL2m2pZyk\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:34Z\",\"id\":\"urn:uuid:bbc4b63b-7352-41e6-b0c0-fea0a7986bc8\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19v56MLUcZD7trcrFAK56usc/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19v56MLUcZD7trcrFAK56usc\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19v56MLUcZD7trcrFAK56usc\"],\"created\":\"2025-08-07T18:17:34Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z62FN5kDiftbTrRmtimfyf2EwSDaqYwfXZENmNprwhSfhEvT164996QrBtnwjBPfoZiq635FVGVqZLW37pvQheLDz\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -48,10 +48,10 @@
     },
     "tags": ["Ed25519Signature2020"]
   }, {
-    "id": "did:key:z6MkkwVJXDkKXhu2y3E1iF2cbzCUL42veRdzC7FFvNAeJ3Ja",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z1AG4jtcG7E9KZCBXyyekq2nw/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19sDCHEWdds9L2RS1wKpnrur/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:01c3a09e-42b7-4b49-b8db-4cd0302fdeb3\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1AG4jtcG7E9KZCBXyyekq2nw\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1AG4jtcG7E9KZCBXyyekq2nw/credentials/issue\",\"expires\":\"2025-07-09T19:59:50Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T19:59:51Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1AG4jtcG7E9KZCBXyyekq2nw\"],\"proofValue\":\"z5eDxqGdZ11bSA4pFVrAKhE8taGuPdwxex46HZ1s1Cwmto8NvtVqsk69ctFkzcu8BxX4G3uRPZVHko2EEjs5H4EpG\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:35Z\",\"id\":\"urn:uuid:37c8bfb6-652e-460e-b9be-a3ff14fdad22\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19sDCHEWdds9L2RS1wKpnrur/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19sDCHEWdds9L2RS1wKpnrur\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19sDCHEWdds9L2RS1wKpnrur\"],\"created\":\"2025-08-07T18:17:35Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z52dZU1zwaXjADJxHVaP6ANXJhy5dnwtyx95BnCFrfiQeHK59FvgPJ6tR2n98BVzbpVqZLYmcr4qNhJyaaRVvt4Uw\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -59,11 +59,11 @@
     },
     "tags": ["eddsa-rdfc-2022"]
   }, {
-    "id": "did:key:zDnaeZjxae9EAvR2MsRpHsLGikm5P5bKQdNypffPuhgGapTGj",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z1A4ymnyeM8RJtyuFq21gRAWH/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19wBEj5i3g9LwxiRQAdG5Zrn/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:db697b50-ee36-42b9-b3a2-abecb582e276\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1A4ymnyeM8RJtyuFq21gRAWH\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1A4ymnyeM8RJtyuFq21gRAWH/credentials/issue\",\"expires\":\"2025-07-09T20:00:12Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T20:00:13Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1A4ymnyeM8RJtyuFq21gRAWH\"],\"proofValue\":\"z4WaWGMoMk82K1A2gSYURtGQfD2dzoUTyX4F6gQ8ECuxfkGEkfX3uFhxBMQhRK6E59VCpXNPVDkTQy8TLmKY9pQ5o\"}}",
-      "keySeed": "KEY_SEED_DB"
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:33Z\",\"id\":\"urn:uuid:fb3cd739-c134-4877-8476-5bddabb2e9f4\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19wBEj5i3g9LwxiRQAdG5Zrn/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19wBEj5i3g9LwxiRQAdG5Zrn\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19wBEj5i3g9LwxiRQAdG5Zrn\"],\"created\":\"2025-08-07T18:17:33Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z3dgB2EzViAJhEG7j5ZKrh3HSeL9VC9Gd1W3FaPn2jjFw7fLV3wrfoSJTxuypHTrsmc9ZhTY7KbSy2jfQ3FhPMUZ4\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
+      "keySeed": ["KEY_SEED_DB"]
     },
     "supports": {
       "vc": ["1.1", "2.0"]
@@ -71,10 +71,10 @@
     "supportedEcdsaKeyTypes": ["P-256"],
     "tags": ["ecdsa-rdfc-2019"]
   }, {
-    "id": "did:key:z82LkmUpik5j3yawMoaLByqCjMAZ4uo6s2r1TBUb4cCmo59JKUsgp8pgQVoEgds7btTmG8A",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z19j4ddhjrHdoq3qB8ZVVyCrE/credentials/issue",
+    "id": "did:key:z82Lm3Rgjb4QphhUweHLHXK547S3GHCsF5FtxzgBgdGu1c2S6VS1AV6xhgrGPxvSGa1mF6D",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19tCeY2WgVtU1Y3bwz5wTmCy/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:721dd599-9d1c-4018-b3e0-a943561277cf\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19j4ddhjrHdoq3qB8ZVVyCrE\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19j4ddhjrHdoq3qB8ZVVyCrE/credentials/issue\",\"expires\":\"2025-07-09T20:00:24Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T20:00:24Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19j4ddhjrHdoq3qB8ZVVyCrE\"],\"proofValue\":\"z5sRebEpgyD36mcKvW3hU37pA1L94KDDRKL7yJCFGmHUdVAXz8nTXzfkQ5uyYZATk64e9RQdwpEjFav9r8Hen9RqX\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:35Z\",\"id\":\"urn:uuid:d9136290-4455-42fe-be05-148ed52eeefe\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19tCeY2WgVtU1Y3bwz5wTmCy/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19tCeY2WgVtU1Y3bwz5wTmCy\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19tCeY2WgVtU1Y3bwz5wTmCy\"],\"created\":\"2025-08-07T18:17:35Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"zNBSSsur5GhX8xxACW9AoBMmURvQwXsxTE5ESHkcUemTUzmaCo68v5nNurwtrBGehuWp1kqCeRpzxnJ6TPBFucUx\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -83,10 +83,10 @@
     "supportedEcdsaKeyTypes": ["P-384"],
     "tags": ["ecdsa-rdfc-2019"]
   }, {
-    "id": "did:key:zDnaeQhKnnm7hwrfJckMtbBaSzeX3HWGUwj6guuBXbxx3mh92",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z19w2LyvmqeSa77xBqMnUuBqA/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19r1eKEPt6mnyDRxxa2BUEpt/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:73207ccf-306e-49ff-bddb-6e53eb28a5d1\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19w2LyvmqeSa77xBqMnUuBqA\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19w2LyvmqeSa77xBqMnUuBqA/credentials/issue\",\"expires\":\"2025-07-09T20:00:35Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T20:00:36Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19w2LyvmqeSa77xBqMnUuBqA\"],\"proofValue\":\"z3L3EJiBy54PG4eNyfswzHvSV17EAf165F6kmWhaNZcMTxVxCVd2v9Cj8K98jN1BAy8CQYe1srFR4XBuXcWeytdCY\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:35Z\",\"id\":\"urn:uuid:853ed4fe-3283-462e-87e3-3bb9ac94f474\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19r1eKEPt6mnyDRxxa2BUEpt/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19r1eKEPt6mnyDRxxa2BUEpt\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19r1eKEPt6mnyDRxxa2BUEpt\"],\"created\":\"2025-08-07T18:17:35Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z53YMRifQzR6VgvU6QXJze5UhsJ1ZgCvy8wkJuqXkpBTb5K31qrkukeqb2rsE6ZGF7hvuHtfDu3fjz23EMzanuHm6\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -95,18 +95,18 @@
     "supportedEcdsaKeyTypes": ["P-256"],
     "tags": ["ecdsa-sd-2023"]
   }, {
-    "id": "did:key:z6MkhnwBZSeedjZmTVekVKF7ocwSHhFpeUyBEUGmGPP7sYdf",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z1A26NEYyG47sREgmpcWAxsKw/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19nkBrEKVDvbXcfuXMT6Y6xX/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:c2cb0b6a-b60b-4f73-91f5-364866453ebd\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1A26NEYyG47sREgmpcWAxsKw\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z1A26NEYyG47sREgmpcWAxsKw/credentials/issue\",\"expires\":\"2025-07-09T22:12:20Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T22:12:21Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz1A26NEYyG47sREgmpcWAxsKw\"],\"proofValue\":\"z3kqFhvMJ5hQM2FPsMbFVkxvkoyReSoqMyKenu3hsfEQDXfqGUFopANGYkpUXuUw8v3Nbvr4HjVKuFgUVjpGo9Tvc\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:36Z\",\"id\":\"urn:uuid:905a2e08-02e6-48fe-9879-db2d126ec44d\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19nkBrEKVDvbXcfuXMT6Y6xX/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19nkBrEKVDvbXcfuXMT6Y6xX\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19nkBrEKVDvbXcfuXMT6Y6xX\"],\"created\":\"2025-08-07T18:17:36Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z5BqAmQV3nVkzeL4XC2qjJWhpueDFpDkWBmcjzwbZPF4kzDCpNRUJJVeMfLCbXGb7oJz4PJ3zkoSrhpMnzDooa2CV\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "tags": ["vc2.0"]
   }, {
-    "id": "did:key:zUC7LefkJ2MJtULzRQfCMhJa5rcYad7XAn3nsSyk657q5AFpbmn9yk4QSh2BaaqvSeS5irGhf76iLkpGeWiDzM4AaNTjfy4uvpnCi2ALsW7ma3d41sHvcgyRPucBBdrUM9Nhcec",
-    "endpoint": "https://vc2.veresissuer.dev/issuers/z19po9Z6NAE1BnwjxLoTfjnex/credentials/issue",
+    "id": "did:key:zUC7CZ65ZY6mbVWkFYiVhoSBs991t37WfijUnZ7W58N8wGbfxPAFQod4QkEzkpzUS4TGQVVyA4DixjQjXHZEBNzJujiwMYV5WEj5YYnVnTv6TJzeYMYGhYbuBvzaLyc9tXAHSgb",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19ivbUD8cnoD1CqiGnp6uTku/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:1f005bf1-990d-4d82-bbca-30c1208b9d09\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19po9Z6NAE1BnwjxLoTfjnex\",\"invocationTarget\":\"https://vc2.veresissuer.dev/issuers/z19po9Z6NAE1BnwjxLoTfjnex/credentials/issue\",\"expires\":\"2025-07-09T19:42:26Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-09T19:42:27Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresissuer.dev%2Fissuers%2Fz19po9Z6NAE1BnwjxLoTfjnex\"],\"proofValue\":\"zwbECZcDH8dTH2d2hvr5dqt64F1LXPcezhfpPNaty7k3ddDLBfQhCrqRCeWXKPq3KWT1qUgksVhP1J3UW3gxFdum\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:32Z\",\"id\":\"urn:uuid:8b334529-4d74-43e1-8c67-d74e42c4be6c\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19ivbUD8cnoD1CqiGnp6uTku/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19ivbUD8cnoD1CqiGnp6uTku\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19ivbUD8cnoD1CqiGnp6uTku\"],\"created\":\"2025-08-07T18:17:32Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z64qJSY7xs72ZsjyngknQ2eVeD8ByyxNpxgmQRAuVhy4iHrWwLi6ps9nHbBJnEisPd1NhJmVaULcaJfqCorLEUnoU\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -114,30 +114,30 @@
     },
     "tags": ["bbs-2023"]
   }, {
-    "id": "did:key:zDnaerQCrQwEocofoup5cMxyviZwPiXgyykMEb5gd2PTUxiqo",
-    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19qx6wy8gWj9e6fMywmVd4m4/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19nYhif3LwA53syaXpiqoP3G/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:53e60eff-5ba4-4391-9b60-97c1060373f1\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19qx6wy8gWj9e6fMywmVd4m4\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19qx6wy8gWj9e6fMywmVd4m4/credentials/issue\",\"expires\":\"2025-08-09T14:38:41Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-08-09T14:38:42Z\",\"verificationMethod\":\"did:key:z6MkgfcyQnH2dLs53kErxtmtskhPDquxcijikCURh74PtfBE#z6MkgfcyQnH2dLs53kErxtmtskhPDquxcijikCURh74PtfBE\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19qx6wy8gWj9e6fMywmVd4m4\"],\"proofValue\":\"z3wQT3KoNjGCCNuqXkaETM1dqddXGijumzGJ16wqWnf3DCAAXfyFo8GFDjard5GPKGwSQHymeFXBvQF4xZ4dvgCDb\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:35Z\",\"id\":\"urn:uuid:caf8d5d4-5e40-44a8-af36-96a0f5afdb75\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19nYhif3LwA53syaXpiqoP3G/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19nYhif3LwA53syaXpiqoP3G\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19nYhif3LwA53syaXpiqoP3G\"],\"created\":\"2025-08-07T18:17:35Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z2cCF4sPy4Z8wyBQ9hFy5Chr3dNnUfvGZ17E6UiLupe8Hp4e3uTh76ibnShsQmnC5aQX6zyE6rAwCmYCQjMWrdYbj\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "tags": ["BitstringStatusList"]
   }, {
-    "id": "did:key:zDnaeTQKDbXQT4batxKcnMQYQ8JynjqC5Xz1uMk5euG2ht8nq",
-    "endpoint": "https://sandbox.platform.veres.dev/issuers/z1A5wbtxmm14nAwXH5vpLktrt/credentials/issue",
+    "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
+    "endpoint": "https://sandbox.platform.veres.dev/issuers/z19tMjc9HcNbRy33r3vrgHyyG/credentials/issue",
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:c8809654-1586-45db-98de-cec7861c87eb\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz1A5wbtxmm14nAwXH5vpLktrt\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z1A5wbtxmm14nAwXH5vpLktrt/credentials\",\"expires\":\"2025-09-18T17:57:35Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-09-18T17:57:36Z\",\"verificationMethod\":\"did:key:z6MkgfcyQnH2dLs53kErxtmtskhPDquxcijikCURh74PtfBE#z6MkgfcyQnH2dLs53kErxtmtskhPDquxcijikCURh74PtfBE\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz1A5wbtxmm14nAwXH5vpLktrt\"],\"proofValue\":\"z3PpszhaLKELjFtS6Z5DRhXRDUP34JGdR9GAXt29gnos6TYowW3veJDpMqnhi48WztvvwWGjcnvQ5sAwhpRnuUvVk\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:32Z\",\"id\":\"urn:uuid:226c3df8-0308-4d6c-b090-4e437090e856\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19tMjc9HcNbRy33r3vrgHyyG/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19tMjc9HcNbRy33r3vrgHyyG\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19tMjc9HcNbRy33r3vrgHyyG\"],\"created\":\"2025-08-07T18:17:32Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z3hJQAQrJarNEdnc1fuzeqs4SJ6Pa9bNx4GqtNLTziqvaHvQNJxou5V7SARsaRpTEExXmRcE2KrFCS7UcajSVtHeK\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "tags": ["EnvelopingProof"]
   }],
   "verifiers": [{
-    "id": "https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz",
-    "endpoint": "https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz/credentials/verify",
+    "id": "https://sandbox.platform.veres.dev/verifiers/z19ooVSubgo3qxUngaCRSkuAR",
+    "endpoint": "https://sandbox.platform.veres.dev/verifiers/z19ooVSubgo3qxUngaCRSkuAR/credentials/verify",
     "options": {
       "checks": ["proof"]
     },
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:596fc8b0-3084-4007-8785-5ec34d5ed850\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresverifier.dev%2Fverifiers%2Fz19w7KofwvE2nkJeRVLp8NDxz\",\"invocationTarget\":\"https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz/credentials/verify\",\"expires\":\"2025-07-30T14:23:08Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-30T14:23:09Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresverifier.dev%2Fverifiers%2Fz19w7KofwvE2nkJeRVLp8NDxz\"],\"proofValue\":\"zebUB8rxYieMi722Y4rVz5PXumgwHCQnf77Nd1zqLxkdJ7KMC5vREqegRbkdpPgxE16weYFMBmdCdv2nLJJVqysq\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:03Z\",\"id\":\"urn:uuid:af21603e-cbf9-412b-a7e1-a3ac7c57c5d9\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/verifiers/z19ooVSubgo3qxUngaCRSkuAR/credentials/verify\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fverifiers%2Fz19ooVSubgo3qxUngaCRSkuAR\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fverifiers%2Fz19ooVSubgo3qxUngaCRSkuAR\"],\"created\":\"2025-08-07T18:17:03Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z58Twz8x3Wnexba8mP8RJC3JdojpguYMHJJyC5VoYDC2TfGKK19Y8M66YraAturEmyZ7g5Mvf1zYPSBV2vwYvhYSH\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "supports": {
@@ -158,13 +158,13 @@
     ]
   }],
   "vpVerifiers": [{
-    "id": "https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz",
-    "endpoint": "https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz/presentations/verify",
+    "id": "https://sandbox.platform.veres.dev/verifiers/z19ooVSubgo3qxUngaCRSkuAR",
+    "endpoint": "https://sandbox.platform.veres.dev/verifiers/z19ooVSubgo3qxUngaCRSkuAR/presentations/verify",
     "options": {
       "checks": ["proof"]
     },
     "zcap": {
-      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"id\":\"urn:uuid:2e392f95-fc49-46c6-b92a-0d53ee6025d9\",\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fvc2.veresverifier.dev%2Fverifiers%2Fz19w7KofwvE2nkJeRVLp8NDxz\",\"invocationTarget\":\"https://vc2.veresverifier.dev/verifiers/z19w7KofwvE2nkJeRVLp8NDxz/presentations/verify\",\"expires\":\"2025-07-30T14:23:08Z\",\"proof\":{\"type\":\"Ed25519Signature2020\",\"created\":\"2024-07-30T14:23:09Z\",\"verificationMethod\":\"did:key:z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV#z6MkeiWvMo7obTB6fdBh7rBYeGjEQaadqBKFJYauFKz5xhDV\",\"proofPurpose\":\"capabilityDelegation\",\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fvc2.veresverifier.dev%2Fverifiers%2Fz19w7KofwvE2nkJeRVLp8NDxz\"],\"proofValue\":\"z48Wn5WTbMx3x2LjBC8ZfQnP52zcpU5nEUKdrKMEsEKXa4U3XhzReRfkC46dtN7wMiKja2n1mDb1TLUTpjKZtiR7q\"}}",
+      "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:03Z\",\"id\":\"urn:uuid:af21603e-cbf9-412b-a7e1-a3ac7c57c5d9\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/verifiers/z19ooVSubgo3qxUngaCRSkuAR/credentials/verify\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fverifiers%2Fz19ooVSubgo3qxUngaCRSkuAR\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fverifiers%2Fz19ooVSubgo3qxUngaCRSkuAR\"],\"created\":\"2025-08-07T18:17:03Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z58Twz8x3Wnexba8mP8RJC3JdojpguYMHJJyC5VoYDC2TfGKK19Y8M66YraAturEmyZ7g5Mvf1zYPSBV2vwYvhYSH\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
       "keySeed": "KEY_SEED_DB"
     },
     "tags": ["vc2.0", "EnvelopingProof"]
