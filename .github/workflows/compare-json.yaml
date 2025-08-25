@@ -1,0 +1,70 @@
+name: Diff Changed JSON Files
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  diff-changed-json:
+    name: Diff Changed JSON files
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Get all changed JSON files
+        id: changed-files
+        uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c # v46.0.5
+        with:
+          files: |
+            implementations/**.json
+      - name: List all changed JSON files
+        if: steps.changed-files.outputs.any_changed == 'true'
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: |
+          for file in ${ALL_CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+      - name: Process JSON diffs
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        run: |
+          for file in ${ALL_CHANGED_FILES}; do
+            if [[ "$file" == *.json ]]; then
+              echo "Processing JSON diff for: $file"
+              # Get the content of the file from the base branch (before changes)
+              BASE_CONTENT=$(git show ${{ github.event.pull_request.base.sha }}:"$file")
+              # Get the content of the file from the head branch (after changes)
+              HEAD_CONTENT=$(cat "$file")
+
+              # Create temporary files for diffing
+              echo "$BASE_CONTENT" > base.json
+              echo "$HEAD_CONTENT" > head.json
+
+              echo "JSON diff for $file:"
+              echo '```diff' > diff_output.txt
+              diff -U5 <(jq --sort-keys '.issuers |= sort_by(.tags)' base.json) <(jq --sort-keys '.issuers |= sort_by(.tags)' head.json) >> diff_output.txt || true
+              echo '```' >> diff_output.txt
+              rm base.json head.json
+            fi
+          done
+      - name: Display diffs
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          if [ -f diff_output.txt ]; then
+            echo "Displaying JSON diffs:"
+            cat diff_output.txt
+          else
+            echo "No diffs to display."
+          fi
+      - name: Add comment with diffs
+        uses: thollander/actions-comment-pull-request@24bffb9b452ba05a4f3f77933840a6a841d1b32b # v3.0.1
+        if: steps.changed-files.outputs.any_changed == 'true'
+        with:
+          file-path: diff_output.txt
+          comment-tag: diff
