@@ -1,6 +1,13 @@
 name: Lint and Test
 
-on: [push]
+permissions: {}
+
+on:
+  push:
+    branches: ['**']
+  schedule:
+    # check the implementation details on Thursdays; 3 days before test suites
+    - cron: 0 5 * * 4
 
 jobs:
   lint:
@@ -11,6 +18,8 @@ jobs:
         node-version: [20.x]
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
@@ -27,6 +36,8 @@ jobs:
         node-version: [20.x]
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:

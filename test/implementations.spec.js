@@ -5,9 +5,11 @@
  */
 
 import chai from 'chai';
+import chaiDateTime from 'chai-datetime';
 const should = chai.should();
+chai.use(chaiDateTime);
 
-import {allImplementations} from '../lib/main.js';
+import {allImplementations, rawImplementations} from '../lib/main.js';
 
 describe('Loading implementations', () => {
   it('should result in no errors.', async () => {
@@ -31,7 +33,7 @@ describe('Loading implementations', () => {
             });
           });
 
-        verifiers.filter(isDidKeyFilter)
+        verifiers?.filter(isDidKeyFilter)
           .map(({settings: {id}}, index) => {
             describe(`verifier[${index}].id`, () => {
               it('should not specify a fragment', () => {
@@ -40,6 +42,28 @@ describe('Loading implementations', () => {
             });
           });
       });
+    });
+  });
+
+  describe('Implementations using ZCAPs', () => {
+    rawImplementations.forEach(implementation => {
+      Object.keys(implementation)
+        .filter(key => Array.isArray(implementation[key]))
+        .forEach(implementationType => {
+          describe(`${implementation.name} - ${implementationType}`, () => {
+            implementation[implementationType]
+              ?.filter(({zcap}) => zcap?.capability)
+              .forEach(issuer => {
+                it(`ZCAP should not be expired for ${issuer.id}`, () => {
+                  const expiration = JSON.parse(issuer.zcap.capability).expires;
+                  const today = new Date();
+                  const nextMonth = new Date(
+                    today.getFullYear(), today.getMonth() + 1, today.getDate());
+                  chai.expect(new Date(expiration)).to.be.afterDate(nextMonth);
+                });
+              });
+          });
+        });
     });
   });
 });
