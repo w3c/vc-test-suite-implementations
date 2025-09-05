@@ -1,6 +1,6 @@
 {
   "name": "vc-test-suite-implementations",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "W3C Verifiable Credential test suite implementations.",
   "homepage": "https://github.com/w3c/vc-test-suite-implementations",
   "author": {
