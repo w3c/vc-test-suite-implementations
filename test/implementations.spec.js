@@ -61,6 +61,13 @@ describe('Loading implementations', () => {
                     today.getFullYear(), today.getMonth() + 1, today.getDate());
                   chai.expect(new Date(expiration)).to.be.afterDate(nextMonth);
                 });
+
+                it(`The "endpoint" MUST match the "invocationTarget" in the
+                    ZCAP for ${config.id}`, () => {
+                  const invocationTarget = JSON.parse(
+                    config.zcap.capability).invocationTarget;
+                  chai.expect(config.endpoint).to.equal(invocationTarget);
+                });
               });
           });
         });
