@@ -53,9 +53,9 @@ describe('Loading implementations', () => {
           describe(`${implementation.name} - ${implementationType}`, () => {
             implementation[implementationType]
               ?.filter(({zcap}) => zcap?.capability)
-              .forEach(issuer => {
-                it(`ZCAP should not be expired for ${issuer.id}`, () => {
-                  const expiration = JSON.parse(issuer.zcap.capability).expires;
+              .forEach(config => {
+                it(`ZCAP should not be expired for ${config.id}`, () => {
+                  const expiration = JSON.parse(config.zcap.capability).expires;
                   const today = new Date();
                   const nextMonth = new Date(
                     today.getFullYear(), today.getMonth() + 1, today.getDate());
