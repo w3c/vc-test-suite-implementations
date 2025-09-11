@@ -37,14 +37,10 @@ jobs:
           for file in ${ALL_CHANGED_FILES}; do
             if [[ "$file" == *.json ]]; then
               echo "Processing JSON diff for: $file"
-              # Get the content of the file from the base branch (before changes)
-              BASE_CONTENT=$(git show ${{ github.event.pull_request.base.sha }}:"$file")
-              # Get the content of the file from the head branch (after changes)
-              HEAD_CONTENT=$(cat "$file")
 
               # Create temporary files for diffing
-              echo "$BASE_CONTENT" > base.json
-              echo "$HEAD_CONTENT" > head.json
+              git show ${{ github.event.pull_request.base.sha }}:"$file" > base.json
+              cat "$file" > head.json
 
               echo "JSON diff for $file:"
               echo '```diff' > diff_output.txt
