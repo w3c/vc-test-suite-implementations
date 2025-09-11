@@ -42,10 +42,12 @@ jobs:
               git show ${{ github.event.pull_request.base.sha }}:"$file" > base.json
               cat "$file" > head.json
 
-              echo "JSON diff for $file:"
-              echo '```diff' > diff_output.txt
-              diff -U5 <(jq --sort-keys '.issuers |= sort_by(.tags)' base.json) <(jq --sort-keys '.issuers |= sort_by(.tags)' head.json) >> diff_output.txt || true
-              echo '```' >> diff_output.txt
+              {
+                echo "### JSON diff for $file:"
+                echo '```diff' > diff_output.txt
+                diff -U5 <(jq --sort-keys '.issuers |= sort_by(.tags)' base.json) <(jq --sort-keys '.issuers |= sort_by(.tags)' head.json) >> diff_output.txt || true
+                echo '```'
+              } >> diff_output.txt || true
               rm base.json head.json
             fi
           done
