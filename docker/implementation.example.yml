@@ -1,0 +1,38 @@
+---
+configs:
+  implementation.json:
+    content: |
+      {
+        "name": "My Company",
+        "implementation": "My Implementation Name",
+        "issuers": [
+          {
+            "id": "",
+            "endpoint": "",
+            "options": {},
+            "tags": [
+              "vc2.0"
+            ]
+          }
+        ],
+        "verifiers": [
+          {
+            "id": "",
+            "endpoint": "",
+            "options": {},
+            "tags": [
+              "vc2.0"
+            ]
+          }
+        ],
+        "vpVerifiers": [
+          {
+            "id": "",
+            "endpoint": "",
+            "options": {},
+            "tags": [
+              "vc2.0"
+            ]
+          }
+        ]
+      }
