@@ -1,6 +1,6 @@
 {
-  "name": "independent",
-  "implementation": "independent",
+  "name": "decentralgabe",
+  "implementation": "decentralgabe",
   "jose-cose": {
     "features": {
       "credential_jose": true,
