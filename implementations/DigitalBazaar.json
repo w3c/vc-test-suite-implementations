@@ -23,11 +23,11 @@
       }
     },
     {
-      "endpoint": "https://sandbox.platform.veres.dev/issuers/z19nYhif3LwA53syaXpiqoP3G/credentials/issue",
+      "endpoint": "https://sandbox.platform.veres.dev/issuers/z19j8CxEF7N3jB7j6AwSfuJzD/credentials/issue",
       "id": "did:key:zDnaemyrUojjzjd6gaBD9uZoUqjFntbqJEBzJcSKbvY38JFua",
       "tags": ["BitstringStatusList"],
       "zcap": {
-        "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-06-03T18:17:35Z\",\"id\":\"urn:uuid:caf8d5d4-5e40-44a8-af36-96a0f5afdb75\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19nYhif3LwA53syaXpiqoP3G/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19nYhif3LwA53syaXpiqoP3G\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19nYhif3LwA53syaXpiqoP3G\"],\"created\":\"2025-08-07T18:17:35Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z2cCF4sPy4Z8wyBQ9hFy5Chr3dNnUfvGZ17E6UiLupe8Hp4e3uTh76ibnShsQmnC5aQX6zyE6rAwCmYCQjMWrdYbj\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
+        "capability": "{\"@context\":[\"https://w3id.org/zcap/v1\",\"https://w3id.org/security/suites/ed25519-2020/v1\"],\"controller\":\"did:key:z6MkptjaoxjyKQFSqf1dHXswP6EayYhPQBYzprVCPmGBHz9S\",\"expires\":\"2026-08-27T16:01:02Z\",\"id\":\"urn:uuid:1b40db8d-cf9c-453e-bdf0-ed6234307927\",\"invocationTarget\":\"https://sandbox.platform.veres.dev/issuers/z19j8CxEF7N3jB7j6AwSfuJzD/credentials/issue\",\"parentCapability\":\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19j8CxEF7N3jB7j6AwSfuJzD\",\"proof\":{\"capabilityChain\":[\"urn:zcap:root:https%3A%2F%2Fsandbox.platform.veres.dev%2Fissuers%2Fz19j8CxEF7N3jB7j6AwSfuJzD\"],\"created\":\"2025-10-31T16:01:02Z\",\"proofPurpose\":\"capabilityDelegation\",\"proofValue\":\"z8GLA1LdsrQbX8h9d2b7KQDwrE85HTFE6ubVVGW2c5Vzpj7oPew3Wza4xSfHh18fbT6cMLyQRiFFbV3LQn2uFFUU\",\"type\":\"Ed25519Signature2020\",\"verificationMethod\":\"did:key:z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97#z6MkfbYByXPbuAgqAttSKvLmAG6Wi6eg29dC6fZZHJ1qcn97\"}}",
         "keySeed": "KEY_SEED_DB"
       }
     },
