@@ -1,0 +1,26 @@
+{
+  "name": "TrustVC",
+  "implementation": "TrustVC Implementation",
+  "issuers": [
+    {
+      "id": "did:web:trustvc.github.io:did:1",
+      "endpoint": "https://w3ctest.dev.trustvc.tech/dev/credentials/imda/issue",
+      "supports": {
+        "vc": ["2.0"]
+      },
+      "tags": ["vc2.0", "ecdsa-sd-2023"],
+      "supportedEcdsaKeyTypes": ["P-256"]
+    }
+  ],
+  "verifiers": [
+    {
+      "id": "did:web:trustvc.github.io:did:1",
+      "endpoint": "https://w3ctest.dev.trustvc.tech/dev/credentials/imda/verify",
+      "supports": {
+        "vc": ["2.0"]
+      },
+      "tags": ["vc2.0", "ecdsa-sd-2023"],
+      "supportedEcdsaKeyTypes": ["P-256"]
+    }
+  ]
+}
