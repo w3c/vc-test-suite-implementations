@@ -4,7 +4,7 @@
   "issuers": [
     {
       "id": "did:web:trustvc.github.io:did:1",
-      "endpoint": "https://w3ctest.dev.trustvc.tech/dev/credentials/imda/issue",
+      "endpoint": "https://w3ctest.dev.trustvc.tech/credentials/imda/issue",
       "supports": {
         "vc": ["2.0"]
       },
@@ -15,7 +15,7 @@
   "verifiers": [
     {
       "id": "did:web:trustvc.github.io:did:1",
-      "endpoint": "https://w3ctest.dev.trustvc.tech/dev/credentials/imda/verify",
+      "endpoint": "https://w3ctest.dev.trustvc.tech/credentials/imda/verify",
       "supports": {
         "vc": ["2.0"]
       },
