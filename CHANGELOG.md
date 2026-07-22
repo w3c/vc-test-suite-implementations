@@ -1,10 +1,15 @@
 <!--
-Copyright 2023 - 2024 Digital Bazaar, Inc.
+Copyright 2023 - 2025 Digital Bazaar, Inc.
 
 SPDX-License-Identifier: BSD-3-Clause
 -->
 
 # w3c/vc-test-suite-implementations  ChangeLog
+
+## 2.1.0 - 2025-03-08
+
+### Fixed
+- Upgrade `ezcap` to v4.1.0.
 
 ## 2.0.1 - 2024-10-24
 
