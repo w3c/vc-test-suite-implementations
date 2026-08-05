@@ -135,5 +135,15 @@
                 "vc2.0"
             ]
         }
-    ]
+    ],
+    "jose-cose": {
+        "features": {
+            "credential_jose": true,
+            "presentation_jose": true,
+            "credential_cose": true,
+            "presentation_cose": true,
+            "credential_sdjwt": true,
+            "presentation_sdjwt": true
+        }
+    }
 }
