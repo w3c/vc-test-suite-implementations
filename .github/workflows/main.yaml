@@ -16,7 +16,7 @@ jobs:
     timeout-minutes: 10
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [24.x]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,16 +25,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install --legacy-peer-deps
+      - run: npm ci
       - name: Run eslint
         run: npm run lint
   test-node:
     runs-on: ubuntu-latest
     needs: [lint]
     timeout-minutes: 10
+    permissions:
+      issues: write
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [24.x]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,6 +45,28 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install --legacy-peer-deps
+      - run: npm ci
       - name: Run test with Node.js ${{ matrix.node-version }}
-        run: npm run test-node
+        id: test
+        run: |
+          echo "EXPIRED<<EOF"$'\n'"$(npm run test-node | grep 'expired' | cut -c 9-)"$'\n'"EOF" >> $GITHUB_OUTPUT
+      - name: Find the most recent `expired-zcaps` issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        id: latest_issue
+        run: |
+          ISSUE_NUM=$(gh issue list --search 'label:expired-zcaps sort:created-desc' --limit 1 --json number --jq .[].number)
+          echo "content=$ISSUE_NUM" >> $GITHUB_OUTPUT
+      - name: Create Issue for Expired ZCAPs
+        if: ${{ steps.test.outputs.EXPIRED != '' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUM: ${{ steps.latest_issue.outputs.content }}
+          ISSUE_BODY: ${{ steps.test.outputs.EXPIRED }}
+        run: |
+          if [ -n "$ISSUE_NUM" ]; then
+            gh issue edit "$ISSUE_NUM" --body "${ISSUE_BODY}"
+            exit 0
+          else
+            gh issue create --title "Expired ZCAPs detected" --body "${ISSUE_BODY}" --label "expired-zcaps"
+          fi
