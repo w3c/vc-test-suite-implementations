@@ -1,0 +1,45 @@
+{
+  "name": "RWAIX",
+  "implementation": "rwaix-reference",
+  "issuers": [
+    {
+      "id": "did:key:z6MkiBxmSP5SW5nvJDr3AsEFJSJirYPBHLKZ5FCgcNTVR2rA",
+      "endpoint": "https://www.rwaix.io/vc-api/credentials/issue",
+      "method": "POST",
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      },
+      "tags": ["eddsa-rdfc-2022", "vc2.0"]
+    },
+    {
+      "id": "did:key:zDnaedXhhvEZXWaibqfxtNeemfN3RBhfbDbEhDDkDNDGqgUZJ",
+      "endpoint": "https://www.rwaix.io/vc-api/ecdsa/credentials/issue",
+      "method": "POST",
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      },
+      "tags": ["ecdsa-rdfc-2019"]
+    }
+  ],
+  "verifiers": [
+    {
+      "id": "did:key:z6MkiBxmSP5SW5nvJDr3AsEFJSJirYPBHLKZ5FCgcNTVR2rA",
+      "endpoint": "https://www.rwaix.io/vc-api/credentials/verify",
+      "method": "POST",
+      "supportedEcdsaKeyTypes": ["P-256"],
+      "supports": {
+        "vc": ["1.1", "2.0"]
+      },
+      "tags": ["eddsa-rdfc-2022", "ecdsa-rdfc-2019", "vc2.0"]
+    }
+  ],
+  "vpVerifiers": [
+    {
+      "id": "did:key:z6MkiBxmSP5SW5nvJDr3AsEFJSJirYPBHLKZ5FCgcNTVR2rA",
+      "endpoint": "https://www.rwaix.io/vc-api/presentations/verify",
+      "method": "POST",
+      "tags": ["vc2.0"]
+    }
+  ]
+}
