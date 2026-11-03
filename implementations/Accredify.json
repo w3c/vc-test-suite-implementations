@@ -1,0 +1,222 @@
+{
+  "name": "Accredify",
+  "implementation": "Accredify VC API",
+  "issuers": [
+    {
+      "id": "did:key:zDnaeynnzwzTUuroEnn3WcHLUYM67D7aJqUnELrk3cnBNShbv",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/ecdsa-rdfc-2019/p256/credentials/issue",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "tags": [
+        "ecdsa-rdfc-2019",
+        "vc2.0"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:z82LkyjT2dHRzhmBZK5mD77aQfy8RcVcFJH5CUfHrdNUqn7oWLMKLYSmrATje28x9xvEYE7",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/ecdsa-rdfc-2019/p384/credentials/issue",
+      "supportedEcdsaKeyTypes": [
+        "P-384"
+      ],
+      "tags": [
+        "ecdsa-rdfc-2019"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:zDnaeynnzwzTUuroEnn3WcHLUYM67D7aJqUnELrk3cnBNShbv",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/ecdsa-sd-2023/p256/credentials/issue",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "tags": [
+        "ecdsa-sd-2023"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:z6MkhnparMq8J64WaoKX6M57A6cngQWuGqjPcsezhiQp2MAs",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/eddsa-rdfc-2022/credentials/issue",
+      "tags": [
+        "eddsa-rdfc-2022"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:zDnaeynnzwzTUuroEnn3WcHLUYM67D7aJqUnELrk3cnBNShbv",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/ecdsa-jcs-2019/p256/credentials/issue",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "tags": [
+        "ecdsa-jcs-2019"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:z82LkyjT2dHRzhmBZK5mD77aQfy8RcVcFJH5CUfHrdNUqn7oWLMKLYSmrATje28x9xvEYE7",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/ecdsa-jcs-2019/p384/credentials/issue",
+      "supportedEcdsaKeyTypes": [
+        "P-384"
+      ],
+      "tags": [
+        "ecdsa-jcs-2019"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:z6MkhnparMq8J64WaoKX6M57A6cngQWuGqjPcsezhiQp2MAs",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/eddsa-jcs-2022/credentials/issue",
+      "tags": [
+        "eddsa-jcs-2022"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:zDnaeynnzwzTUuroEnn3WcHLUYM67D7aJqUnELrk3cnBNShbv",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/jose/credentials/issue",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "tags": [
+        "EnvelopingProof"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:z6MkhnparMq8J64WaoKX6M57A6cngQWuGqjPcsezhiQp2MAs",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/bitstring-status-list/revocation/credentials/issue",
+      "tags": [
+        "BitstringStatusList",
+        "Revocation"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    },
+    {
+      "id": "did:key:z6MkhnparMq8J64WaoKX6M57A6cngQWuGqjPcsezhiQp2MAs",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/bitstring-status-list/suspension/credentials/issue",
+      "tags": [
+        "BitstringStatusList",
+        "Suspension"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    }
+  ],
+  "verifiers": [
+    {
+      "id": "did:key:zDnaeynnzwzTUuroEnn3WcHLUYM67D7aJqUnELrk3cnBNShbv",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/credentials/verify",
+      "supportedEcdsaKeyTypes": [
+        "P-256",
+        "P-384"
+      ],
+      "tags": [
+        "ecdsa-rdfc-2019",
+        "ecdsa-jcs-2019",
+        "ecdsa-sd-2023",
+        "eddsa-rdfc-2022",
+        "eddsa-jcs-2022",
+        "vc2.0",
+        "EnvelopingProof",
+        "BitstringStatusList",
+        "Revocation",
+        "Suspension"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    }
+  ],
+  "vcHolders": [
+    {
+      "id": "did:key:zDnaeynnzwzTUuroEnn3WcHLUYM67D7aJqUnELrk3cnBNShbv",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/credentials/derive",
+      "supportedEcdsaKeyTypes": [
+        "P-256"
+      ],
+      "tags": [
+        "vcHolder"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    }
+  ],
+  "vpVerifiers": [
+    {
+      "id": "did:key:zDnaeynnzwzTUuroEnn3WcHLUYM67D7aJqUnELrk3cnBNShbv",
+      "endpoint": "https://vc-api.w3c.services.conformance.accredify.dev/presentations/verify",
+      "supportedEcdsaKeyTypes": [
+        "P-256",
+        "P-384"
+      ],
+      "tags": [
+        "vc2.0"
+      ],
+      "supports": {
+        "vc": [
+          "1.1",
+          "2.0"
+        ]
+      }
+    }
+  ]
+}
