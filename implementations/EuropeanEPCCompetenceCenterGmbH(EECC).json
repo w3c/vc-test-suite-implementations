@@ -1,0 +1,41 @@
+{
+  "name": "European EPC Competence Center GmbH (EECC)",
+  "implementation": "EECC VC Verifier",
+  "verifiers": [{
+    "id": "https://verifier.prod-k8s.eecc.de/api/vcalm/credentials/verify",
+    "endpoint": "https://verifier.prod-k8s.eecc.de/api/vcalm/credentials/verify",
+    "options": {
+      "checks": ["proof"]
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-256"],
+    "tags": [
+      "vc2.0",
+      "eddsa-rdfc-2022",
+      "ecdsa-rdfc-2019",
+      "ecdsa-sd-2023",
+      "Ed25519Signature2020"
+    ]
+  }, {
+    "id": "https://verifier.prod-k8s.eecc.de/api/vcalm/credentials/verify#status",
+    "endpoint": "https://verifier.prod-k8s.eecc.de/api/vcalm/credentials/verify",
+    "options": {
+      "checks": ["proof", "credentialStatus"]
+    },
+    "supports": {
+      "vc": ["1.1", "2.0"]
+    },
+    "supportedEcdsaKeyTypes": ["P-256"],
+    "tags": ["BitstringStatusList"]
+  }],
+  "vpVerifiers": [{
+    "id": "https://verifier.prod-k8s.eecc.de/api/vcalm/presentations/verify",
+    "endpoint": "https://verifier.prod-k8s.eecc.de/api/vcalm/presentations/verify",
+    "options": {
+      "checks": ["proof"]
+    },
+    "tags": ["vc2.0"]
+  }]
+}
